@@ -1,0 +1,502 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  3 MAR 2023 13:15
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**ms.tex
+(./ms.tex
+LaTeX2e <2018-12-01>
+(./agujournal2019.cls
+Document Class: agujournal2019 01/14/2019
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count80
+\output=\toks15
+\linenoprevgraf=\count81
+\linenumbersep=\dimen104
+\linenumberwidth=\dimen105
+\c@linenumber=\count82
+\c@pagewiselinenumber=\count83
+\c@LN@truepage=\count84
+\c@internallinenumber=\count85
+\c@internallinenumbers=\count86
+\quotelinenumbersep=\dimen106
+\bframerule=\dimen107
+\bframesep=\dimen108
+\bframebox=\box27
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip41
+\RaggedLeftLeftskip=\skip42
+\RaggedRightLeftskip=\skip43
+\CenteringRightskip=\skip44
+\RaggedLeftRightskip=\skip45
+\RaggedRightRightskip=\skip46
+\CenteringParfillskip=\skip47
+\RaggedLeftParfillskip=\skip48
+\RaggedRightParfillskip=\skip49
+\JustifyingParfillskip=\skip50
+\CenteringParindent=\skip51
+\RaggedLeftParindent=\skip52
+\RaggedRightParindent=\skip53
+\JustifyingParindent=\skip54
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count87
+\rotFPtop=\skip55
+\rotFPbot=\skip56
+\rot@float@box=\box28
+\rot@mess@toks=\toks16
+)
+\draftskip=\count88
+\c@section=\count89
+\c@subsection=\count90
+\c@subsubsection=\count91
+\c@paragraph=\count92
+\c@subparagraph=\count93
+\c@figure=\count94
+\c@table=\count95
+\abovecaptionskip=\skip57
+\belowcaptionskip=\skip58
+\c@appendnum=\count96
+\bibindent=\dimen109
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/apacite/apacite.sty
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count97
+\bibleftmargin=\skip59
+\bibindent=\skip60
+\bibparsep=\skip61
+\bibitemsep=\skip62
+\biblabelsep=\skip63
+))
+(./trackchanges.sty
+Package: trackchanges 2009/04/22 v0.7.0 TrackChanges file 
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count98
+\calc@Bcount=\count99
+\calc@Adimen=\dimen110
+\calc@Bdimen=\dimen111
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count100
+\calc@Cskip=\skip66
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks17
+\SOUL@lasttoken=\toks18
+\SOUL@cmds=\toks19
+\SOUL@buffer=\toks20
+\SOUL@token=\toks21
+\SOUL@spaceskip=\skip67
+\SOUL@ttwidth=\dimen112
+\SOUL@uldp=\dimen113
+\SOUL@ulht=\dimen114
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/morefloats/morefloats.sty
+Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+Package morefloats Info: Maximum number of possible floats asked for: 36
+(morefloats)             (i.e. 18 more floats).
+(morefloats)             LaTeX might run out of memory before this
+(morefloats)             (in which case it will notify you).
+)
+\c@userid=\count101
+\c@changenumber=\count102
+\c@storefootnote=\count103
+\c@numeditors=\count104
+\c@maxeditors=\count105
+)
+(./ms.aux)
+\openout1 = `ms.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count106
+\scratchdimen=\dimen115
+\scratchbox=\box29
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen116
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks23
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 17.
+\c@maskedRefs=\count112
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/apacite/english.apc
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 44.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 44.
+ [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 69.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 69.
+
+
+Overfull \hbox (22.15456pt too wide) in paragraph at lines 72--73
+[]\OT1/cmr/m/n/10 The Com-mu-nity Ter-res-trial Sys-tem Model (CTSM) is de-vel-
+oped by the CESM Land 
+ []
+
+
+Overfull \hbox (17.54355pt too wide) in paragraph at lines 72--73
+\OT1/cmr/m/n/10 Model Work-ing Group (LMWG) and main-tained at the Na-tional Ce
+n-ter for At-mo-spheric 
+ []
+
+
+Overfull \hbox (6.34903pt too wide) in paragraph at lines 72--73
+\OT1/cmr/m/n/10 Re-search (NCAR). This ex-per-i-ment uti-lizes the Com-mu-nity 
+Land Model con-fig-u-ra-tion 
+ []
+
+
+Overfull \hbox (5.46016pt too wide) in paragraph at lines 72--73
+\OT1/cmr/m/n/10 of CTSM, ver-sion 5.1 (CLM5.1). The model source code and doc-u
+-men-ta-tion are avail- 
+ []
+
+
+Overfull \hbox (22.43071pt too wide) in paragraph at lines 72--73
+\OT1/cmr/m/n/10 able on-line ($\OT1/cmtt/m/n/10 https :// github [] .com / ESCO
+MP / CTSM$\OT1/cmr/m/n/10 ), as is a full model de-scrip-tion []Lawrence 
+ []
+
+
+Overfull \hbox (9.9324pt too wide) in paragraph at lines 74--74
+\OT1/cmr/m/n/10 just-ments, and the im-ple-men-ta-tion of biomass heat stor-age
+ []Swenson et al.[], 2019). The 
+ []
+
+
+Overfull \hbox (1.29361pt too wide) in paragraph at lines 74--74
+\OT1/cmr/m/n/10 PPE ex-per-i-ment re-quired ad-di-tional code mod-i-fi-ca-tions
+ to iden-tify and pro-gram-mat-i- 
+ []
+
+
+Overfull \hbox (10.98796pt too wide) in paragraph at lines 74--74
+\OT1/cmr/m/n/10 cally vary the full suite of model pa-ram-e-ters. The ex-act mo
+del code for this ex-per-i-ment 
+ []
+
+
+Overfull \hbox (1.51337pt too wide) in paragraph at lines 74--74
+\OT1/cmr/m/n/10 is con-tained in a de-vel-op-ment tag ($\OT1/cmtt/m/n/10 https 
+:// github [] .com / ESCOMP / CTSM / tree / branch [] 
+ []
+
+
+Overfull \hbox (10.87971pt too wide) in paragraph at lines 74--74
+[]\OT1/cmtt/m/n/10 tags / PPE [] .n11 [] []ctsm5 [] .1 [] .dev030$\OT1/cmr/m/n/
+10 ). We uti-lized the full bio-geo-chem-istry ver-sion of CLM 
+ []
+
+
+Overfull \hbox (42.21028pt too wide) in paragraph at lines 77--78
+[]\OT1/cmr/m/n/10 Model spin-up for the equi-li-bra-tion of car-bon and ni-tro-
+gen pools within biogeochemistry- 
+ []
+
+
+Overfull \hbox (5.51581pt too wide) in paragraph at lines 77--78
+\OT1/cmr/m/n/10 enabled land mod-els can con-sume up to 98% of com-pu-ta-tional
+ time []Sun et al.[], 2023).  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Overfull \hbox (9.82117pt too wide) in paragraph at lines 277--279
+[]\OT1/cmr/m/n/10 This sec-tion MUST con-tain a state-ment that de-scribes wher
+e the data sup-port-ing 
+ []
+
+
+Overfull \hbox (5.90463pt too wide) in paragraph at lines 277--279
+\OT1/cmr/m/n/10 the con-clu-sions can be ob-tained. Data can-not be listed as '
+'Avail-able from au-thors'' or 
+ []
+
+
+Overfull \hbox (4.4047pt too wide) in paragraph at lines 277--279
+\OT1/cmr/m/n/10 stored solely in sup-port-ing in-for-ma-tion. Ci-ta-tions to ar
+chived data should be in-cluded 
+ []
+
+
+Overfull \hbox (18.51564pt too wide) in paragraph at lines 277--279
+\OT1/cmr/m/n/10 in your ref-er-ence list. Wi-ley will pub-lish it as a sep-a-ra
+te sec-tion on the pa-per's page. Ex- 
+ []
+
+
+Overfull \hbox (71.11316pt too wide) in paragraph at lines 277--279
+\OT1/cmr/m/n/10 am-ples and com-plete in-for-ma-tion are here: https://www.agu.
+org/Publish with AGU/Publish/Author 
+ []
+
+
+Overfull \hbox (8.65456pt too wide) in paragraph at lines 281--283
+\OT1/cmr/m/n/10 Enter ac-knowl-edg-ments here. This sec-tion is to ac-knowl-edg
+e fund-ing, thank col-leagues, 
+ []
+
+(./ms.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 17--34
+[]\OT1/cmr/m/n/10 Hoffman, F. M., Ku-mar, J., Mills, R. T., & Har-grove, W. W. 
+ (2013). 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--34
+\OT1/cmr/m/n/10 Representativeness-based sam-pling net-work de-sign for the Sta
+te of Alaska. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--66
+[]\OT1/cmr/m/n/10 Lawrence, D. M., et al., & et al.  (2019).  The Com-mu-nity L
+and Model ver-sion 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--66
+\OT1/cmr/m/n/10 5: De-scrip-tion of new fea-tures, bench-mark-ing, and im-pact 
+of forc-ing un- 
+ []
+
+
+Underfull \hbox (badness 7963) in paragraph at lines 48--66
+\OT1/cmr/m/n/10 cer-tainty.  \OT1/cmr/m/it/10 Jour-nal of Ad-vances in Mod-el-i
+ng Earth Sys-tems\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 in press\OT1/cmr/m/n/10 .  
+doi: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--99
+\OT1/cmr/m/n/10 Full im-ple-men-ta-tion of ma-trix ap-proach to bio-geo-chem-is
+try mod-ule of clm5. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--131
+[]\OT1/cmr/m/n/10 Sun, Y., Goll, D. S., Huang, Y., Ciais, P., Wang, Y.-P., Bas-
+trikov, V., & Wang, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--131
+\OT1/cmr/m/n/10 Y.  (2023).  Ma-chine learn-ing for ac-cel-er-at-ing process-ba
+sed com-pu-ta- 
+ []
+
+
+Underfull \hbox (badness 4967) in paragraph at lines 111--131
+\OT1/cmr/m/n/10 tion of land bio-geo-chem-i-cal cy-cles.  \OT1/cmr/m/it/10 Glob
+al Change Bi-ol-ogy\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 n/a\OT1/cmr/m/n/10 (n/a).
+  doi: 
+ []
+
+
+Underfull \hbox (badness 3088) in paragraph at lines 145--163
+[]\OT1/cmr/m/n/10 Swenson, S. C., Burns, S. P., & Lawrence, D. M.  (2019).  The
+ im-pact of biomass 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--163
+\OT1/cmr/m/n/10 heat stor-age on the canopy en-ergy bal-ance and at-mo-spheric 
+sta-bil-ity in the 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--163
+\OT1/cmr/m/n/10 com-mu-nity land model.  \OT1/cmr/m/it/10 Jour-nal of Ad-vances
+ in Mod-el-ing Earth Sys-tems\OT1/cmr/m/n/10 , 
+ []
+
+) [3] (./ms.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.45pt have occurred.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3247 strings out of 492616
+ 44644 string characters out of 6129482
+ 122008 words of memory out of 5000000
+ 7112 multiletter control sequences out of 15000+600000
+ 9230 words of font info for 33 fonts, out of 8000000 for 9000
+ 1147 hyphenation exceptions out of 8191
+ 43i,9n,37p,690b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/201
+9/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on ms.pdf (3 pages, 176412 bytes).
+PDF statistics:
+ 70 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
