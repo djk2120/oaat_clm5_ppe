@@ -70,21 +70,53 @@
 
 \section{Introduction}
 \section{Experiment Description}
+\label{methods}
 \subsection{Model description}
+\label{sect:md}
 The Community Terrestrial System Model (CTSM) is developed by the CESM Land Model Working Group (LMWG) and maintained at the National Center for Atmospheric Research (NCAR). This experiment utilizes the Community Land Model configuration of CTSM, version 5.1 (CLM5.1). The model source code and documentation are available online (\url{https://github.com/ESCOMP/CTSM}), as is a full model description \cite{lawrence2019}.
 
 Relative to CLM5.0, version 5.1 includes minor bug fixes, several parameter adjustments, and the implementation of biomass heat storage \cite{swenson2019}. The PPE experiment required additional code modifications to identify and programmatically vary the full suite of model parameters. The exact model code for this experiment is contained in a development tag (\url{https://github.com/ESCOMP/CTSM/tree/branch_tags/PPE.n11_ctsm5.1.dev030}). We utilized the full biogeochemistry version of CLM in land-only mode, with the crop model turned off. The component set longname is: \\ \texttt{2000\_DATM\%GSWP3v1\_CLM51\%BGC\_SICE\_SOCN\_SROF\_SGLC\_SWAV\_SIAC\_SESP}
 
 \subsection{Model spin-up}
-Model spin-up for the equilibration of carbon and nitrogen pools within biogeochemistry-enabled land models can consume up to 98\% of computational time \cite{sun2023}.
+Model spin-up for the equilibration of carbon and nitrogen pools within biogeochemistry-enabled land models can consume up to 98\% of computational time \cite{sun2023}. Depending on the evaluation criteria and model configuration, CLM5 requires between 800 and 2000 years (or more) to reach steady-state conditions \cite{lawrence2019}. Absent equilibrium, the drift towards steady state can obscure important model dynamics or features. For this reason, each member of the PPE requires independent spin-up.
 
-\cite{lu2020}
+To manage computational cost we leveraged the Matrix-CN spin-up mode recently implemented within CLM \cite{lu2020}. This new module leverages a linearized simplification of CLM's biogeochemistry to significantly reduce spin-up time. Our spin-up protocol featured 20 years in accelerated decomposition mode, followed by 80 years of Matrix-CN, followed by 40 years of `normal' mode, cycling over a ten-year forcing dataset. This was designed to achieve sufficiently equilibrated model states, while minimizing computational time. To reduce model cost, we did not require full equilibration of deep soil carbon (beyond 1 meter). Any inferences about deep soil carbon would therefore be subject to uncertainty due to spin-up concerns.
 
 \subsection{Sparsegrid}
+\label{sect:sg}
+One of the largest controls on model cost is resolution. Most CLM simulations utilize nominal 1$^\circ$ resolution, which requires over 20,000 land grid cells. In order to manage computational cost, parameter perturbation experiments often use lower resolution, such as 4$^\circ$x5$^\circ$ \cite{dagon2020}. CLM does not require standard rectilinear grids, which allows for innovative techniques to reduce model resolution
 
-\cite{hoffman2013}
+Multivariate spatio-temporal clustering (MVSC) has been utilized to extract patterns of climatological significance from climate model output \cite{hoffman2005} and applied to design a representativeness-based sampling network \cite{hoffman2013}. Instead of lowering resolution by increasing grid spacing, we used MVSC to strategically remove redundant grid cells, leaving only 400 grid cells that efficiently sample important model dynamics. Our goal was to quantify parameter effects with sufficient accuracy, while minimizing computational cost.
+
+We used k-means clustering to identify groups of grid cells with similar climatologies based on a 2$^\circ$ transient simulation (1850-2014) using the CLM-PPE codebase. Instead of running every grid cell from a given cluster, we only run one representative grid cell, whichever is located nearest the cluster centroid in climate space. We refer to the set of representative grid cells as the `sparsegrid'. A paint-by-number approach is used to recompose mapped output and compute global means, where the output from the representative grid cell is substituted for all members of the cluster cohort.
+
+Clustering was based on a subset of 18 meaningful CLM variables (Table \ref{tab:sg}). The clustering algorithm received 12 observations of each variable per grid cell, namely the mean and interannual variability computed for six 30-year climatology windows (1865-1894, 1895-1924, ... , 1985-2014). Clusters were delineated to equalize the multi-dimensional variance across the user-specified number of groups, $k$. We tested 15 values of $k$, ranging from 10 to 800. Based on ILAMB2.5 benchmarking \cite{collier2018} against the full grid output, we opted for a 400-cluster sparsegrid, to balance computational cost against model fidelity (Supp Figure \ref{supp:ilamb}). Because our emphasis is on vegetated regions, we masked out Antarctica within the clustering algorithm, whereby we do not provide any output below 60$^\circ$S.
+
+\begin{table}[h]
+\caption{Clustering inputs}
+\centering
+\begin{tabular}{l c c c c}
+ \hline
+ Climate forcing variables & Ecosystem state variables &Ecosystem flux variables \\
+ \hline
+ 2m air temperature (TSA) & Leaf area index (TLAI) & Gross primary production (GPP) \\
+Atmospheric rain (RAIN) & Ecosystem carbon (TOTECOSYSC) &Heterotrophic respiration (HR) \\
+Atmospheric snow (SNOW) &  Ecosystem nitrogen (TOTECOSYSN) &Autotrophic respiration (AR) \\
+2m specific humidity (Q2M) & Soil ice (TOTSOILICE) &Net biome production (NBP) \\
+Solar radiation (FSDS) & Soil liquid water (TOTSOILLIQ) & Total liquid runoff (QRUNOFF) \\
+& Snow cover fraction (FSNO) & Sensible heat  (FSH) \\
+&&Latent heat (EFLX\_LH\_TOT ) \\
+ \hline
+ \end{tabular}
+ \label{tab:sg}
+ \end{table}
+
 
 \subsection{Experimental Design}
+493 simulations.
+Nine simulations failed.
+
+
 \subsection{Forcing Scenarios}
 \label{sect:exps}
  \begin{table}[h]
@@ -107,174 +139,63 @@ Model spin-up for the equilibration of carbon and nitrogen pools within biogeoch
 
 \subsection{Analyses}
 \section{Results}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=30pc]{../figs/sims.pdf}
+\caption{The approximate number of simulations afforded by 1 million core-hours for a range of CLM configurations. Configurations are labeled according to spin-up procedure and resolution, with `sg' signifying sparsegrid. The inset map shows the locations of the 400 sparse grid cells as the red dots. See Section \ref{methods} for spin-up and sparsegrid details. My speed calculations here are a bit janky, assume linear scaling of cost for increasing time or space (zqz). }
+\label{fig:sims}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=40pc]{../figs/sparsegrid_gpp.pdf}
+\caption{Sparsegrid vs fullgrid (2$^{\circ}$ resolution) global annual GPP across the last thirty years of a transient CLM5.1 simulation. We opted for 400 clusters to balance computational cost against representativeness. For reference there are 22648, 5666, and 1764 land gridcells in standard 1$^{\circ}$, 2$^{\circ}$, and 4$^{\circ}$x5$^{\circ}$ CLM simulations, respectively.}
+\label{}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=30pc]{../figs/bar.pdf}
+\caption{206 parameters were identified and perturbed across the various domains of the land model.}
+\label{fig:params}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=35pc]{../figs/violins.pdf}
+\caption{Distributions of global annual gross primary production (GPP) and net biome production (NBP) across the six forcing scenarios. See Section \ref{sect:exps} for scenario descriptions. The distributions are concentrated around the default parameterization with long tails, indicating that a small proportion of parameters have large effects on these two variables. In the case of NBP, parameter effects appear larger than scenario effects.}
+\label{}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=40pc]{../figs/lai_biome.pdf}
+\caption{The eight most influential parameters on leaf area index within the CTL2010 ensemble, globally and within three biomes.}
+\label{fig:lai}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=40pc]{../figs/ET_response.pdf}
+\caption{(a) Global evapotranspiration in the warm forcing scenario vs. our control experiment. The default parameterization ET enhancement is +8.8\%, as shown with the orange line. The shading spans the CTL2010 default ET, plus or minus 1 W/m2.
+(b) The top 8 parameters governing global ET in the CTL2010 experiment.
+(c) The top 8 parameters governing ET response to the future climate anomaly forcing (AF2095).
+Parameters governing the response to temperature anomalies tend to differ from the parameters controlling present-day ET.}
+\label{fig:et}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=40pc]{../figs/deltmap_panel.pdf}
+\caption{Screenshot of interactive diagnostic for exploring maps of parameter effects. In this case, the effect of medlynslope on runoff within the CTL2010 ensemble. Increasing medlynslope tends to increase transpiration and reduce runoff.}
+\label{fig:panel}
+\end{figure}
+
 \section{Discussion}
 \section{Conclusion}
-%Text here ===>>>
-
-
-%%
-
-%  Numbered lines in equations:
-%  To add line numbers to lines in equations,
-%  \begin{linenomath*}
-%  \begin{equation}
-%  \end{equation}
-%  \end{linenomath*}
-
-
-
-%% Enter Figures and Tables near as possible to where they are first mentioned:
-%
-% DO NOT USE \psfrag or \subfigure commands.
-%
-% Figure captions go below the figure.
-% Acronyms used in figure captions will be spelled out in the final, published version.
-
-% Table titles go above tables;  other caption information
-%  should be placed in last line of the table, using
-% \multicolumn2l{$^a$ This is a table note.}
-% NOTE that there is no difference between table caption and table heading in the final, published version
-%
-%----------------
-% EXAMPLE FIGURES
-%
-% \begin{figure}
-% \includegraphics{example.png}
-% \caption{caption}
-% \end{figure}
-%
-% Giving latex a width will help it to scale the figure properly. A simple trick is to use \textwidth. Try this if large figures run off the side of the page.
-% \begin{figure}
-% \noindent\includegraphics[width=\textwidth]{anothersample.png}
-%\caption{caption}
-%\label{pngfiguresample}
-%\end{figure}
-%
-%
-% If you get an error about an unknown bounding box, try specifying the width and height of the figure with the natwidth and natheight options. This is common when trying to add a PDF figure without pdflatex.
-% \begin{figure}
-% \noindent\includegraphics[natwidth=800px,natheight=600px]{samplefigure.pdf}
-%\caption{caption}
-%\label{pdffiguresample}
-%\end{figure}
-%
-%
-% PDFLatex does not seem to be able to process EPS figures. You may want to try the epstopdf package.
-%
-
-%
-% ---------------
-% EXAMPLE TABLE
-%
-% \begin{table}
-% \caption{Time of the Transition Between Phase 1 and Phase 2$^{a}$}
-% \centering
-% \begin{tabular}{l c}
-% \hline
-%  Run  & Time (min)  \\
-% \hline
-%   $l1$  & 260   \\
-%   $l2$  & 300   \\
-%   $l3$  & 340   \\
-%   $h1$  & 270   \\
-%   $h2$  & 250   \\
-%   $h3$  & 380   \\
-%   $r1$  & 370   \\
-%   $r2$  & 390   \\
-% \hline
-% \multicolumn{2}{l}{$^{a}$Footnote text here.}
-% \end{tabular}
-% \end{table}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% SIDEWAYS FIGURES and TABLES
-% AGU prefers the use of {sidewaystable} over {landscapetable} as it causes fewer problems.
-%
-% \begin{sidewaysfigure}
-% \includegraphics[width=20pc]{figsamp}
-% \caption{caption here}
-% \label{newfig}
-% \end{sidewaysfigure}
-%
-%  \begin{sidewaystable}
-%  \caption{Caption here}
-% \label{tab:signif_gap_clos}
-%  \begin{tabular}{ccc}
-% one&two&three\\
-% four&five&six
-%  \end{tabular}
-%  \end{sidewaystable}
-
-%% If using numbered lines, please surround equations with \begin{linenomath*}...\end{linenomath*}
-%\begin{linenomath*}
-%\begin{equation}
-%y|{f} \sim g(m, \sigma),
-%\end{equation}
-%\end{linenomath*}
-
-%%% End of body of article
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Optional Appendices go here
-%
-% The \appendix command resets counters and redefines section heads
-%
-% After typing \appendix
-%
-%\section{Here Is Appendix Title}
-% will show
-% A: Here Is Appendix Title
-%
-%\appendix
-%\section{Here is a sample appendix}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Optional Glossary, Notation or Acronym section goes here:
-%
-% Glossary is only allowed in Reviews of Geophysics
-%  \begin{glossary}
-%  \term{Term}
-%   Term Definition here
-%  \term{Term}
-%   Term Definition here
-%  \term{Term}
-%   Term Definition here
-%  \end{glossary}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Acronyms
-%% NOTE that acronyms in the final published version will be spelled out when used in figure captions.
-%   \begin{acronyms}
-%   \acro{Acronym}
-%   Definition here
-%   \acro{EMOS}
-%   Ensemble model output statistics
-%   \acro{ECMWF}
-%   Centre for Medium-Range Weather Forecasts
-%   \end{acronyms}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Notation
-%   \begin{notation}
-%   \notation{$a+b$} Notation Definition here
-%   \notation{$e=mc^2$}
-%   Equation in German-born physicist Albert Einstein's theory of special
-%  relativity that showed that the increased relativistic mass ($m$) of a
-%  body comes from the energy of motion of the body—that is, its kinetic
-%  energy ($E$)—divided by the speed of light squared ($c^2$).
-%   \end{notation}
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% DATA SECTION and ACKNOWLEDGMENTS
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section*{Open Research Section}
 This section MUST contain a statement that describes where the data supporting the conclusions can be obtained. Data cannot be listed as ''Available from authors'' or stored solely in supporting information. Citations to archived data should be included in your reference list. Wiley will publish it as a separate section on the paper’s page. Examples and complete information are here:
 https://www.agu.org/Publish with AGU/Publish/Author Resources/Data for Authors
@@ -284,183 +205,25 @@ https://www.agu.org/Publish with AGU/Publish/Author Resources/Data for Authors
 Enter acknowledgments here. This section is to acknowledge funding, thank colleagues, enter any secondary affiliations, and so on.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% REFERENCES and BIBLIOGRAPHY
-%
-% \bibliography{<name of your .bib file>} don't specify the file extension
-% don't specify bibliographystyle
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \bibliography{refs}
 
+\appendix
+\section{Supplementary Figures}
 
 
-%Reference citation instructions and examples:
-%
-% Please use ONLY \cite and \citeA for reference citations.
-% \cite for parenthetical references
-% ...as shown in recent studies (Simpson et al., 2019)
-% \citeA for in-text citations
-% ...Simpson et al. (2019) have shown...
-%
-%
-%...as shown by \citeA{jskilby}.
-%...as shown by \citeA{lewin76}, \citeA{carson86}, \citeA{bartoldy02}, and \citeA{rinaldi03}.
-%...has been shown \cite{jskilbye}.
-%...has been shown \cite{lewin76,carson86,bartoldy02,rinaldi03}.
-%... \cite <i.e.>[]{lewin76,carson86,bartoldy02,rinaldi03}.
-%...has been shown by \cite <e.g.,>[and others]{lewin76}.
-%
-% apacite uses < > for prenotes and [ ] for postnotes
-% DO NOT use other cite commands (e.g., \citet, \citep, \citeyear, \nocite, \citealp, etc.).
-%
+\begin{figure}[h]
+\centering
+\includegraphics[width=42pc]{../figs/supp/ilamb.pdf}
+\caption{ILAMB 2.5 overall scores comparing remapped sparsegrid output to the full grid 2$^{\circ}$ model output. Column headings indicate the number of clusters, and whether annual means or annual means and standard deviations were used as input to the clustering algorithm. We should try to remove the gray bits (zqz). Full, interactive results are available at \url{www.ilamb.org/PPE/CLM/2021-02}. See main text Section \ref{sect:sg} for clustering details.}
+\label{supp:ilamb}
+\end{figure}
 
 
 
 \end{document}
 
-
-
-More Information and Advice:
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  SECTION HEADS
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Capitalize the first letter of each word (except for
-% prepositions, conjunctions, and articles that are
-% three or fewer letters).
-
-% AGU follows standard outline style; therefore, there cannot be a section 1 without
-% a section 2, or a section 2.3.1 without a section 2.3.2.
-% Please make sure your section numbers are balanced.
-% ---------------
-% Level 1 head
-%
-% Use the \section{} command to identify level 1 heads;
-% type the appropriate head wording between the curly
-% brackets, as shown below.
-%
-%An example:
-%\section{Level 1 Head: Introduction}
-%
-% ---------------
-% Level 2 head
-%
-% Use the \subsection{} command to identify level 2 heads.
-%An example:
-%\subsection{Level 2 Head}
-%
-% ---------------
-% Level 3 head
-%
-% Use the \subsubsection{} command to identify level 3 heads
-%An example:
-%\subsubsection{Level 3 Head}
-%
-%---------------
-% Level 4 head
-%
-% Use the \subsubsubsection{} command to identify level 3 heads
-% An example:
-%\subsubsubsection{Level 4 Head} An example.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  IN-TEXT LISTS
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Do not use bulleted lists; enumerated lists are okay.
-% \begin{enumerate}
-% \item
-% \item
-% \item
-% \end{enumerate}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  EQUATIONS
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Single-line equations are centered.
-% Equation arrays will appear left-aligned.
-
-Math coded inside display math mode \[ ...\]
- will not be numbered, e.g.,:
- \[ x^2=y^2 + z^2\]
-
- Math coded inside \begin{equation} and \end{equation} will
- be automatically numbered, e.g.,:
- \begin{equation}
- x^2=y^2 + z^2
- \end{equation}
-
-
-% To create multiline equations, use the
-% \begin{eqnarray} and \end{eqnarray} environment
-% as demonstrated below.
-\begin{eqnarray}
-  x_{1} & = & (x - x_{0}) \cos \Theta \nonumber \\
-        && + (y - y_{0}) \sin \Theta  \nonumber \\
-  y_{1} & = & -(x - x_{0}) \sin \Theta \nonumber \\
-        && + (y - y_{0}) \cos \Theta.
-\end{eqnarray}
-
-%If you don't want an equation number, use the star form:
-%\begin{eqnarray*}...\end{eqnarray*}
-
-% Break each line at a sign of operation
-% (+, -, etc.) if possible, with the sign of operation
-% on the new line.
-
-% Indent second and subsequent lines to align with
-% the first character following the equal sign on the
-% first line.
-
-% Use an \hspace{} command to insert horizontal space
-% into your equation if necessary. Place an appropriate
-% unit of measure between the curly braces, e.g.
-% \hspace{1in}; you may have to experiment to achieve
-% the correct amount of space.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  EQUATION NUMBERING: COUNTER
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% You may change equation numbering by resetting
-% the equation counter or by explicitly numbering
-% an equation.
-
-% To explicitly number an equation, type \eqnum{}
-% (with the desired number between the brackets)
-% after the \begin{equation} or \begin{eqnarray}
-% command.  The \eqnum{} command will affect only
-% the equation it appears with; LaTeX will number
-% any equations appearing later in the manuscript
-% according to the equation counter.
-%
-
-% If you have a multiline equation that needs only
-% one equation number, use a \nonumber command in
-% front of the double backslashes (\\) as shown in
-% the multiline equation above.
-
-% If you are using line numbers, remember to surround
-% equations with \begin{linenomath*}...\end{linenomath*}
-
-%  To add line numbers to lines in equations:
-%  \begin{linenomath*}
-%  \begin{equation}
-%  \end{equation}
-%  \end{linenomath*}
 
 
 

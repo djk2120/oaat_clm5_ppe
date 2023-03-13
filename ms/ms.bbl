@@ -1,6 +1,117 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Collier%
+\ \protect \BOthers {.}}{%
+Collier%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+collier2018}
+\APACinsertmetastar {%
+collier2018}%
+\begin{APACrefauthors}%
+Collier, N.%
+, Hoffman, F\BPBI M.%
+, Lawrence, D\BPBI M.%
+, Keppel-Aleks, G.%
+, Koven, C\BPBI D.%
+, Riley, W\BPBI J.%
+\BDBL {}Randerson, J\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The International Land Model Benchmarking (ILAMB)}
+  System: Design, Theory, and Implementation} {{The International Land Model
+  Benchmarking (ILAMB)} system: Design, theory, and implementation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Advances in Modeling Earth
+  Systems}{10}{11}{2731-2754}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018MS001354}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2018MS001354} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dagon%
+, Sanderson%
+, Fisher%
+\BCBL {}\ \BBA {} Lawrence%
+}{%
+Dagon%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+dagon2020}
+\APACinsertmetastar {%
+dagon2020}%
+\begin{APACrefauthors}%
+Dagon, K.%
+, Sanderson, B\BPBI M.%
+, Fisher, R\BPBI A.%
+\BCBL {}\ \BBA {} Lawrence, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A machine learning approach to emulation and biophysical
+  parameter estimation with the {Community Land Model}, version 5} {A machine
+  learning approach to emulation and biophysical parameter estimation with the
+  {Community Land Model}, version 5}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Advances in Statistical Climatology, Meteorology and
+  Oceanography}{6}{2}{223--244}.
+\newblock
+\begin{APACrefURL} \url{https://ascmo.copernicus.org/articles/6/223/2020/}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.5194/ascmo-6-223-2020} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hoffman%
+, Hargrove%
+, Erickson%
+\BCBL {}\ \BBA {} Oglesby%
+}{%
+Hoffman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+hoffman2005}
+\APACinsertmetastar {%
+hoffman2005}%
+\begin{APACrefauthors}%
+Hoffman, F\BPBI M.%
+, Hargrove, W\BPBI W.%
+, Erickson, D\BPBI J.%
+\BCBL {}\ \BBA {} Oglesby, R\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Using Clustered Climate Regimes to Analyze and Compare
+  Predictions from Fully Coupled General Circulation Models} {Using clustered
+  climate regimes to analyze and compare predictions from fully coupled general
+  circulation models}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Earth Interactions}{9}{10}{1 - 27}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.ametsoc.org/view/journals/eint/9/10/ei110.1.xml}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1175/EI110.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hoffman%
 , Kumar%
 , Mills%
@@ -24,10 +135,13 @@ Hoffman, F\BPBI M.%
 \APACrefYearMonthDay{2013}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {Representativeness-based sampling network design for the
-  {State} of {Alaska}} {Representativeness-based sampling network design for
-  the {State} of {Alaska}}.{\BBCQ}
+  State of Alaska} {Representativeness-based sampling network design for the
+  state of alaska}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Landscape Ecology}{28}{8}{1567--1586}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1007/s10980-013-9902-0}
+  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1007/s10980-013-9902-0} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
