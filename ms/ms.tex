@@ -69,26 +69,47 @@
 
 
 \section{Introduction}
+
+Water availability, land temperature extremes, fire risk, crop productivity, and the strength of the terrestrial carbon sink.
+Our certainty in model projections varies by domain and generally decreases as the time horizon is extended.
+Centennial-scale estimates of the cumulative terrestrial carbon sink have been especially challenging, with high uncertainty persisting across model generations (Fried, Arora). 
+A portion of this uncertainty is irreducible, inherent to the challenge of predicting vegetation dynamics in a novel climate (Bonan and Doney?).
+But with the ever-increasing observational basis from remote sensing, meteorological stations, flux towers, and field campaigns we should expect predictions to become more skillful over time.
+
+While model inter-comparison projects have had tremendous utility, it can be difficult to interpret the differences between models, or even between subsequent versions of the same model, due to the multiplicity of structural and parametric variations.
+Within the model development process, there is a larger emphasis on hypothesis testing, substituting one parameterization at a time to understand the various consequences.
+At this point, complexity of land models has increased to the point 
+
+Probabilistic forecasts
+
+Models have parameters.
+Some can be measured, but many cannot.
+
+
+Parametric uncertainty vs. structural uncertainty
+
+
+
 \section{Experiment Description}
 \label{methods}
 \subsection{Model description}
 \label{sect:md}
 The Community Terrestrial System Model (CTSM) is developed by the CESM Land Model Working Group (LMWG) and maintained at the National Center for Atmospheric Research (NCAR). This experiment utilizes the Community Land Model configuration of CTSM, version 5.1 (CLM5.1). The model source code and documentation are available online (\url{https://github.com/ESCOMP/CTSM}), as is a full model description \cite{lawrence2019}.
 
-Relative to CLM5.0, version 5.1 includes minor bug fixes, several parameter adjustments, and the implementation of biomass heat storage \cite{swenson2019}. The PPE experiment required additional code modifications to identify and programmatically vary the full suite of model parameters. The exact model code for this experiment is contained in a development tag (\url{https://github.com/ESCOMP/CTSM/tree/branch_tags/PPE.n11_ctsm5.1.dev030}). We utilized the full biogeochemistry version of CLM in land-only mode, with the crop model turned off. The component set longname is: \\ \texttt{2000\_DATM\%GSWP3v1\_CLM51\%BGC\_SICE\_SOCN\_SROF\_SGLC\_SWAV\_SIAC\_SESP}
+Relative to CLM5.0, version 5.1 includes minor bug fixes, parameter adjustments, and the implementation of biomass heat storage \cite{swenson2019}. The PPE experiment required additional code modifications to programmatically vary the full suite of model parameters. The exact model code for this experiment is contained in a development tag (\url{https://github.com/ESCOMP/CTSM/tree/branch_tags/PPE.n11_ctsm5.1.dev030}). We utilized the biogeochemistry version of CLM in land-only mode, with the crop model turned off. The component set longname is: \\ \texttt{2000\_DATM\%GSWP3v1\_CLM51\%BGC\_SICE\_SOCN\_SROF\_SGLC\_SWAV\_SIAC\_SESP}
 
 \subsection{Model spin-up}
 Model spin-up for the equilibration of carbon and nitrogen pools within biogeochemistry-enabled land models can consume up to 98\% of computational time \cite{sun2023}. Depending on the evaluation criteria and model configuration, CLM5 requires between 800 and 2000 years (or more) to reach steady-state conditions \cite{lawrence2019}. Absent equilibrium, the drift towards steady state can obscure important model dynamics or features. For this reason, each member of the PPE requires independent spin-up.
 
-To manage computational cost we leveraged the Matrix-CN spin-up mode recently implemented within CLM \cite{lu2020}. This new module leverages a linearized simplification of CLM's biogeochemistry to significantly reduce spin-up time. Our spin-up protocol featured 20 years in accelerated decomposition mode, followed by 80 years of Matrix-CN, followed by 40 years of `normal' mode, cycling over a ten-year forcing dataset. This was designed to achieve sufficiently equilibrated model states, while minimizing computational time. To reduce model cost, we did not require full equilibration of deep soil carbon (beyond 1 meter). Any inferences about deep soil carbon would therefore be subject to uncertainty due to spin-up concerns.
+To manage computational cost we leveraged the Matrix-CN spin-up mode recently implemented within CLM \cite{lu2020}. This new module utilizes a linearized simplification of CLM's biogeochemistry to significantly reduce spin-up time. Our spin-up protocol featured 20 years in accelerated decomposition mode, followed by 80 years of Matrix-CN, followed by 40 years of `normal' mode, cycling over a ten-year forcing dataset. This was designed to achieve sufficiently equilibrated model states, while minimizing computational time. This spin-up methodology did not always reach full equilibration of deep soil carbon (beyond 1 meter). Certain inferences about deep soil carbon would therefore be subject to uncertainty due to spin-up concerns.
 
 \subsection{Sparsegrid}
 \label{sect:sg}
-One of the largest controls on model cost is resolution. Most CLM simulations utilize nominal 1$^\circ$ resolution, which requires over 20,000 land grid cells. In order to manage computational cost, parameter perturbation experiments often use lower resolution, such as 4$^\circ$x5$^\circ$ \cite{dagon2020}. CLM does not require standard rectilinear grids, which allows for innovative techniques to reduce model resolution
+Another control on model cost is resolution. Most CLM simulations utilize nominal 1$^\circ$ resolution, which requires over 20,000 land grid cells. In order to manage computational cost, parameter perturbation experiments often use lower resolution, such as 4$^\circ$x5$^\circ$ \cite{dagon2020}. We used a clustering algorithm to achieve an alternative low resolution configuration.
 
-Multivariate spatio-temporal clustering (MVSC) has been utilized to extract patterns of climatological significance from climate model output \cite{hoffman2005} and applied to design a representativeness-based sampling network \cite{hoffman2013}. Instead of lowering resolution by increasing grid spacing, we used MVSC to strategically remove redundant grid cells, leaving only 400 grid cells that efficiently sample important model dynamics. Our goal was to quantify parameter effects with sufficient accuracy, while minimizing computational cost.
+Multivariate spatio-temporal clustering (MVSC) has been utilized to extract patterns of climatological significance from climate model output \cite{hoffman2005} and applied to design a representativeness-based sampling network \cite{hoffman2013}. Instead of lowering resolution by coarsening a rectilinear grid, we used MVSC to strategically remove redundant grid cells, leaving only 400 grid cells that efficiently sample important model dynamics.
 
-We used k-means clustering to identify groups of grid cells with similar climatologies based on a 2$^\circ$ transient simulation (1850-2014) using the CLM-PPE codebase. Instead of running every grid cell from a given cluster, we only run one representative grid cell, whichever is located nearest the cluster centroid in climate space. We refer to the set of representative grid cells as the `sparsegrid'. A paint-by-number approach is used to recompose mapped output and compute global means, where the output from the representative grid cell is substituted for all members of the cluster cohort.
+We used k-means clustering to identify groups of grid cells with similar climatologies based on a 2$^\circ$ transient simulation (1850-2014) using the CLM-PPE codebase. We selected one representative grid cell from each cluster, whichever is located nearest the cluster centroid in climate space. The set of representative grid cells comprise a `sparsegrid', which are used in lieu of a coarse grid. A paint-by-number approach is used to recompose mapped output and compute global means, where the output from the representative grid cell is substituted for all members of the cluster cohort.
 
 Clustering was based on a subset of 18 meaningful CLM variables (Table \ref{tab:sg}). The clustering algorithm received 12 observations of each variable per grid cell, namely the mean and interannual variability computed for six 30-year climatology windows (1865-1894, 1895-1924, ... , 1985-2014). Clusters were delineated to equalize the multi-dimensional variance across the user-specified number of groups, $k$. We tested 15 values of $k$, ranging from 10 to 800. Based on ILAMB2.5 benchmarking \cite{collier2018} against the full grid output, we opted for a 400-cluster sparsegrid, to balance computational cost against model fidelity (Supp Figure \ref{supp:ilamb}). Because our emphasis is on vegetated regions, we masked out Antarctica within the clustering algorithm, whereby we do not provide any output below 60$^\circ$S.
 
@@ -113,11 +134,10 @@ Solar radiation (FSDS) & Soil liquid water (TOTSOILLIQ) & Total liquid runoff (Q
 
 
 \subsection{Experimental Design}
-493 simulations.
-Nine simulations failed.
+In the preparation for this experiment, 206 CLM-BGC parameters were identified. We decided to vary each parameter once at a time, to a minimum and maximum values. To define parameter ranges we created an online spreadsheet and solicited domain-area experts to provide a minimum and maximum value for each parameter. In some cases literature values were available, but in the vast majority expert judgment was used. The spreadsheet, with literature references and parameter descriptions is available online and in appendix zqz.
 
+Each simulation lasted 150 years, with the first 140 for spin-up, followed by a 10-year period for analysis purposes. We opted for six different forcing scenarios to understand the intersection of parameter effects and climate change (Table \ref{tab:exps}). The GSWP3v1 reanalysis product (\url{http://hydro.iis.u-tokyo.ac.jp/GSWP3/}) served as our atmospheric forcing, and is the default forcing data for CLM5 \cite{lawrence2019}. We applied climate and CO$_2$ anomalies independently, in order to disentangle their effects on parameter rankings. Future and pre-industrial climate forcing datasets were prepared by adding GSWP3v1 anomalies from 2005-2014 to the mean climate change signal. We inferred the mean climate change signal using the CESM2 large ensemble experiment \cite{rodgers2021}, computed as the average of the difference between the period of interest and present day for the six atmospheric forcing variables.
 
-\subsection{Forcing Scenarios}
 \label{sect:exps}
  \begin{table}[h]
  \caption{Forcing Scenarios}
@@ -138,6 +158,9 @@ Nine simulations failed.
  \end{table}
 
 \subsection{Analyses}
+
+Biome analysis
+
 \section{Results}
 
 \begin{figure}[h]

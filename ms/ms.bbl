@@ -212,6 +212,41 @@ Lu, X.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Rodgers%
+\ \protect \BOthers {.}}{%
+Rodgers%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+rodgers2021}
+\APACinsertmetastar {%
+rodgers2021}%
+\begin{APACrefauthors}%
+Rodgers, K\BPBI B.%
+, Lee, S\BHBI S.%
+, Rosenbloom, N.%
+, Timmermann, A.%
+, Danabasoglu, G.%
+, Deser, C.%
+\BDBL {}Yeager, S\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Ubiquity of human-induced changes in climate
+  variability} {Ubiquity of human-induced changes in climate
+  variability}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Earth System Dynamics}{12}{4}{1393--1411}.
+\newblock
+\begin{APACrefURL} \url{https://esd.copernicus.org/articles/12/1393/2021/}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.5194/esd-12-1393-2021} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Sun%
 \ \protect \BOthers {.}}{%
 Sun%

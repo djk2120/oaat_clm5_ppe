@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  7 MAR 2023 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  28 MAR 2023 10:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -281,367 +281,544 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.5> not available
 (Font)              size <10.95> substituted on input line 71.
 
 
-Overfull \hbox (22.15456pt too wide) in paragraph at lines 76--77
+Overfull \hbox (33.12686pt too wide) in paragraph at lines 73--78
+[]\OT1/cmr/m/n/10 Water avail-abil-ity, land tem-per-a-ture ex-tremes, fire ris
+k, crop vi-a-bil-ity, and the strength 
+ []
+
+
+Overfull \hbox (8.34908pt too wide) in paragraph at lines 73--78
+\OT1/cmr/m/n/10 of the ter-res-trial car-bon sink. Our cer-tainty in model pro-
+jec-tions varies by do-main and 
+ []
+
+
+Overfull \hbox (0.32112pt too wide) in paragraph at lines 73--78
+\OT1/cmr/m/n/10 gen-er-ally de-creases as the time hori-zon is ex-tended. Cente
+nnial-scale es-ti-mates of the 
+ []
+
+
+Overfull \hbox (18.76575pt too wide) in paragraph at lines 73--78
+\OT1/cmr/m/n/10 cu-mu-la-tive ter-res-trial car-bon sink have been es-pe-cially
+ chal-leng-ing, with high un-cer-tainty 
+ []
+
+
+Overfull \hbox (3.1268pt too wide) in paragraph at lines 73--78
+\OT1/cmr/m/n/10 per-sist-ing across model gen-er-a-tions (Fried, Arora). A por-
+tion of this un-cer-tainty is ir- 
+ []
+
+
+Overfull \hbox (12.48793pt too wide) in paragraph at lines 73--78
+\OT1/cmr/m/n/10 re-ducible, in-her-ent to the chal-lenge of pre-dict-ing veg-e-
+ta-tion dy-nam-ics in a novel cli-mate 
+ []
+
+
+Overfull \hbox (16.57129pt too wide) in paragraph at lines 73--78
+\OT1/cmr/m/n/10 (Bo-nan and Doney?). But with the ever-increasing ob-ser-va-tio
+nal ba-sis from re-mote sens- 
+ []
+
+
+Overfull \hbox (4.09901pt too wide) in paragraph at lines 73--78
+\OT1/cmr/m/n/10 ing, me-te-o-ro-log-i-cal sta-tions, flux tow-ers, and field ca
+m-paigns we should ex-pect pre-dic- 
+ []
+
+
+Overfull \hbox (9.12677pt too wide) in paragraph at lines 79--82
+[]\OT1/cmr/m/n/10 While model inter-comparison projects have had tremen-dous ut
+il-ity, it can be dif- 
+ []
+
+
+Overfull \hbox (6.15442pt too wide) in paragraph at lines 79--82
+\OT1/cmr/m/n/10 fi-cult to in-ter-pret the dif-fer-ences be-tween mod-els, or e
+ven be-tween sub-se-quent ver-sions 
+ []
+
+
+Overfull \hbox (22.9325pt too wide) in paragraph at lines 79--82
+\OT1/cmr/m/n/10 of the same model, due to the mul-ti-plic-ity of struc-tural an
+d para-met-ric vari-a-tions. Within 
+ []
+
+
+Overfull \hbox (1.57118pt too wide) in paragraph at lines 79--82
+\OT1/cmr/m/n/10 the model de-vel-op-ment pro-cess, there is a larger em-pha-sis
+ on hy-poth-e-sis test-ing, sub- 
+ []
+
+
+Overfull \hbox (16.96016pt too wide) in paragraph at lines 79--82
+\OT1/cmr/m/n/10 sti-tut-ing one pa-ram-e-ter-i-za-tion at a time to un-der-stan
+d the var-i-ous con-se-quences. At this 
+ []
+
+
+Overfull \hbox (22.15456pt too wide) in paragraph at lines 97--98
 []\OT1/cmr/m/n/10 The Com-mu-nity Ter-res-trial Sys-tem Model (CTSM) is de-vel-
 oped by the CESM Land 
  []
 
 
-Overfull \hbox (17.54355pt too wide) in paragraph at lines 76--77
+Overfull \hbox (17.54355pt too wide) in paragraph at lines 97--98
 \OT1/cmr/m/n/10 Model Work-ing Group (LMWG) and main-tained at the Na-tional Ce
 n-ter for At-mo-spheric 
  []
 
 
-Overfull \hbox (6.34903pt too wide) in paragraph at lines 76--77
+Overfull \hbox (6.34903pt too wide) in paragraph at lines 97--98
 \OT1/cmr/m/n/10 Re-search (NCAR). This ex-per-i-ment uti-lizes the Com-mu-nity 
 Land Model con-fig-u-ra-tion 
  []
 
 
-Overfull \hbox (5.46016pt too wide) in paragraph at lines 76--77
+Overfull \hbox (5.46016pt too wide) in paragraph at lines 97--98
 \OT1/cmr/m/n/10 of CTSM, ver-sion 5.1 (CLM5.1). The model source code and doc-u
 -men-ta-tion are avail- 
  []
 
 
-Overfull \hbox (22.43071pt too wide) in paragraph at lines 76--77
+Overfull \hbox (22.43071pt too wide) in paragraph at lines 97--98
 \OT1/cmr/m/n/10 able on-line ($\OT1/cmtt/m/n/10 https :// github [] .com / ESCO
 MP / CTSM$\OT1/cmr/m/n/10 ), as is a full model de-scrip-tion []Lawrence 
  []
 
 
-Overfull \hbox (9.9324pt too wide) in paragraph at lines 78--78
-\OT1/cmr/m/n/10 just-ments, and the im-ple-men-ta-tion of biomass heat stor-age
- []Swenson et al.[], 2019). The 
+Overfull \hbox (8.96013pt too wide) in paragraph at lines 99--99
+[]\OT1/cmr/m/n/10 Relative to CLM5.0, ver-sion 5.1 in-cludes mi-nor bug fixes, 
+pa-ram-e-ter ad-just-ments, 
  []
 
 
-Overfull \hbox (1.29361pt too wide) in paragraph at lines 78--78
-\OT1/cmr/m/n/10 PPE ex-per-i-ment re-quired ad-di-tional code mod-i-fi-ca-tions
- to iden-tify and pro-gram-mat-i- 
+Overfull \hbox (1.62682pt too wide) in paragraph at lines 99--99
+\OT1/cmr/m/n/10 and the im-ple-men-ta-tion of biomass heat stor-age []Swenson e
+t al.[], 2019). The PPE ex- 
  []
 
 
-Overfull \hbox (10.98796pt too wide) in paragraph at lines 78--78
-\OT1/cmr/m/n/10 cally vary the full suite of model pa-ram-e-ters. The ex-act mo
-del code for this ex-per-i-ment 
+Overfull \hbox (9.84918pt too wide) in paragraph at lines 99--99
+\OT1/cmr/m/n/10 per-i-ment re-quired ad-di-tional code mod-i-fi-ca-tions to pro
+-gram-mat-i-cally vary the full suite 
  []
 
 
-Overfull \hbox (1.51337pt too wide) in paragraph at lines 78--78
-\OT1/cmr/m/n/10 is con-tained in a de-vel-op-ment tag ($\OT1/cmtt/m/n/10 https 
-:// github [] .com / ESCOMP / CTSM / tree / branch [] 
+Overfull \hbox (10.68234pt too wide) in paragraph at lines 99--99
+\OT1/cmr/m/n/10 of model pa-ram-e-ters. The ex-act model code for this ex-per-i
+-ment is con-tained in a de-vel- 
  []
 
 
-Overfull \hbox (10.87971pt too wide) in paragraph at lines 78--78
-[]\OT1/cmtt/m/n/10 tags / PPE [] .n11 [] []ctsm5 [] .1 [] .dev030$\OT1/cmr/m/n/
-10 ). We uti-lized the full bio-geo-chem-istry ver-sion of CLM 
+Overfull \hbox (0.76678pt too wide) in paragraph at lines 99--99
+\OT1/cmr/m/n/10 op-ment tag ($\OT1/cmtt/m/n/10 https :// github [] .com / ESCOM
+P / CTSM / tree / branch [] []tags / PPE [] .n11 [] []ctsm5 [] 
  []
 
 
-Overfull \hbox (42.21028pt too wide) in paragraph at lines 81--82
+Overfull \hbox (4.90411pt too wide) in paragraph at lines 99--99
+\OT1/cmtt/m/n/10 .1 [] .dev030$\OT1/cmr/m/n/10 ). We uti-lized the bio-geo-chem
+-istry ver-sion of CLM in land-only mode, with 
+ []
+
+
+Overfull \hbox (42.21028pt too wide) in paragraph at lines 102--103
 []\OT1/cmr/m/n/10 Model spin-up for the equi-li-bra-tion of car-bon and ni-tro-
 gen pools within biogeochemistry- 
  []
 
 
-Overfull \hbox (5.51581pt too wide) in paragraph at lines 81--82
+Overfull \hbox (5.51581pt too wide) in paragraph at lines 102--103
 \OT1/cmr/m/n/10 enabled land mod-els can con-sume up to 98% of com-pu-ta-tional
  time []Sun et al.[], 2023). 
  []
 
 
-Overfull \hbox (6.71017pt too wide) in paragraph at lines 81--82
+Overfull \hbox (6.71017pt too wide) in paragraph at lines 102--103
 \OT1/cmr/m/n/10 De-pend-ing on the eval-u-a-tion cri-te-ria and model con-fig-u
 -ra-tion, CLM5 re-quires be-tween 
  []
 
 
-Overfull \hbox (3.96011pt too wide) in paragraph at lines 81--82
+Overfull \hbox (3.96011pt too wide) in paragraph at lines 102--103
 \OT1/cmr/m/n/10 800 and 2000 years (or more) to reach steady-state con-di-tions
  []Lawrence et al.[], 2019). 
  []
 
 
-Overfull \hbox (13.87686pt too wide) in paragraph at lines 81--82
+Overfull \hbox (13.87686pt too wide) in paragraph at lines 102--103
 \OT1/cmr/m/n/10 Ab-sent equi-lib-rium, the drift to-wards steady state can ob-s
 cure im-por-tant model dy-nam- 
  []
 
 
-Overfull \hbox (8.71005pt too wide) in paragraph at lines 81--82
+Overfull \hbox (8.71005pt too wide) in paragraph at lines 102--103
 \OT1/cmr/m/n/10 ics or fea-tures. For this rea-son, each mem-ber of the PPE re-
 quires in-de-pen-dent spin-up.  
  []
 
 
-Overfull \hbox (12.93231pt too wide) in paragraph at lines 83--84
+Overfull \hbox (12.93231pt too wide) in paragraph at lines 104--105
 []\OT1/cmr/m/n/10 To man-age com-pu-ta-tional cost we lever-aged the Matrix-CN 
 spin-up mode re-cently 
  []
 
 
-Overfull \hbox (13.96011pt too wide) in paragraph at lines 83--84
+Overfull \hbox (5.599pt too wide) in paragraph at lines 104--105
 \OT1/cmr/m/n/10 im-ple-mented within CLM []Lu et al.[], 2020). This new mod-ule
- lever-ages a lin-earized sim- 
+ uti-lizes a lin-earized sim- 
  []
 
 
-Overfull \hbox (5.62686pt too wide) in paragraph at lines 83--84
+Overfull \hbox (5.62686pt too wide) in paragraph at lines 104--105
 \OT1/cmr/m/n/10 pli-fi-ca-tion of CLM's bio-geo-chem-istry to sig-nif-i-cantly 
 re-duce spin-up time. Our spin-up 
  []
 
 
-Overfull \hbox (2.37682pt too wide) in paragraph at lines 83--84
+Overfull \hbox (2.37682pt too wide) in paragraph at lines 104--105
 \OT1/cmr/m/n/10 pro-to-col fea-tured 20 years in ac-cel-er-ated de-com-po-si-ti
 on mode, fol-lowed by 80 years of 
  []
 
 
-Overfull \hbox (22.62686pt too wide) in paragraph at lines 83--84
+Overfull \hbox (22.62686pt too wide) in paragraph at lines 104--105
 \OT1/cmr/m/n/10 Matrix-CN, fol-lowed by 40 years of `nor-mal' mode, cy-cling ov
 er a ten-year forc-ing dataset. 
  []
 
 
-Overfull \hbox (21.32123pt too wide) in paragraph at lines 83--84
+Overfull \hbox (21.32123pt too wide) in paragraph at lines 104--105
 \OT1/cmr/m/n/10 This was de-signed to achieve suf-fi-ciently equi-li-brated mod
 el states, while min-i-miz-ing com- 
  []
 
 
-Overfull \hbox (9.79347pt too wide) in paragraph at lines 83--84
-\OT1/cmr/m/n/10 pu-ta-tional time. To re-duce model cost, we did not re-quire f
-ull equi-li-bra-tion of deep soil 
+Overfull \hbox (20.34917pt too wide) in paragraph at lines 104--105
+\OT1/cmr/m/n/10 pu-ta-tional time. This spin-up method-ol-ogy did not al-ways r
+each full equi-li-bra-tion of deep 
  []
 
 
-Overfull \hbox (16.0157pt too wide) in paragraph at lines 83--84
-\OT1/cmr/m/n/10 car-bon (be-yond 1 me-ter). Any in-fer-ences about deep soil ca
-r-bon would there-fore be sub- 
- []
-
-
-Overfull \hbox (13.96008pt too wide) in paragraph at lines 87--88
-[]\OT1/cmr/m/n/10 One of the largest con-trols on model cost is res-o-lu-tion. 
-Most CLM sim-u-la-tions uti- 
- []
-
-
-Overfull \hbox (4.80731pt too wide) in paragraph at lines 87--88
-\OT1/cmr/m/n/10 lize nom-i-nal 1$[]$ res-o-lu-tion, which re-quires over 20,000
- land grid cells. In or-der to man- 
- []
-
-
-Overfull \hbox (10.54352pt too wide) in paragraph at lines 87--88
-\OT1/cmr/m/n/10 age com-pu-ta-tional cost, pa-ram-e-ter per-tur-ba-tion ex-per-
-i-ments of-ten use lower res-o-lu-tion, 
- []
-
-
-Overfull \hbox (25.59903pt too wide) in paragraph at lines 87--88
-\OT1/cmr/m/n/10 such as 4$[]$x5$[]$ []Dagon et al.[], 2020). CLM does not re-qu
-ire stan-dard rec-ti-lin-ear grids, which 
- []
-
-
-Overfull \hbox (7.18237pt too wide) in paragraph at lines 89--90
-[]\OT1/cmr/m/n/10 Multivariate spatio-temporal clus-ter-ing (MVSC) has been uti
--lized to ex-tract pat- 
- []
-
-
-Overfull \hbox (16.40474pt too wide) in paragraph at lines 89--90
-\OT1/cmr/m/n/10 terns of cli-ma-to-log-i-cal sig-nif-i-cance from cli-mate mode
-l out-put []Hoffman et al.[], 2005) and 
- []
-
-
-Overfull \hbox (2.48793pt too wide) in paragraph at lines 89--90
-\OT1/cmr/m/n/10 ap-plied to de-sign a representativeness-based sam-pling net-wo
-rk []Hoffman et al.[], 2013). 
- []
-
-
-Overfull \hbox (14.21011pt too wide) in paragraph at lines 89--90
-\OT1/cmr/m/n/10 In-stead of low-er-ing res-o-lu-tion by in-creas-ing grid spac-
-ing, we used MVSC to strate-gi-cally 
- []
-
-
-Overfull \hbox (14.3213pt too wide) in paragraph at lines 89--90
-\OT1/cmr/m/n/10 re-move re-dun-dant grid cells, leav-ing only 400 grid cells th
-at ef-fi-ciently sam-ple im-por-tant 
- []
-
-
-Overfull \hbox (26.01573pt too wide) in paragraph at lines 89--90
-\OT1/cmr/m/n/10 model dy-nam-ics. Our goal was to quan-tify pa-ram-e-ter ef-fec
-ts with suf-fi-cient ac-cu-racy, while 
+Overfull \hbox (0.18233pt too wide) in paragraph at lines 104--105
+\OT1/cmr/m/n/10 soil car-bon (be-yond 1 me-ter). Cer-tain in-fer-ences about de
+ep soil car-bon would there- 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-Overfull \hbox (9.01564pt too wide) in paragraph at lines 91--92
+Overfull \hbox (3.84898pt too wide) in paragraph at lines 108--109
+[]\OT1/cmr/m/n/10 Another con-trol on model cost is res-o-lu-tion. Most CLM sim
+-u-la-tions uti-lize nom- 
+ []
+
+
+Overfull \hbox (3.6962pt too wide) in paragraph at lines 108--109
+\OT1/cmr/m/n/10 i-nal 1$[]$ res-o-lu-tion, which re-quires over 20,000 land gri
+d cells. In or-der to man-age com- 
+ []
+
+
+Overfull \hbox (9.82126pt too wide) in paragraph at lines 108--109
+\OT1/cmr/m/n/10 pu-ta-tional cost, pa-ram-e-ter per-tur-ba-tion ex-per-i-ments 
+of-ten use lower res-o-lu-tion, such as 
+ []
+
+
+Overfull \hbox (14.37683pt too wide) in paragraph at lines 108--109
+\OT1/cmr/m/n/10 4$[]$x5$[]$ []Dagon et al.[], 2020). We used a clus-ter-ing al-
+go-rithm to achieve an al-ter-na-tive low 
+ []
+
+
+Overfull \hbox (7.18237pt too wide) in paragraph at lines 110--111
+[]\OT1/cmr/m/n/10 Multivariate spatio-temporal clus-ter-ing (MVSC) has been uti
+-lized to ex-tract pat- 
+ []
+
+
+Overfull \hbox (16.40474pt too wide) in paragraph at lines 110--111
+\OT1/cmr/m/n/10 terns of cli-ma-to-log-i-cal sig-nif-i-cance from cli-mate mode
+l out-put []Hoffman et al.[], 2005) and 
+ []
+
+
+Overfull \hbox (2.48793pt too wide) in paragraph at lines 110--111
+\OT1/cmr/m/n/10 ap-plied to de-sign a representativeness-based sam-pling net-wo
+rk []Hoffman et al.[], 2013). 
+ []
+
+
+Overfull \hbox (11.71005pt too wide) in paragraph at lines 110--111
+\OT1/cmr/m/n/10 In-stead of low-er-ing res-o-lu-tion by coars-en-ing a rec-ti-l
+in-ear grid, we used MVSC to strate- 
+ []
+
+
+Overfull \hbox (16.23795pt too wide) in paragraph at lines 110--111
+\OT1/cmr/m/n/10 gi-cally re-move re-dun-dant grid cells, leav-ing only 400 grid
+ cells that ef-fi-ciently sam-ple im- 
+ []
+
+
+Overfull \hbox (9.01564pt too wide) in paragraph at lines 112--113
 []\OT1/cmr/m/n/10 We used k-means clus-ter-ing to iden-tify groups of grid cell
 s with sim-i-lar cli-ma-tolo- 
  []
 
 
-Overfull \hbox (5.64069pt too wide) in paragraph at lines 91--92
+Overfull \hbox (7.02957pt too wide) in paragraph at lines 112--113
 \OT1/cmr/m/n/10 gies based on a 2$[]$ tran-sient sim-u-la-tion (1850-2014) us-i
-ng the CLM-PPE code-base. In- 
+ng the CLM-PPE code-base. We 
  []
 
 
-Overfull \hbox (14.15454pt too wide) in paragraph at lines 91--92
-\OT1/cmr/m/n/10 stead of run-ning ev-ery grid cell from a given clus-ter, we on
-ly run one rep-re-sen-ta-tive grid 
+Overfull \hbox (5.59883pt too wide) in paragraph at lines 112--113
+\OT1/cmr/m/n/10 se-lected one rep-re-sen-ta-tive grid cell from each clus-ter, 
+whichever is lo-cated near-est the 
  []
 
 
-Overfull \hbox (4.68216pt too wide) in paragraph at lines 91--92
-\OT1/cmr/m/n/10 cell, whichever is lo-cated near-est the clus-ter cen-troid in 
-cli-mate space. We re-fer to the 
+Overfull \hbox (16.87663pt too wide) in paragraph at lines 112--113
+\OT1/cmr/m/n/10 clus-ter cen-troid in cli-mate space. The set of rep-re-sen-ta-
+tive grid cells com-prise a `sparseg- 
  []
 
 
-Overfull \hbox (6.04337pt too wide) in paragraph at lines 91--92
-\OT1/cmr/m/n/10 set of rep-re-sen-ta-tive grid cells as the `sparseg-rid'. A pa
-int-by-number ap-proach is used 
+Overfull \hbox (7.48781pt too wide) in paragraph at lines 112--113
+\OT1/cmr/m/n/10 rid', which are used in lieu of a coarse grid. A paint-by-numbe
+r ap-proach is used to re- 
  []
 
 
-Overfull \hbox (18.12688pt too wide) in paragraph at lines 91--92
-\OT1/cmr/m/n/10 to re-com-pose mapped out-put and com-pute global means, where 
-the out-put from the rep- 
+Overfull \hbox (5.90463pt too wide) in paragraph at lines 112--113
+\OT1/cmr/m/n/10 com-pose mapped out-put and com-pute global means, where the ou
+t-put from the rep-re- 
  []
 
 
-Overfull \hbox (7.15451pt too wide) in paragraph at lines 93--94
+Overfull \hbox (7.15451pt too wide) in paragraph at lines 114--115
 []\OT1/cmr/m/n/10 Clustering was based on a sub-set of 18 mean-ing-ful CLM vari
 -ables (Ta-ble 1[]). The 
  []
 
 
-Overfull \hbox (5.21014pt too wide) in paragraph at lines 93--94
+Overfull \hbox (5.21014pt too wide) in paragraph at lines 114--115
 \OT1/cmr/m/n/10 clus-ter-ing al-go-rithm re-ceived 12 ob-ser-va-tions of each v
 ari-able per grid cell, namely the 
  []
 
 
-Overfull \hbox (5.90471pt too wide) in paragraph at lines 93--94
+Overfull \hbox (5.90471pt too wide) in paragraph at lines 114--115
 \OT1/cmr/m/n/10 mean and in-ter-an-nual vari-abil-ity com-puted for six 30-year
  cli-ma-tol-ogy win-dows (1865- 
  []
 
 
-Overfull \hbox (30.90465pt too wide) in paragraph at lines 93--94
+Overfull \hbox (30.90465pt too wide) in paragraph at lines 114--115
 \OT1/cmr/m/n/10 1894, 1895-1924, ... , 1985-2014). Clus-ters were de-lin-eated 
 to equal-ize the multi-dimensional 
  []
 
 
-Overfull \hbox (5.33504pt too wide) in paragraph at lines 93--94
+Overfull \hbox (5.33504pt too wide) in paragraph at lines 114--115
 \OT1/cmr/m/n/10 vari-ance across the user-specified num-ber of groups, $\OML/cm
 m/m/it/10 k$\OT1/cmr/m/n/10 . We tested 15 val-ues of $\OML/cmm/m/it/10 k$\OT1/
 cmr/m/n/10 , rang- 
  []
 
 
-Overfull \hbox (12.40471pt too wide) in paragraph at lines 93--94
+Overfull \hbox (12.40471pt too wide) in paragraph at lines 114--115
 \OT1/cmr/m/n/10 ing from 10 to 800. Based on IL-AMB2.5 bench-mark-ing []Collier
  et al.[], 2018) against the 
  []
 
 
-Overfull \hbox (33.32135pt too wide) in paragraph at lines 93--94
+Overfull \hbox (33.32135pt too wide) in paragraph at lines 114--115
 \OT1/cmr/m/n/10 full grid out-put, we opted for a 400-cluster sparseg-rid, to b
 al-ance com-pu-ta-tional cost against 
  []
 
 
-Overfull \hbox (25.82127pt too wide) in paragraph at lines 93--94
+Overfull \hbox (25.82127pt too wide) in paragraph at lines 114--115
 \OT1/cmr/m/n/10 model fi-delity (Supp Fig-ure A1[]). Be-cause our em-pha-sis is
  on veg-e-tated re-gions, we masked 
  []
 
 
-Overfull \hbox (5.87685pt too wide) in paragraph at lines 93--94
+Overfull \hbox (5.87685pt too wide) in paragraph at lines 114--115
 \OT1/cmr/m/n/10 out Antarc-tica within the clus-ter-ing al-go-rithm, whereby we
  do not pro-vide any out-put 
  []
 
 
-Overfull \hbox (69.18259pt too wide) in paragraph at lines 98--112
+Overfull \hbox (69.18259pt too wide) in paragraph at lines 119--133
  [][] 
  []
 
 
-Underfull \vbox (badness 3907) has occurred while \output is active []
+Underfull \vbox (badness 4846) has occurred while \output is active []
 
  [3]
+Overfull \hbox (11.44618pt too wide) in paragraph at lines 137--138
+[]\OT1/cmr/m/n/10 In the prepa-ra-tion for this ex-per-i-ment, 206 CLM-BGC pa-r
+am-e-ters were iden-ti-fied. 
+ []
+
+
+Overfull \hbox (0.76572pt too wide) in paragraph at lines 137--138
+\OT1/cmr/m/n/10 We de-cided to vary each pa-ram-e-ter once at a time, to a min-
+i-mum and max-i-mum val- 
+ []
+
+
+Overfull \hbox (11.37671pt too wide) in paragraph at lines 137--138
+\OT1/cmr/m/n/10 ues. To de-fine pa-ram-e-ter ranges we cre-ated an on-line spre
+ad-sheet and so-licited domain- 
+ []
+
+
+Overfull \hbox (24.96019pt too wide) in paragraph at lines 137--138
+\OT1/cmr/m/n/10 area ex-perts to pro-vide a min-i-mum and max-i-mum value for e
+ach pa-ram-e-ter. In some cases 
+ []
+
+
+Overfull \hbox (14.93236pt too wide) in paragraph at lines 137--138
+\OT1/cmr/m/n/10 lit-er-a-ture val-ues were avail-able, but in the vast ma-jor-i
+ty ex-pert judg-ment was used. The 
+ []
+
+
+Overfull \hbox (15.12677pt too wide) in paragraph at lines 137--138
+\OT1/cmr/m/n/10 spread-sheet, with lit-er-a-ture ref-er-ences and pa-ram-e-ter 
+de-scrip-tions is avail-able on-line and 
+ []
+
+
+Overfull \hbox (6.5712pt too wide) in paragraph at lines 139--140
+[]\OT1/cmr/m/n/10 Each sim-u-la-tion lasted 150 years, with the first 140 for s
+pin-up, fol-lowed by a 10- 
+ []
+
+
+Overfull \hbox (8.82124pt too wide) in paragraph at lines 139--140
+\OT1/cmr/m/n/10 year pe-riod for anal-y-sis pur-poses. We opted for six dif-fer
+-ent forc-ing sce-nar-ios to un-der- 
+ []
+
+
+Overfull \hbox (15.58511pt too wide) in paragraph at lines 139--140
+\OT1/cmr/m/n/10 stand the in-ter-sec-tion of pa-ram-e-ter ef-fects and cli-mate
+ change (Ta-ble 2[]). The GSWP3v1 
+ []
+
+
+Overfull \hbox (1.65253pt too wide) in paragraph at lines 139--140
+\OT1/cmr/m/n/10 re-anal-y-sis prod-uct ($\OT1/cmtt/m/n/10 http :// hydro [] .ii
+s [] .u [] -tokyo [] .ac [] .jp / GSWP3 /$\OT1/cmr/m/n/10 ) served as our at-mo
+- 
+ []
+
+
+Overfull \hbox (0.37679pt too wide) in paragraph at lines 139--140
+\OT1/cmr/m/n/10 spheric forc-ing, and is the de-fault forc-ing data for CLM5 []
+Lawrence et al.[], 2019). We 
+ []
+
+
+Overfull \hbox (4.58516pt too wide) in paragraph at lines 139--140
+\OT1/cmr/m/n/10 ap-plied cli-mate and CO$[]$ anoma-lies in-de-pen-dently, in or
+-der to dis-en-tan-gle their ef-fects 
+ []
+
+
+Overfull \hbox (15.21016pt too wide) in paragraph at lines 139--140
+\OT1/cmr/m/n/10 on pa-ram-e-ter rank-ings. Fu-ture and pre-industrial cli-mate 
+forc-ing datasets were pre-pared 
+ []
+
+
+Overfull \hbox (9.08524pt too wide) in paragraph at lines 139--140
+\OT1/cmr/m/n/10 by adding GSWP3v1 anoma-lies from 2005-2014 to the mean cli-mat
+e change sig-nal. We 
+ []
+
+
+Overfull \hbox (42.71016pt too wide) in paragraph at lines 139--140
+\OT1/cmr/m/n/10 in-ferred the mean cli-mate change sig-nal us-ing the CESM2 lar
+ge en-sem-ble ex-per-i-ment []Rodgers 
+ []
+
+
+Overfull \hbox (0.62672pt too wide) in paragraph at lines 139--140
+\OT1/cmr/m/n/10 et al.[], 2021), com-puted as the av-er-age of the dif-fer-ence
+ be-tween the pe-riod of in-ter-est 
+ []
+
 <../figs/sims.pdf, id=27, 508.81027pt x 308.81532pt>
 File: ../figs/sims.pdf Graphic file (type pdf)
 <use ../figs/sims.pdf>
-Package pdftex.def Info: ../figs/sims.pdf  used on input line 141.
+Package pdftex.def Info: ../figs/sims.pdf  used on input line 168.
 (pdftex.def)             Requested size: 360.0pt x 218.50645pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 []\OT1/cmr/bx/n/9 Figure  1. \OT1/cmr/m/n/9 The ap-prox-i-mate num-ber of sim-u
 -la-tions af-forded by 1 mil-lion core-hours for a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 \OT1/cmr/m/n/9 range of CLM con-fig-u-ra-tions. Con-fig-u-ra-tions are la-beled
  ac-cord-ing to spin-up pro-ce-dure and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 \OT1/cmr/m/n/9 res-o-lu-tion, with `sg' sig-ni-fy-ing sparseg-rid. The in-set m
 ap shows the lo-ca-tions of the 400 sparse
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 \OT1/cmr/m/n/9 grid cells as the red dots. See Sec-tion 2[] for spin-up and spa
 rseg-rid de-tails. My speed cal-cu-la-tions
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <../figs/sparsegrid_gpp.pdf, id=28, 1193.83675pt x 566.99268pt>
 File: ../figs/sparsegrid_gpp.pdf Graphic file (type pdf)
 <use ../figs/sparsegrid_gpp.pdf>
-Package pdftex.def Info: ../figs/sparsegrid_gpp.pdf  used on input line 148.
+Package pdftex.def Info: ../figs/sparsegrid_gpp.pdf  used on input line 175.
 (pdftex.def)             Requested size: 480.0pt x 227.96967pt.
 
-Overfull \hbox (82.51501pt too wide) in paragraph at lines 148--149
+Overfull \hbox (82.51501pt too wide) in paragraph at lines 175--176
  [][] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 149.
+(Font)              <9> on input line 176.
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--149
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
 []\OT1/cmr/bx/n/9 Figure  2. \OT1/cmr/m/n/9 Sparseg-rid vs full-grid (2$[]$ res
 -o-lu-tion) global an-nual GPP across the last thirty
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--149
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
 \OT1/cmr/m/n/9 years of a tran-sient CLM5.1 sim-u-la-tion. We opted for 400 clu
 s-ters to bal-ance com-pu-ta-tional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--149
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
 \OT1/cmr/m/n/9 cost against rep-re-sen-ta-tive-ness. For ref-er-ence there are 
 22648, 5666, and 1764 land grid-cells in
  []
@@ -652,10 +829,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../figs/bar.pdf, id=29, 528.42108pt x 387.47635pt>
 File: ../figs/bar.pdf Graphic file (type pdf)
 <use ../figs/bar.pdf>
-Package pdftex.def Info: ../figs/bar.pdf  used on input line 155.
+Package pdftex.def Info: ../figs/bar.pdf  used on input line 182.
 (pdftex.def)             Requested size: 360.0pt x 263.98299pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--156
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
 []\OT1/cmr/bx/n/9 Figure  3. \OT1/cmr/m/n/9 206 pa-ram-e-ters were iden-ti-fied
  and per-turbed across the var-i-ous do-mains of the
  []
@@ -666,33 +843,33 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../figs/violins.pdf, id=30, 614.44559pt x 212.4142pt>
 File: ../figs/violins.pdf Graphic file (type pdf)
 <use ../figs/violins.pdf>
-Package pdftex.def Info: ../figs/violins.pdf  used on input line 163.
+Package pdftex.def Info: ../figs/violins.pdf  used on input line 190.
 (pdftex.def)             Requested size: 420.0pt x 145.19492pt.
 
-Overfull \hbox (22.51501pt too wide) in paragraph at lines 163--164
+Overfull \hbox (22.51501pt too wide) in paragraph at lines 190--191
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 []\OT1/cmr/bx/n/9 Figure  4. \OT1/cmr/m/n/9 Dis-tri-bu-tions of global an-nual 
 gross pri-mary pro-duc-tion (GPP) and net biome
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 \OT1/cmr/m/n/9 pro-duc-tion (NBP) across the six forc-ing sce-nar-ios. See Sec-
-tion 2.5[] for sce-nario de-scrip-tions. The
+tion 2.4[] for sce-nario de-scrip-tions. The
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 \OT1/cmr/m/n/9 dis-tri-bu-tions are con-cen-trated around the de-fault pa-ram-e
 -ter-i-za-tion with long tails, in-di-cat-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 \OT1/cmr/m/n/9 that a small pro-por-tion of pa-ram-e-ters have large ef-fects o
 n these two vari-ables. In the case of
  []
@@ -703,15 +880,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../figs/lai_biome.pdf, id=31, 608.15327pt x 387.47635pt>
 File: ../figs/lai_biome.pdf Graphic file (type pdf)
 <use ../figs/lai_biome.pdf>
-Package pdftex.def Info: ../figs/lai_biome.pdf  used on input line 170.
+Package pdftex.def Info: ../figs/lai_biome.pdf  used on input line 197.
 (pdftex.def)             Requested size: 480.0pt x 305.8369pt.
 
-Overfull \hbox (82.51501pt too wide) in paragraph at lines 170--171
+Overfull \hbox (82.51501pt too wide) in paragraph at lines 197--198
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--171
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
 []\OT1/cmr/bx/n/9 Figure  5. \OT1/cmr/m/n/9 The eight most in-flu-en-tial pa-ra
 m-e-ters on leaf area in-dex within the CTL2010 en-
  []
@@ -722,39 +899,39 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../figs/ET_response.pdf, id=32, 731.2554pt x 266.97804pt>
 File: ../figs/ET_response.pdf Graphic file (type pdf)
 <use ../figs/ET_response.pdf>
-Package pdftex.def Info: ../figs/ET_response.pdf  used on input line 177.
+Package pdftex.def Info: ../figs/ET_response.pdf  used on input line 204.
 (pdftex.def)             Requested size: 480.0pt x 175.24464pt.
 
-Overfull \hbox (82.51501pt too wide) in paragraph at lines 177--181
+Overfull \hbox (82.51501pt too wide) in paragraph at lines 204--208
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 []\OT1/cmr/bx/n/9 Figure  6. \OT1/cmr/m/n/9 (a) Global evap-o-tran-spi-ra-tion 
 in the warm forc-ing sce-nario vs. our con-trol ex-per-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \OT1/cmr/m/n/9 i-ment. The de-fault pa-ram-e-ter-i-za-tion ET en-hance-ment is 
 +8.8%, as shown with the or-ange line.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \OT1/cmr/m/n/9 The shad-ing spans the CTL2010 de-fault ET, plus or mi-nus 1 W/m
 2. (b) The top 8 pa-ram-e-ters
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \OT1/cmr/m/n/9 gov-ern-ing global ET in the CTL2010 ex-per-i-ment. (c) The top 
 8 pa-ram-e-ters gov-ern-ing ET re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \OT1/cmr/m/n/9 sponse to the fu-ture cli-mate anomaly forc-ing (AF2095). Pa-ram
 -e-ters gov-ern-ing the re-sponse to
  []
@@ -765,21 +942,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../figs/deltmap_panel.pdf, id=33, 824.07875pt x 242.9075pt>
 File: ../figs/deltmap_panel.pdf Graphic file (type pdf)
 <use ../figs/deltmap_panel.pdf>
-Package pdftex.def Info: ../figs/deltmap_panel.pdf  used on input line 188.
+Package pdftex.def Info: ../figs/deltmap_panel.pdf  used on input line 215.
 (pdftex.def)             Requested size: 480.0pt x 141.48688pt.
 
-Overfull \hbox (82.51501pt too wide) in paragraph at lines 188--189
+Overfull \hbox (82.51501pt too wide) in paragraph at lines 215--216
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--189
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 []\OT1/cmr/bx/n/9 Figure  7. \OT1/cmr/m/n/9 Screen-shot of in-ter-ac-tive di-ag
 -nos-tic for ex-plor-ing maps of pa-ram-e-ter ef-fects. In this
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--189
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 \OT1/cmr/m/n/9 case, the ef-fect of med-lyns-lope on runoff within the CTL2010 
 en-sem-ble. In-creas-ing med-lyns-lope
  []
@@ -788,41 +965,45 @@ en-sem-ble. In-creas-ing med-lyns-lope
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (9.82117pt too wide) in paragraph at lines 196--198
+Overfull \hbox (9.82117pt too wide) in paragraph at lines 223--225
 []\OT1/cmr/m/n/10 This sec-tion MUST con-tain a state-ment that de-scribes wher
 e the data sup-port-ing 
  []
 
 
-Overfull \hbox (5.90463pt too wide) in paragraph at lines 196--198
+Overfull \hbox (5.90463pt too wide) in paragraph at lines 223--225
 \OT1/cmr/m/n/10 the con-clu-sions can be ob-tained. Data can-not be listed as '
 'Avail-able from au-thors'' or 
  []
 
 
-Overfull \hbox (4.4047pt too wide) in paragraph at lines 196--198
+Overfull \hbox (4.4047pt too wide) in paragraph at lines 223--225
 \OT1/cmr/m/n/10 stored solely in sup-port-ing in-for-ma-tion. Ci-ta-tions to ar
 chived data should be in-cluded 
  []
 
 
-Overfull \hbox (18.51564pt too wide) in paragraph at lines 196--198
+Overfull \hbox (18.51564pt too wide) in paragraph at lines 223--225
 \OT1/cmr/m/n/10 in your ref-er-ence list. Wi-ley will pub-lish it as a sep-a-ra
 te sec-tion on the pa-per's page. Ex- 
  []
 
 
-Overfull \hbox (71.11316pt too wide) in paragraph at lines 196--198
+Overfull \hbox (71.11316pt too wide) in paragraph at lines 223--225
 \OT1/cmr/m/n/10 am-ples and com-plete in-for-ma-tion are here: https://www.agu.
 org/Publish with AGU/Publish/Author 
  []
 
 
-Overfull \hbox (8.65456pt too wide) in paragraph at lines 200--202
+Overfull \hbox (8.65456pt too wide) in paragraph at lines 227--229
 \OT1/cmr/m/n/10 Enter ac-knowl-edg-ments here. This sec-tion is to ac-knowl-edg
 e fund-ing, thank col-leagues, 
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
 (./ms.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 14--39
 []\OT1/cmr/m/n/10 Collier, N., Hoff-man, F. M., Lawrence, D. M., Keppel-Aleks, 
@@ -853,7 +1034,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--39
 wiley [] .com / doi / abs / 10 [] .1029 / 
  []
 
-[4 <../figs/sims.pdf>]
+
 Underfull \hbox (badness 6575) in paragraph at lines 54--76
 []\OT1/cmr/m/n/10 Dagon, K., Sander-son, B. M., Fisher, R. A., & Lawrence, D. M
 .  (2020).  A ma- 
@@ -946,80 +1127,105 @@ ng Earth Sys-tems\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 in press\OT1/cmr/m/n/10 .
 doi: 
  []
 
-
+[5 <../figs/sims.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 192--213
 \OT1/cmr/m/n/10 Full im-ple-men-ta-tion of ma-trix ap-proach to bio-geo-chem-is
 try mod-ule of clm5. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--245
+Underfull \hbox (badness 10000) in paragraph at lines 225--248
+[]\OT1/cmr/m/n/10 Rodgers, K. B., Lee, S.-S., Rosen-bloom, N., Tim-mer-mann, A.
+, Dan-aba-soglu, G., 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--248
+\OT1/cmr/m/n/10 Deser, C., ... Yea-ger, S. G.  (2021).  Ubiq-uity of human-indu
+ced changes 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--248
+\OT1/cmr/m/n/10 in cli-mate vari-abil-ity.  \OT1/cmr/m/it/10 Earth Sys-tem Dy-n
+am-ics\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 12\OT1/cmr/m/n/10 (4), 1393--1411.  Re
+- 
+ []
+
+
+Underfull \hbox (badness 3088) in paragraph at lines 225--248
+\OT1/cmr/m/n/10 trieved from $\OT1/cmtt/m/n/10 https :// esd [] .copernicus [] 
+.org / articles / 12 / 1393 / 2021 /$   \OT1/cmr/m/n/10 doi: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--280
 []\OT1/cmr/m/n/10 Sun, Y., Goll, D. S., Huang, Y., Ciais, P., Wang, Y.-P., Bas-
 trikov, V., & Wang, 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--245
+Underfull \hbox (badness 10000) in paragraph at lines 260--280
 \OT1/cmr/m/n/10 Y.  (2023).  Ma-chine learn-ing for ac-cel-er-at-ing process-ba
 sed com-pu-ta- 
  []
 
 
-Underfull \hbox (badness 4967) in paragraph at lines 225--245
+Underfull \hbox (badness 4967) in paragraph at lines 260--280
 \OT1/cmr/m/n/10 tion of land bio-geo-chem-i-cal cy-cles.  \OT1/cmr/m/it/10 Glob
 al Change Bi-ol-ogy\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 n/a\OT1/cmr/m/n/10 (n/a).
   doi: 
  []
 
-[5 <../figs/sparsegrid_gpp.pdf>]
-Underfull \hbox (badness 3088) in paragraph at lines 259--277
+
+Underfull \hbox (badness 3088) in paragraph at lines 294--312
 []\OT1/cmr/m/n/10 Swenson, S. C., Burns, S. P., & Lawrence, D. M.  (2019).  The
  im-pact of biomass 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--277
+Underfull \hbox (badness 10000) in paragraph at lines 294--312
 \OT1/cmr/m/n/10 heat stor-age on the canopy en-ergy bal-ance and at-mo-spheric 
 sta-bil-ity in the 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--277
+Underfull \hbox (badness 10000) in paragraph at lines 294--312
 \OT1/cmr/m/n/10 com-mu-nity land model.  \OT1/cmr/m/it/10 Jour-nal of Ad-vances
  in Mod-el-ing Earth Sys-tems\OT1/cmr/m/n/10 , 
  []
 
 )
-<../figs/supp/ilamb.pdf, id=151, 1018.80624pt x 791.95876pt>
+<../figs/supp/ilamb.pdf, id=88, 1018.80624pt x 791.95876pt>
 File: ../figs/supp/ilamb.pdf Graphic file (type pdf)
 <use ../figs/supp/ilamb.pdf>
-Package pdftex.def Info: ../figs/supp/ilamb.pdf  used on input line 214.
+Package pdftex.def Info: ../figs/supp/ilamb.pdf  used on input line 241.
 (pdftex.def)             Requested size: 504.0pt x 391.78516pt.
 
-Overfull \hbox (106.51501pt too wide) in paragraph at lines 214--215
+Overfull \hbox (106.51501pt too wide) in paragraph at lines 241--242
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--215
+Underfull \hbox (badness 10000) in paragraph at lines 242--242
 []\OT1/cmr/bx/n/9 Figure  A1. \OT1/cmr/m/n/9 IL-AMB 2.5 over-all scores com-par
 -ing remapped sparseg-rid out-put to the full
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--215
+Underfull \hbox (badness 10000) in paragraph at lines 242--242
 \OT1/cmr/m/n/9 grid 2$[]$ model out-put. Col-umn head-ings in-di-cate the num-b
 er of clus-ters, and whether an-nual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--215
+Underfull \hbox (badness 10000) in paragraph at lines 242--242
 \OT1/cmr/m/n/9 means or an-nual means and stan-dard de-vi-a-tions were used as 
 in-put to the clus-ter-ing al-go-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--215
+Underfull \hbox (badness 10000) in paragraph at lines 242--242
 \OT1/cmr/m/n/9 rithm. We should try to re-move the gray bits (zqz). Full, in-te
 r-ac-tive re-sults are avail-able at
  []
@@ -1027,12 +1233,15 @@ r-ac-tive re-sults are avail-able at
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <../figs/bar.pdf>] [7 <../figs/violins.pdf> <../figs/lai_biome.pdf
+[6 <../figs/sparsegrid_gpp.pdf>] [7 <../figs/bar.pdf> <../figs/violins.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../figs/lai_biome.pdf): PDF 
-inclusion: multiple pdfs with page group included in a single page
->] [8 <../figs/ET_response.pdf> <../figs/deltmap_panel.pdf>] [9 <../figs/supp/i
-lamb.pdf>] (./ms.aux)
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../figs/violins.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>] [8 <../figs/lai_biome.pdf> <../figs/ET_response.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../figs/ET_response.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+>] [9 <../figs/deltmap_panel.pdf>] [10 <../figs/supp/ilamb.pdf>] (./ms.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
@@ -1042,13 +1251,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3313 strings out of 492616
- 46043 string characters out of 6129482
- 125525 words of memory out of 5000000
- 7167 multiletter control sequences out of 15000+600000
+ 3316 strings out of 492616
+ 46085 string characters out of 6129482
+ 127611 words of memory out of 5000000
+ 7170 multiletter control sequences out of 15000+600000
  9843 words of font info for 35 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 43i,9n,37p,856b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,9n,37p,955b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -1066,10 +1275,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2019/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on ms.pdf (9 pages, 785955 bytes).
+Output written on ms.pdf (10 pages, 789106 bytes).
 PDF statistics:
- 454 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
+ 456 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
