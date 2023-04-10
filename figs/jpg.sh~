@@ -1,0 +1,6 @@
+for file in *.pdf; do
+    echo $file
+
+    filename="${file%%.*}"
+    echo $filename
+done
