@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  3 MAR 2023 13:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  27 MAR 2023 10:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**ms.tex
-(./ms.tex
+**ms2.tex
+(./ms2.tex
 LaTeX2e <2018-12-01>
 (./agujournal2019.cls
 Document Class: agujournal2019 01/14/2019
@@ -190,22 +190,21 @@ Package morefloats Info: Maximum number of possible floats asked for: 36
 \c@numeditors=\count104
 \c@maxeditors=\count105
 )
-(./ms.aux)
-\openout1 = `ms.aux'.
+No file ms2.aux.
+\openout1 = `ms2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count106
@@ -252,7 +251,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 17.
+LaTeX Info: Redefining \selectfont on input line 16.
 \c@maskedRefs=\count112
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/apacite/english.apc
@@ -261,9 +260,9 @@ LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 25.
+(Font)              <7> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 25.
+(Font)              <5> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -271,214 +270,252 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 69.
+(Font)              size <10.95> substituted on input line 65.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 69.
+(Font)              size <10.95> substituted on input line 65.
 
+<../figs/sparsegrid_gpp.pdf, id=17, 1193.83675pt x 566.99268pt>
+File: ../figs/sparsegrid_gpp.pdf Graphic file (type pdf)
+<use ../figs/sparsegrid_gpp.pdf>
+Package pdftex.def Info: ../figs/sparsegrid_gpp.pdf  used on input line 75.
+(pdftex.def)             Requested size: 480.0pt x 227.96967pt.
 
-Overfull \hbox (22.15456pt too wide) in paragraph at lines 72--73
-[]\OT1/cmr/m/n/10 The Com-mu-nity Ter-res-trial Sys-tem Model (CTSM) is de-vel-
-oped by the CESM Land 
+Overfull \hbox (82.51501pt too wide) in paragraph at lines 75--76
+ [][] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 76.
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[]\OT1/cmr/bx/n/9 Figure  1. \OT1/cmr/m/n/9 Sparseg-rid vs full-grid (2$[]$ res
+-o-lu-tion) global an-nual GPP across the last thirty years
  []
 
 
-Overfull \hbox (17.54355pt too wide) in paragraph at lines 72--73
-\OT1/cmr/m/n/10 Model Work-ing Group (LMWG) and main-tained at the Na-tional Ce
-n-ter for At-mo-spheric 
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+\OT1/cmr/m/n/9 of a tran-sient CLM5.1 sim-u-la-tion. We opted for 400 clus-ters
+ (i.e. 400 sparse grid-cells) to bal-ance
  []
 
 
-Overfull \hbox (6.34903pt too wide) in paragraph at lines 72--73
-\OT1/cmr/m/n/10 Re-search (NCAR). This ex-per-i-ment uti-lizes the Com-mu-nity 
-Land Model con-fig-u-ra-tion 
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+\OT1/cmr/m/n/9 com-pu-ta-tional cost against rep-re-sen-ta-tive-ness. For ref-e
+r-ence there are 22,648 and 5,666 land
+ []
+
+<../figs/sims.pdf, id=18, 508.81027pt x 308.81532pt>
+File: ../figs/sims.pdf Graphic file (type pdf)
+<use ../figs/sims.pdf>
+Package pdftex.def Info: ../figs/sims.pdf  used on input line 83.
+(pdftex.def)             Requested size: 300.0pt x 182.08636pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+[]\OT1/cmr/bx/n/9 Figure  2. \OT1/cmr/m/n/9 A stan-dard 1-degree CLM-BGC sim-u-
+la-tion with 1500 years of spinup is pro-
  []
 
 
-Overfull \hbox (5.46016pt too wide) in paragraph at lines 72--73
-\OT1/cmr/m/n/10 of CTSM, ver-sion 5.1 (CLM5.1). The model source code and doc-u
--men-ta-tion are avail- 
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+\OT1/cmr/m/n/9 hibitively ex-pen-sive ($\OMS/cmsy/m/n/9 ^^X$\OT1/cmr/m/n/9 400k
+ pe-hours) for ex-haus-tive pa-ram-e-ter sen-si-tiv-ity test-ing. Uti-liz-ing
  []
 
 
-Overfull \hbox (22.43071pt too wide) in paragraph at lines 72--73
-\OT1/cmr/m/n/10 able on-line ($\OT1/cmtt/m/n/10 https :// github [] .com / ESCO
-MP / CTSM$\OT1/cmr/m/n/10 ), as is a full model de-scrip-tion []Lawrence 
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+\OT1/cmr/m/n/9 the Matrix-CN spinup method and our sparseg-rid con-fig-u-ra-tio
+n yields ap-prox-i-mately 1300 sim-u-
  []
 
 
-Overfull \hbox (9.9324pt too wide) in paragraph at lines 74--74
-\OT1/cmr/m/n/10 just-ments, and the im-ple-men-ta-tion of biomass heat stor-age
- []Swenson et al.[], 2019). The 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1715) has occurred while \output is active []
+
+ [2 <../figs/sparsegrid_gpp.pdf>]
+<../figs/bar.pdf, id=86, 528.42108pt x 387.47635pt>
+File: ../figs/bar.pdf Graphic file (type pdf)
+<use ../figs/bar.pdf>
+Package pdftex.def Info: ../figs/bar.pdf  used on input line 117.
+(pdftex.def)             Requested size: 360.0pt x 263.98299pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+[]\OT1/cmr/bx/n/9 Figure  3. \OT1/cmr/m/n/9 206 pa-ram-e-ters were iden-ti-fied
+ and per-turbed across the var-i-ous do-mains of the
  []
 
 
-Overfull \hbox (1.29361pt too wide) in paragraph at lines 74--74
-\OT1/cmr/m/n/10 PPE ex-per-i-ment re-quired ad-di-tional code mod-i-fi-ca-tions
- to iden-tify and pro-gram-mat-i- 
- []
-
-
-Overfull \hbox (10.98796pt too wide) in paragraph at lines 74--74
-\OT1/cmr/m/n/10 cally vary the full suite of model pa-ram-e-ters. The ex-act mo
-del code for this ex-per-i-ment 
- []
-
-
-Overfull \hbox (1.51337pt too wide) in paragraph at lines 74--74
-\OT1/cmr/m/n/10 is con-tained in a de-vel-op-ment tag ($\OT1/cmtt/m/n/10 https 
-:// github [] .com / ESCOMP / CTSM / tree / branch [] 
- []
-
-
-Overfull \hbox (10.87971pt too wide) in paragraph at lines 74--74
-[]\OT1/cmtt/m/n/10 tags / PPE [] .n11 [] []ctsm5 [] .1 [] .dev030$\OT1/cmr/m/n/
-10 ). We uti-lized the full bio-geo-chem-istry ver-sion of CLM 
- []
-
-
-Overfull \hbox (42.21028pt too wide) in paragraph at lines 77--78
-[]\OT1/cmr/m/n/10 Model spin-up for the equi-li-bra-tion of car-bon and ni-tro-
-gen pools within biogeochemistry- 
- []
-
-
-Overfull \hbox (5.51581pt too wide) in paragraph at lines 77--78
-\OT1/cmr/m/n/10 enabled land mod-els can con-sume up to 98% of com-pu-ta-tional
- time []Sun et al.[], 2023).  
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
-Overfull \hbox (9.82117pt too wide) in paragraph at lines 277--279
-[]\OT1/cmr/m/n/10 This sec-tion MUST con-tain a state-ment that de-scribes wher
-e the data sup-port-ing 
+ [3 <../figs/sims.pdf>]
+<../figs/gpp_violin.pdf, id=138, 390.40857pt x 266.97804pt>
+File: ../figs/gpp_violin.pdf Graphic file (type pdf)
+<use ../figs/gpp_violin.pdf>
+Package pdftex.def Info: ../figs/gpp_violin.pdf  used on input line 126.
+(pdftex.def)             Requested size: 300.0pt x 205.15005pt.
+
+
+LaTeX Warning: Reference `sect:exps' on page 4 undefined on input line 127.
+
+
+LaTeX Warning: Reference `sect:exps' on page 4 undefined on input line 127.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\OT1/cmr/bx/n/9 Figure  4. \OT1/cmr/m/n/9 Dis-tri-bu-tions of global an-nual 
+GPP across the six forc-ing sce-nar-ios. See Sec-tion []
  []
 
 
-Overfull \hbox (5.90463pt too wide) in paragraph at lines 277--279
-\OT1/cmr/m/n/10 the con-clu-sions can be ob-tained. Data can-not be listed as '
-'Avail-able from au-thors'' or 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../figs/lai_biome.pdf, id=139, 608.15327pt x 387.47635pt>
+File: ../figs/lai_biome.pdf Graphic file (type pdf)
+<use ../figs/lai_biome.pdf>
+Package pdftex.def Info: ../figs/lai_biome.pdf  used on input line 137.
+(pdftex.def)             Requested size: 480.0pt x 305.8369pt.
+
+Overfull \hbox (82.51501pt too wide) in paragraph at lines 137--138
+ [][] 
  []
 
 
-Overfull \hbox (4.4047pt too wide) in paragraph at lines 277--279
-\OT1/cmr/m/n/10 stored solely in sup-port-ing in-for-ma-tion. Ci-ta-tions to ar
-chived data should be in-cluded 
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+[]\OT1/cmr/bx/n/9 Figure  5. \OT1/cmr/m/n/9 The eight most in-flu-en-tial pa-ra
+m-e-ters on leaf area in-dex within the CTL2010 en-
  []
 
 
-Overfull \hbox (18.51564pt too wide) in paragraph at lines 277--279
-\OT1/cmr/m/n/10 in your ref-er-ence list. Wi-ley will pub-lish it as a sep-a-ra
-te sec-tion on the pa-per's page. Ex- 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../figs/ET_response.pdf, id=140, 731.2554pt x 266.97804pt>
+File: ../figs/ET_response.pdf Graphic file (type pdf)
+<use ../figs/ET_response.pdf>
+Package pdftex.def Info: ../figs/ET_response.pdf  used on input line 150.
+(pdftex.def)             Requested size: 480.0pt x 175.24464pt.
+
+Overfull \hbox (82.51501pt too wide) in paragraph at lines 150--154
+ [][] 
  []
 
 
-Overfull \hbox (71.11316pt too wide) in paragraph at lines 277--279
-\OT1/cmr/m/n/10 am-ples and com-plete in-for-ma-tion are here: https://www.agu.
-org/Publish with AGU/Publish/Author 
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]\OT1/cmr/bx/n/9 Figure  6. \OT1/cmr/m/n/9 (a) Global evap-o-tran-spi-ra-tion 
+in the warm forc-ing sce-nario vs. our con-trol ex-per-
  []
 
 
-Overfull \hbox (8.65456pt too wide) in paragraph at lines 281--283
-\OT1/cmr/m/n/10 Enter ac-knowl-edg-ments here. This sec-tion is to ac-knowl-edg
-e fund-ing, thank col-leagues, 
- []
-
-(./ms.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 17--34
-[]\OT1/cmr/m/n/10 Hoffman, F. M., Ku-mar, J., Mills, R. T., & Har-grove, W. W. 
- (2013). 
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\OT1/cmr/m/n/9 i-ment. The de-fault pa-ram-e-ter-i-za-tion ET en-hance-ment is 
++8.8%, as shown with the or-ange line.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--34
-\OT1/cmr/m/n/10 Representativeness-based sam-pling net-work de-sign for the Sta
-te of Alaska. 
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\OT1/cmr/m/n/9 The shad-ing spans the CTL2010 de-fault ET, plus or mi-nus 1 W/m
+2. (b) The top 8 pa-ram-e-ters
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--66
-[]\OT1/cmr/m/n/10 Lawrence, D. M., et al., & et al.  (2019).  The Com-mu-nity L
-and Model ver-sion 
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\OT1/cmr/m/n/9 gov-ern-ing global ET in the CTL2010 ex-per-i-ment. (c) The top 
+8 pa-ram-e-ters gov-ern-ing ET re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--66
-\OT1/cmr/m/n/10 5: De-scrip-tion of new fea-tures, bench-mark-ing, and im-pact 
-of forc-ing un- 
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\OT1/cmr/m/n/9 sponse to the fu-ture cli-mate anomaly forc-ing (AF2095). Pa-ram
+-e-ters gov-ern-ing the re-sponse to
  []
 
 
-Underfull \hbox (badness 7963) in paragraph at lines 48--66
-\OT1/cmr/m/n/10 cer-tainty.  \OT1/cmr/m/it/10 Jour-nal of Ad-vances in Mod-el-i
-ng Earth Sys-tems\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 in press\OT1/cmr/m/n/10 .  
-doi: 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../figs/wue.pdf, id=141, 340.78253pt x 268.31116pt>
+File: ../figs/wue.pdf Graphic file (type pdf)
+<use ../figs/wue.pdf>
+Package pdftex.def Info: ../figs/wue.pdf  used on input line 162.
+(pdftex.def)             Requested size: 300.0pt x 236.2005pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+[]\OT1/cmr/bx/n/9 Figure  7. \OT1/cmr/m/n/9 Global pho-to-syn-the-sis vs. tran-
+spi-ra-tion for the con-trol and high CO$[]$ en-sem-bles.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--99
-\OT1/cmr/m/n/10 Full im-ple-men-ta-tion of ma-trix ap-proach to bio-geo-chem-is
-try mod-ule of clm5. 
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+\OT1/cmr/m/n/9 Wa-ter use ef-fi-ciency (in this case de-fined as GPP/T) con-tou
+rs are drawn for ref-er-ence. The de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--131
-[]\OT1/cmr/m/n/10 Sun, Y., Goll, D. S., Huang, Y., Ciais, P., Wang, Y.-P., Bas-
-trikov, V., & Wang, 
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+\OT1/cmr/m/n/9 fault pa-ram-e-ter-i-za-tion in-creases GPP by 53% in re-sponse 
+to in-creas-ing CO$[]$ from 367 to 867
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--131
-\OT1/cmr/m/n/10 Y.  (2023).  Ma-chine learn-ing for ac-cel-er-at-ing process-ba
-sed com-pu-ta- 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../figs/deltmap_panel.pdf, id=142, 824.07875pt x 242.9075pt>
+File: ../figs/deltmap_panel.pdf Graphic file (type pdf)
+<use ../figs/deltmap_panel.pdf>
+Package pdftex.def Info: ../figs/deltmap_panel.pdf  used on input line 175.
+(pdftex.def)             Requested size: 480.0pt x 141.48688pt.
+
+Overfull \hbox (82.51501pt too wide) in paragraph at lines 175--176
+ [][] 
  []
 
 
-Underfull \hbox (badness 4967) in paragraph at lines 111--131
-\OT1/cmr/m/n/10 tion of land bio-geo-chem-i-cal cy-cles.  \OT1/cmr/m/it/10 Glob
-al Change Bi-ol-ogy\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 n/a\OT1/cmr/m/n/10 (n/a).
-  doi: 
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+[]\OT1/cmr/bx/n/9 Figure  8. \OT1/cmr/m/n/9 Screen-shot of in-ter-ac-tive di-ag
+-nos-tic for ex-plor-ing maps of pa-ram-e-ter ef-fects. In this
  []
 
 
-Underfull \hbox (badness 3088) in paragraph at lines 145--163
-[]\OT1/cmr/m/n/10 Swenson, S. C., Burns, S. P., & Lawrence, D. M.  (2019).  The
- im-pact of biomass 
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+\OT1/cmr/m/n/9 case, the ef-fect of med-lyns-lope on runoff within the CTL2010 
+en-sem-ble. In-creas-ing med-lyns-lope
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--163
-\OT1/cmr/m/n/10 heat stor-age on the canopy en-ergy bal-ance and at-mo-spheric 
-sta-bil-ity in the 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+[4 <../figs/bar.pdf> <../figs/gpp_violin.pdf
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--163
-\OT1/cmr/m/n/10 com-mu-nity land model.  \OT1/cmr/m/it/10 Jour-nal of Ad-vances
- in Mod-el-ing Earth Sys-tems\OT1/cmr/m/n/10 , 
- []
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../figs/gpp_violin.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+>] [5 <../figs/lai_biome.pdf> <../figs/ET_response.pdf
 
-) [3] (./ms.aux)
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../figs/ET_response.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+>] [6 <../figs/wue.pdf> <../figs/deltmap_panel.pdf>] (./ms2.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 3247 strings out of 492616
- 44644 string characters out of 6129482
- 122008 words of memory out of 5000000
- 7112 multiletter control sequences out of 15000+600000
- 9230 words of font info for 33 fonts, out of 8000000 for 9000
+ 3274 strings out of 492616
+ 45596 string characters out of 6129482
+ 118487 words of memory out of 5000000
+ 7136 multiletter control sequences out of 15000+600000
+ 9329 words of font info for 33 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 43i,9n,37p,690b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,9n,37p,402b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -489,14 +526,14 @@ l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
 exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
 ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texliv
 e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/
-2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/201
-9/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on ms.pdf (3 pages, 176412 bytes).
+2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
+19/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2019
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2019/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on ms2.pdf (6 pages, 641954 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 466 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
