@@ -4,6 +4,7 @@
 \usepackage{lineno}
 \usepackage[inline]{trackchanges} %for better track changes. finalnew option will compile document with changes incorporated.
 \usepackage{soul}
+\usepackage{pdflscape}
 \linenumbers
 
 
@@ -18,7 +19,7 @@
 
 
 
-\title{The Community Land Model, version 5: \\ Parameter Perturbation Experiment}
+\title{The Community Land Model, version 5: \\ One-at-a-time Parameter Perturbation Ensemble}
 
 
 
@@ -71,7 +72,7 @@
 \section{Introduction}
 
 Water availability, land temperature extremes, fire risk, and crop productivity will all see impacts from climate change, and are among the many variables represented within the land component of Earth System Models.
-Understanding how such states respond to carbon dioxide concentration, and how we expect carbon dioxide concentration to evolve over time, is at the center of climate change research.  
+Understanding how these variables respond to carbon dioxide concentration, and how we expect carbon dioxide concentration to evolve over time, is at the center of climate change research.  
 Our certainty in climate model projections varies by domain and generally decreases with extended time horizons.
 Centennial-scale estimates of the cumulative terrestrial carbon sink have been especially challenging, with high uncertainty persisting across model generations \cite{friedlingstein2014,arora2020}. 
 A portion of this uncertainty is irreducible, inherent to the challenge of predicting vegetation dynamics in a novel climate \cite{bonan2018}.
@@ -94,7 +95,7 @@ In this paper we present that dataset, how it was produced, and its potential ap
 We are working with the Community Land Model (CLM), the land component of the Community Earth System Model, which is developed and maintained at the National Center for Atmospheric Research (NCAR).
 This work follows up on \citeA{dagon2020}, which began the process of systematically varying CLM parameters in service of automated model calibration.
 We extend that work by sampling a more exhaustive set of parameters across a broader range of land model processes.
-A set of 206 parameters were varied independently (one-at-a-time) across a range of climate scenarios.
+A set of approximately 200 parameters were varied across a range of climate scenarios.
 This dataset has already demonstrated great utility for diagnosing parameter effects, while the software and modeling infrastructure has greatly our expanded our capability to generate insights about CLM dynamics and uncertainties.
 
 \section{Experiment Description}
@@ -103,7 +104,7 @@ This dataset has already demonstrated great utility for diagnosing parameter eff
 \label{sect:md}
 The Community Terrestrial System Model (CTSM) is developed by the CESM Land Model Working Group and maintained at the National Center for Atmospheric Research (NCAR). This experiment utilizes the Community Land Model configuration of CTSM, version 5.1 (CLM5.1). The model source code and documentation are available online (\url{https://github.com/ESCOMP/CTSM}), as is a full model description \cite{lawrence2019}.
 
-Relative to CLM5.0, version 5.1 includes minor bug fixes, parameter adjustments, and the implementation of biomass heat storage \cite{swenson2019}. The PPE experiment required additional code modifications to programmatically vary the full suite of model parameters. The exact model code for this experiment is contained in a development tag (\url{https://github.com/ESCOMP/CTSM/tree/branch_tags/PPE.n11_ctsm5.1.dev030}). We utilized the biogeochemistry version of CLM in land-only mode, with the crop model turned off. The component set longname is: \\ \texttt{2000\_DATM\%GSWP3v1\_CLM51\%BGC\_SICE\_SOCN\_SROF\_SGLC\_SWAV\_SIAC\_SESP}
+Relative to CLM5.0, version 5.1 includes minor bug fixes, parameter adjustments, and the implementation of biomass heat storage \cite{swenson2019}. The PPE experiment required additional code modifications to programmatically vary the full suite of model parameters. The model code for this experiment is contained in a development tag (\url{https://github.com/ESCOMP/CTSM/tree/branch_tags/PPE.n11_ctsm5.1.dev030}). We utilized the biogeochemistry version of CLM in land-only mode, with the crop model turned off. The component set longname is: \\ \texttt{2000\_DATM\%GSWP3v1\_CLM51\%BGC\_SICE\_SOCN\_SROF\_SGLC\_SWAV\_SIAC\_SESP}
 
 \subsection{Model spin-up}
 Model spin-up for the equilibration of carbon and nitrogen pools within biogeochemistry-enabled land models can consume up to 98\% of computational time \cite{sun2023}. Depending on the evaluation criteria and model configuration, CLM5 requires between 800 and 2000 years (or more) to reach steady-state conditions \cite{lawrence2019}. Absent equilibrium, the drift towards steady state can obscure important model dynamics or features. For this reason, each member of the PPE requires independent spin-up.
@@ -141,9 +142,9 @@ Solar radiation (FSDS) & Soil liquid water (TOTSOILLIQ) & Total liquid runoff (Q
 
 
 \subsection{Experimental Design}
-In the preparation for this experiment, 206 CLM-BGC parameters were identified. We decided to vary each parameter independently, to a low and high value. To define parameter ranges we created an online spreadsheet and solicited domain-area experts to provide a minimum and maximum value for each parameter. In some cases literature values were directly utilized, but in the majority of cases, expert judgment was used. The spreadsheet, with literature references and parameter descriptions is available online and in appendix zqz.
+In the preparation for this experiment, 188 CLM-BGC parameters were identified. We decided to vary each parameter independently, to a low and high value. To define parameter ranges we created an online spreadsheet and solicited domain-area experts to provide a minimum and maximum value for each parameter. In some cases literature values were directly utilized, but in the majority of cases, expert judgment was used. The spreadsheet, with literature references and parameter descriptions is available online and in appendix zqz.
 
-Each simulation comprised 150 years, with the first 140 for spin-up, followed by a 10-year period for analysis. We opted for six different forcing scenarios to understand the intersection of parameter effects and climate change (Table \ref{tab:exps}). The GSWP3v1 reanalysis product (\url{http://hydro.iis.u-tokyo.ac.jp/GSWP3/}) served as our atmospheric forcing, and is the default forcing data for CLM5 \cite{lawrence2019}. We applied climate and CO$_2$ anomalies independently, in order to disentangle their effects on parameter rankings. Future and pre-industrial climate forcing datasets were prepared by adding GSWP3v1 anomalies from 2005-2014 to a derived climate change signal. We inferred the mean climate change signal using the CESM2 large ensemble experiment \cite{rodgers2021}, computed as the average of the difference between the period of interest and present day for the six atmospheric forcing variables.
+Each simulation ran for 150 years, with the first 140 for spin-up, followed by a 10-year period for analysis. We opted for six different forcing scenarios to understand the intersection of parameter effects and climate change (Table \ref{tab:exps}). The GSWP3v1 reanalysis product (\url{http://hydro.iis.u-tokyo.ac.jp/GSWP3/}) served as our atmospheric forcing, and is the default forcing data for CLM5 \cite{lawrence2019}. We applied climate and CO$_2$ anomalies independently, in order to disentangle their effects on parameter rankings. Future and pre-industrial climate forcing datasets were prepared by adding GSWP3v1 anomalies from 2005-2014 to the mean climate change signal. We inferred the mean climate change signal using the CESM2 large ensemble experiment \cite{rodgers2021}, computed as the average of the difference between the period of interest and present day for the six atmospheric forcing variables.
 
 \label{sect:exps}
  \begin{table}[h]
@@ -164,33 +165,80 @@ Each simulation comprised 150 years, with the first 140 for spin-up, followed by
  \label{tab:exps}
  \end{table}
 
+\subsection{Parameters} 
+\begin{landscape}
+
+ \begin{table}[h]
+ \caption{Some key parameters \\
+ Right now I'm sorting them by domain, should I sort them alphabetically by parameter name instead?}
+ \centering
+ \begin{tabular}{l l c}
+ \hline
+  Parameter  & Description & Model Domain \\
+ \hline
+d\_max & Dry surface layer parameter & Sensible, latent heat and momentum fluxes \\
+frac\_sat\_soil\_dsl\_init & Fraction of saturated soil at which DSL initiates & Sensible, latent heat and momentum fluxes \\
+fff & Decay factor for fractional saturated area & Hydrology \\
+liq\_canopy\_storage\_scalar & Canopy-storage-of-liquid-water parameter & Hydrology \\
+maximum\_leaf\_wetted\_fraction & Maximum leaf wetted fraction & Hydrology \\
+medlynintercept & Medlyn intercept of conductance-photosynthesis relationship & Stomatal resistance and photosynthesis \\
+medlynslope & Medlyn slope of conductance-photosynthesis relationship & Stomatal resistance and photosynthesis \\
+tpu25ratio & Ratio of tpu25top to vcmax25top & Stomatal resistance and photosynthesis \\
+jmaxb0 & Baseline proportion of nitrogen allocated for electron transport & Photosynthetic capacity (LUNA) \\
+jmaxb1 & Response of electron transport rate to light & Photosynthetic capacity (LUNA) \\
+slatop & Specific leaf area at top of canopy & Photosynthetic capacity (LUNA) \\
+wc2wjb0 & Baseline ratio of wc:wj & Photosynthetic capacity (LUNA) \\
+kmax & Plant segment max conductance & Plant hydraulics \\
+krmax & Root segment max conductance & Plant hydraulics \\
+psi50 & Water potential at 50\% loss of conductance & Plant hydraulics \\
+nstem & Stem number & Biomass heat storage \\
+lmr\_intercept\_atkin & Intercept in the calculation of leaf maintenance respiration& Plant respiration \\
+froot\_leaf & Allocation parameter: new fine root C per new leaf C & Carbon and nitrogen allocation \\
+leafcn & Leaf C:N & Carbon and nitrogen allocation \\
+leaf\_long & Leaf longevity & Vegetation phenology and turnover \\
+cpha & Activation energy for cp & Acclimation parameters \\
+jmaxhd & Deactivation energy for jmax & Acclimation parameters \\
+kcha & Activation energy for kc & Acclimation parameters \\
+lmrha & Activation energy for lmr & Acclimation parameters \\
+lmrhd & Deactivation energy for lmr & Acclimation parameters \\
+tpuha & Activation energy for tpu & Acclimation parameters \\
+tpuse\_sf & Scale factor for tpu entropy term & Acclimation parameters \\
+vcmaxha & Activation energy for vcmax & Acclimation parameters \\
+vcmaxhd & Deactivation energy for vcmax & Acclimation parameters \\
+ \hline
+ \end{tabular}
+ \end{table}
+\end{landscape}
+
+
 \subsection{Analyses}
 
 Biome analysis
 
 \section{Results}
-A major goal of this project was to develop a fast configuration of CLM5-BGC that would allow for a large number of simulations given the available computational resources.
-Combining the CN-Matrix spinup approach with our sparsegrid formulation (see Section \ref{sect:sg} for details) yielded a configuration approximately 500 times faster than the 1-degree configuration most often used for CLM simulations (Figure \ref{fig:sims}).
-There are 22648, 5666, and 1764 land gridcells in standard 1$^{\circ}$, 2$^{\circ}$, and 4$^{\circ}$x5$^{\circ}$ CLM simulations, respectively, as compared to just 400 grid cells in the sparsegrid.
-Likewise, whereas previous spin-up methodologies required 1500 years or longer to satisfy equilibration criteria, the CN-matrix approach yielded satisfactory spin-up for our experiment within 140 years.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=30pc]{../figs/sims.pdf}
-\caption{The approximate number of simulations afforded by 1 million core-hours for a range of CLM configurations. Configurations are labeled according to spin-up procedure and resolution, with `sg' signifying sparsegrid. The inset map shows the locations of the 400 sparse grid cells. See Section \ref{methods} for spin-up and sparsegrid details. (My speed calculations here are a bit janky, assume linear scaling of cost for increasing time or space zqz) }
+\caption{The approximate number of simulations afforded by 1 million core-hours for a range of CLM configurations. Configurations are labeled according to spin-up procedure (CN-matrix or the standard 1500-year spinup) and horizontal resolution (`sg' signifies sparsegrid). The inset map shows the locations of the 400 sparse grid cells. See Section \ref{methods} for spin-up and sparsegrid details.}
 \label{fig:sims}
 \end{figure}
+
+A major goal of this project was to develop a fast configuration of CLM5-BGC that would allow for a large number of simulations given the available computational resources.
+Combining the CN-Matrix spinup approach with our sparsegrid formulation (see Section \ref{sect:sg} for details) yielded a configuration approximately 500 times faster than the 1-degree configuration most often used for CLM simulations (Figure \ref{fig:sims}).
+There are 22648, 5666, and 1764 land grid cells in standard 1$^{\circ}$, 2$^{\circ}$, and 4$^{\circ}$x5$^{\circ}$ CLM simulations, respectively, as compared to just 400 grid cells in the sparsegrid.
+Likewise, whereas previous spin-up methodologies required 1500 years or longer to satisfy equilibration criteria, the CN-matrix approach yielded satisfactory spin-up for our experiment within 140 years.
 
 Choosing the number of clusters to generate the sparsegrid involved balancing the computational savings against representational fidelity. Generally the more clusters, the 
 stronger the relationship between output from the full grid and the sparsegrid. Accuracy of global photosynthesis could be achieved with a relatively small number of clusters, with R$_2>$0.95 achieved with only 200 clusters, and RMSE$<$1PgC requiring approximately 700 clusters (Figure \ref{fig:sggpp}). We chose 400 clusters, based on ILAMB scores of a wide variety of output variables (Supp Figure \ref{supp:ilamb})
 \begin{figure}[h]
 \centering
-\includegraphics[width=40pc]{../figs/sparsegrid_gpp.pdf}
+\includegraphics[width=35pc]{../figs/sparsegrid_gpp.pdf}
 \caption{Sparsegrid vs fullgrid (2$^{\circ}$ resolution) global annual GPP across the last thirty years of a transient CLM5.1 simulation. We opted for 400 clusters to balance computational cost against representativeness.}
 \label{fig:sggpp}
 \end{figure}
 
-Parameters were varied across a wide variety of CLM subcomponents (Figure \ref{fig:params}). A total of 206 parameters were targeted for sensitivity testing. Many parameters were hard-coded, but have now been extracted to the CLM parameter file for easier manipulation. In some cases new parameters were introduced to allow perturbation of important processes. For example a sand perturbation factor ($sand\_pf$) was introduced in order to perturb the percent sand in the soil column without creating a new surface dataset. A spreadsheet detailing all of the parameters, and their ranges, is provided in the supplementary material and available online (zqz link).
+Parameters were varied across a wide variety of CLM subcomponents (Figure \ref{fig:params}). A total of 188 parameters were targeted for sensitivity testing. Many parameters were hard-coded, but have now been extracted to the CLM parameter file for easier manipulation. In some cases new parameters were introduced to allow perturbation of important processes. For example a sand perturbation factor ($sand\_pf$) was introduced in order to perturb the percent sand in the soil column without creating a new surface dataset. A spreadsheet detailing all of the parameters, and their ranges, is provided in the supplementary material and available online (zqz link).
 
 \begin{figure}[h]
 \centering
@@ -199,13 +247,16 @@ Parameters were varied across a wide variety of CLM subcomponents (Figure \ref{f
 \label{fig:params}
 \end{figure}
 
+Most of the parameter perturbations had a relatively small impact on any given output variable. For example, the distributions of GPP and NBP are concentrated around the default parameterization with long tails, indicating that a small proportion of parameters have large effects (Figure \ref{fig:violins}). One perturbation, reducing the heat capacity of sand by 20\%, proved destructive in the future climate scenario, resulting in inhospitably hot soil conditions and widespread plant death. This simulation is likely unrealistic, indicating that the perturbation range was too large, but possibly also that the model struggles to acclimate to warmer soils. This represents one of the valuable outcomes of an extensive PPE, exposing unexpected model behavior, which may belie brittle parameterizations or bugs.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=35pc]{../figs/violins.pdf}
-\caption{Distributions of global annual gross primary production (GPP) and net biome production (NBP) across the six forcing scenarios. See Section \ref{sect:exps} for scenario descriptions. The distributions are concentrated around the default parameterization with long tails, indicating that a small proportion of parameters have large effects. Especially in the case of NBP, parameter effects can be larger than scenario effects.}
-\label{}
+\caption{Distributions of global annual gross primary production (GPP) and net ecosystem production (NEP) across the PPE within each of our six forcing scenarios. See Section \ref{sect:exps} for scenario descriptions.}
+\label{fig:violins}
 \end{figure}
+
+The PPE is likewise useful for determining which parameters influence which model processes and where. For example the parameters controlling leaf area index varies significantly by biome (Figure \ref{fig:lai}). Plant hydraulics were the most important in the tropical rain forest, photosynthetic capacity in the boreal forest, and runoff and soil evaporation in the temperate grassland/desert biome. The most influential parameters globally includes parameters from each of these three biomes. We have similar plots delineated by plant functional type, and for many other output variables in our extended diagnostics set (\url{https://webext.cgd.ucar.edu/I2000/PPEn11_OAAT}) 
 
 \begin{figure}[h]
 \centering
@@ -214,15 +265,22 @@ Parameters were varied across a wide variety of CLM subcomponents (Figure \ref{f
 \label{fig:lai}
 \end{figure}
 
+Repeating our perturbations across the six forcing scenarios ensures that we can identify important parameters not just under present-day conditions, but also in the future. In the case of evaporation (ET), the parameters that control the increase in ET due to warming tend to be different from the parameters that control present-day ET (Figure \ref{fig:et}). 
+ET response can differ significantly from the default case (i.e. stray from the orange line), even when ET is near the default under present-day conditions (i.e. within the shaded region).
+Many of the new parameters that appear in the ET response parameter rankings govern plant acclimation to temperature. 
+These parameters, while not especially influential on present-day ET, will be important in governing the trend in ET going forward.
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=40pc]{../figs/ET_response.pdf}
-\caption{(a) Global evapotranspiration in the warm forcing scenario vs. our control experiment. The default parameterization ET enhancement is +8.8\%, as shown with the orange line. The shading spans the CTL2010 default ET, plus or minus 1 W/m2.
-(b) The top 8 parameters governing global ET in the CTL2010 experiment.
+\caption{(a) Global evapotranspiration in the warm forcing scenario vs. our control experiment. The response to warming with default parameters is ET+8.8\% (highlighted with the orange line). The shading spans the default ET, plus or minus 1 W/m2.
+(b) The top 8 parameters governing global ET in the control experiment.
 (c) The top 8 parameters governing ET response to the future climate anomaly forcing (AF2095).
 Parameters governing the response to temperature anomalies tend to differ from the parameters controlling present-day ET.}
 \label{fig:et}
 \end{figure}
+
+The sheer volume of data generated by a large PPE can be overwhelming - our full dataset exceeds 2TB.  Our diagnostics package, which operates on only a subset of output variables, generated 1720 figures (\url{https://webext.cgd.ucar.edu/I2000/PPEn11_OAAT}). In many cases we have found it easier to utilize interactive plotting utilities to toggle through the various parameters, output variables, and forcing scenarios (Figure \ref{fig:panel}). Interactive widgets are relatively easy to generate while performing data analysis, but more difficult to host online, hence the screenshot. Effectively leveraging the latest data science tools will greatly enhance the utility of PPE datasets.
 
 
 \begin{figure}[h]

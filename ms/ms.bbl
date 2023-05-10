@@ -1,6 +1,76 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Arora%
+\ \protect \BOthers {.}}{%
+Arora%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+arora2020}
+\APACinsertmetastar {%
+arora2020}%
+\begin{APACrefauthors}%
+Arora, V\BPBI K.%
+, Katavouta, A.%
+, Williams, R\BPBI G.%
+, Jones, C\BPBI D.%
+, Brovkin, V.%
+, Friedlingstein, P.%
+\BDBL {}Ziehn, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Carbon--concentration and carbon--climate feedbacks in
+  CMIP6 models and their comparison to CMIP5 models} {Carbon--concentration and
+  carbon--climate feedbacks in cmip6 models and their comparison to cmip5
+  models}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Biogeosciences}{17}{16}{4173--4222}.
+\newblock
+\begin{APACrefURL} \url{https://bg.copernicus.org/articles/17/4173/2020/}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.5194/bg-17-4173-2020} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bonan%
+\ \BBA {} Doney%
+}{%
+Bonan%
+\ \BBA {} Doney%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+bonan2018}
+\APACinsertmetastar {%
+bonan2018}%
+\begin{APACrefauthors}%
+Bonan, G\BPBI B.%
+\BCBT {}\ \BBA {} Doney, S\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Climate, ecosystems, and planetary futures: The
+  challenge to predict life in {E}arth system models} {Climate, ecosystems, and
+  planetary futures: The challenge to predict life in {E}arth system
+  models}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science}{359}{6375}{eaam8328}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.science.org/doi/abs/10.1126/science.aam8328}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1126/science.aam8328} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Collier%
 \ \protect \BOthers {.}}{%
 Collier%
@@ -23,8 +93,8 @@ Collier, N.%
 \newblock
 \APACrefYearMonthDay{2018}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{The International Land Model Benchmarking (ILAMB)}
-  System: Design, Theory, and Implementation} {{The International Land Model
+{\BBOQ}\APACrefatitle {The {International Land Model Benchmarking (ILAMB)}
+  System: Design, Theory, and Implementation} {The {International Land Model
   Benchmarking (ILAMB)} system: Design, theory, and implementation}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Advances in Modeling Earth
@@ -61,9 +131,9 @@ Dagon, K.%
 \APACrefYearMonthDay{2020}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {A machine learning approach to emulation and biophysical
-  parameter estimation with the {Community Land Model}, version 5} {A machine
+  parameter estimation with the {Community Land Model, version 5}} {A machine
   learning approach to emulation and biophysical parameter estimation with the
-  {Community Land Model}, version 5}.{\BBCQ}
+  {Community Land Model, version 5}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Advances in Statistical Climatology, Meteorology and
   Oceanography}{6}{2}{223--244}.
@@ -72,6 +142,73 @@ Dagon, K.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.5194/ascmo-6-223-2020} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fisher%
+\ \BBA {} Koven%
+}{%
+Fisher%
+\ \BBA {} Koven%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+fisher2020}
+\APACinsertmetastar {%
+fisher2020}%
+\begin{APACrefauthors}%
+Fisher, R\BPBI A.%
+\BCBT {}\ \BBA {} Koven, C\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Perspectives on the Future of {Land Surface Models} and
+  the Challenges of Representing Complex Terrestrial Systems} {Perspectives on
+  the future of {Land Surface Models} and the challenges of representing
+  complex terrestrial systems}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Advances in Modeling Earth
+  Systems}{12}{4}{e2018MS001453}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018MS001453}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2018MS001453} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Friedlingstein%
+\ \protect \BOthers {.}}{%
+Friedlingstein%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+friedlingstein2014}
+\APACinsertmetastar {%
+friedlingstein2014}%
+\begin{APACrefauthors}%
+Friedlingstein, P.%
+, Meinshausen, M.%
+, Arora, V\BPBI K.%
+, Jones, C\BPBI D.%
+, Anav, A.%
+, Liddicoat, S\BPBI K.%
+\BCBL {}\ \BBA {} Knutti, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{Jan 15}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Uncertainties in {CMIP}5 Climate Projections due to
+  Carbon Cycle Feedbacks} {Uncertainties in {CMIP}5 climate projections due to
+  carbon cycle feedbacks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Climate}{27}{2}{511-526}.
+\newblock
+\begin{APACrefDOI} \doi{10.1175/JCLI-D-12-00579.1} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -135,15 +272,49 @@ Hoffman, F\BPBI M.%
 \APACrefYearMonthDay{2013}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {Representativeness-based sampling network design for the
-  State of Alaska} {Representativeness-based sampling network design for the
-  state of alaska}.{\BBCQ}
+  {State} of {Alaska}} {Representativeness-based sampling network design for
+  the {State} of {Alaska}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Landscape Ecology}{28}{8}{1567--1586}.
 \newblock
-\begin{APACrefURL} \url{https://doi.org/10.1007/s10980-013-9902-0}
+\begin{APACrefDOI} \doi{10.1007/s10980-013-9902-0} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hourdin%
+\ \protect \BOthers {.}}{%
+Hourdin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+hourdin2017}
+\APACinsertmetastar {%
+hourdin2017}%
+\begin{APACrefauthors}%
+Hourdin, F.%
+, Mauritsen, T.%
+, Gettelman, A.%
+, Golaz, J\BHBI C.%
+, Balaji, V.%
+, Duan, Q.%
+\BDBL {}Williamson, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Art and Science of Climate Model Tuning} {The art
+  and science of climate model tuning}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bulletin of the American Meteorological
+  Society}{98}{3}{589 - 602}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.ametsoc.org/view/journals/bams/98/3/bams-d-15-00135.1.xml}
   \end{APACrefURL}
 \newblock
-\begin{APACrefDOI} \doi{10.1007/s10980-013-9902-0} \end{APACrefDOI}
+\begin{APACrefDOI} \doi{https://doi.org/10.1175/BAMS-D-15-00135.1}
+  \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -202,8 +373,8 @@ Lu, X.%
 \APACrefYearMonthDay{2020}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {Full Implementation of Matrix Approach to
-  Biogeochemistry Module of CLM5} {Full implementation of matrix approach to
-  biogeochemistry module of clm5}.{\BBCQ}
+  Biogeochemistry Module of {CLM5}} {Full implementation of matrix approach to
+  biogeochemistry module of {CLM5}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Advances in Modeling Earth
   Systems}{12}{11}{e2020MS002105}.
@@ -300,9 +471,9 @@ Swenson, S\BPBI C.%
 \APACrefYearMonthDay{2019}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {The Impact of Biomass Heat Storage on the Canopy Energy
-  Balance and Atmospheric Stability in the Community Land Model} {The impact of
-  biomass heat storage on the canopy energy balance and atmospheric stability
-  in the community land model}.{\BBCQ}
+  Balance and Atmospheric Stability in the {C}ommunity {L}and {M}odel} {The
+  impact of biomass heat storage on the canopy energy balance and atmospheric
+  stability in the {C}ommunity {L}and {M}odel}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Advances in Modeling Earth
   Systems}{11}{1}{83-98}.

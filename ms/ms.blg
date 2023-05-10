@@ -12,51 +12,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: refs.bib
-Warning--I didn't find a database entry for "friedlingstein2014"
-Warning--I didn't find a database entry for "arora2020"
-Warning--I didn't find a database entry for "bonan2018"
-Warning--I didn't find a database entry for "fisher2020"
-Warning--I didn't find a database entry for "hourdin2017"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 9 entries,
+You've used 14 entries,
             6951 wiz_defined-function locations,
-            1341 strings with 13653 characters,
-and the built_in function-call counts, 22943 in all, are:
-= -- 2710
-> -- 215
-< -- 1215
-+ -- 1426
-- -- 22
-* -- 1635
-:= -- 4372
-add.period$ -- 33
-call.type$ -- 9
-change.case$ -- 153
+            1377 strings with 15667 characters,
+and the built_in function-call counts, 35311 in all, are:
+= -- 4172
+> -- 324
+< -- 1872
++ -- 2171
+- -- 32
+* -- 2507
+:= -- 6695
+add.period$ -- 51
+call.type$ -- 14
+change.case$ -- 240
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 717
-empty$ -- 795
-format.name$ -- 419
-if$ -- 4046
+cite$ -- 28
+duplicate$ -- 1121
+empty$ -- 1237
+format.name$ -- 641
+if$ -- 6257
 int.to.chr$ -- 0
-int.to.str$ -- 27
+int.to.str$ -- 42
 missing$ -- 0
-newline$ -- 279
-num.names$ -- 72
-pop$ -- 289
+newline$ -- 429
+num.names$ -- 112
+pop$ -- 446
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 58
 quote$ -- 0
-skip$ -- 1267
+skip$ -- 1966
 stack$ -- 0
-substring$ -- 1537
-swap$ -- 397
-text.length$ -- 20
+substring$ -- 2346
+swap$ -- 618
+text.length$ -- 32
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 720
+type$ -- 1120
 warning$ -- 0
-while$ -- 142
+while$ -- 215
 width$ -- 0
-write$ -- 370
-(There were 5 warnings)
+write$ -- 563
