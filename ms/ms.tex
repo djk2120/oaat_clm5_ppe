@@ -19,7 +19,7 @@
 
 
 
-\title{The Community Land Model, version 5: \\ One-at-a-time Parameter Perturbation Ensemble}
+\title{The Community Land Model, version 5.1 \\ One-at-a-time Parameter Perturbation Ensemble}
 
 
 
@@ -51,11 +51,11 @@
 \section{Introduction}
 
 Water availability, land temperature extremes, fire risk, and crop productivity will all see impacts from climate change, and are among the many variables represented within the land component of Earth System Models.
-Understanding how these variables respond to carbon dioxide concentration, and how we expect carbon dioxide concentration to evolve over time, is at the center of climate change research.  
+Understanding how these variables respond to CO$_2$ concentration, and how we expect CO$_2$ concentration to evolve over time, is at the center of climate change research.  
 Our certainty in climate model projections varies by domain and generally decreases with extended time horizons.
 Centennial-scale estimates of the cumulative terrestrial carbon sink have been especially challenging, with high uncertainty persisting across model generations \cite{friedlingstein2014,arora2020}. 
 A portion of this uncertainty is irreducible, inherent to the challenge of predicting vegetation dynamics in a novel climate \cite{bonan2018}.
-But with the ever-increasing observational basis from remote sensing, meteorological stations, flux towers, and field campaigns, we would expect predictions to become more skillful over time.
+But with the ever-increasing observational basis from remote sensing, meteorological stations, flux towers, and field campaigns, we might expect predictions to become more skillful across subsequent model generations.
 
 While model inter-comparison projects have had tremendous utility, it can be difficult to interpret the differences between models, or even between subsequent versions of the same model, due to the multiplicity of structural and parametric variations.
 Within the day-to-day model development process, there is a greater emphasis on hypothesis testing, substituting one parameterization at a time to understand the various consequences.
@@ -65,7 +65,7 @@ Maintaining, improving, and interpreting complex land models benefits from thoug
 One such fundamental model development step is parameter sensitivity testing and/or parameter optimization.
 Because parameter values are uncertain, evaluating the effect of parameter values on model output is critical to the model development process \cite{hourdin2017}.
 When applied systematically, the result is a parameter perturbation ensemble (PPE), alternatively termed a perturbed physics ensemble.
-PPEs have played an important role in assessing projection uncertainty in climate models.
+PPEs have played an important role in assessing projection uncertainty in climate models (Hawkins 2019 JAMES).
 They also form a basis for automated model calibration.
 Our goal in this project is to systematize parameter perturbation activity within our modeling framework, and develop the necessary tools and datasets to efficiently test parameter effects across the full suite of land model processes. 
 In doing so, we have generated a large PPE, comprising thousands of parameter sensitivity tests.
@@ -97,7 +97,7 @@ Another control on model cost is resolution. Most CLM simulations utilize nomina
 
 Multivariate spatio-temporal clustering (MVSC) has been utilized to extract patterns of climatological significance from climate model output \cite{hoffman2005} and applied to design a representativeness-based sampling network \cite{hoffman2013}. Instead of lowering resolution by coarsening a rectilinear grid, we used MVSC to strategically remove redundant grid cells, leaving only 400 grid cells that efficiently sample important model dynamics.
 
-We used k-means clustering to identify groups of grid cells with similar climates based on a 2$^\circ$ transient simulation (1850-2014) using the CLM-PPE codebase. We selected one representative grid cell from each cluster to stand in for the entire cluster. The representative grid cell is whichever is located nearest the cluster centroid in climate space. The set of representative grid cells comprise a `sparsegrid', which are used in lieu of a `coarse' grid. A paint-by-number approach is used to recompose mapped output and compute global means, where the output from the representative grid cell is substituted for all members of the cluster cohort.
+We used k-means clustering to identify groups of grid cells with similar dynamics based on a 2$^\circ$ transient simulation (1850-2014) using the CLM-PPE codebase. We selected one representative grid cell from each cluster to stand in for the entire cluster. The representative grid cell is whichever is located nearest the cluster centroid in climate space. The set of representative grid cells comprise a `sparsegrid', which are used in lieu of a `coarse' grid. A paint-by-number approach is used to recompose mapped output and compute global means, where the output from the representative grid cell is substituted for all members of the cluster cohort.
 
 Clustering was based on a subset of 18 meaningful CLM variables (Table \ref{tab:sg}). The clustering algorithm analyzed 12 observations of each variable per grid cell, namely the mean and interannual variability computed for six 30-year climatology windows (1865-1894, 1895-1924, ... , 1985-2014). Clusters were delineated to equalize the multi-dimensional variance across the user-specified number of groups, $k$. We tested 15 values of $k$, ranging from 10 to 800. Based on ILAMB2.5 benchmarking \cite{collier2018} against the full grid output, we opted for a 400-cluster sparsegrid, to balance computational cost against model fidelity (Supp Figure \ref{supp:ilamb}). Because our emphasis is on vegetated regions, we masked out Antarctica within the clustering algorithm, whereby we do not provide any output below 60$^\circ$S.
 
@@ -122,7 +122,7 @@ Solar radiation (FSDS) & Soil liquid water (TOTSOILLIQ) & Total liquid runoff (Q
 
 
 \subsection{Experimental Design}
-In the preparation for this experiment, 188 CLM-BGC parameters were identified. We decided to vary each parameter independently, to a low and high value. To define parameter ranges we created an online spreadsheet and solicited domain-area experts to provide a minimum and maximum value for each parameter. In some cases literature values were directly utilized, but in the majority of cases, expert judgment was used. The spreadsheet, with literature references and parameter descriptions is available online and in appendix zqz.
+In the preparation for this experiment, 188 CLM-BGC parameters were identified. We decided to vary each parameter independently, to a low and high value. To define parameter ranges we created an online spreadsheet and solicited domain-area experts to provide a minimum and maximum value for each parameter. In some cases literature values were directly utilized, but in the majority of cases, expert judgment was used. The spreadsheet, with literature references and parameter descriptions is available online and in appendix zqz. In some cases parameters could not be perturbed independently, because they are required to sum to 1. In the case of nitrogen fixation costs, we opted to perturbed the parameters independently, but also as a group (`KCN'), to enforce nitrogen limitation in lieu of switching from one uptake pathway to another.
 
 Each simulation ran for 150 years, with the first 140 for spin-up, followed by a 10-year period for analysis. We opted for six different forcing scenarios to understand the intersection of parameter effects and climate change (Table \ref{tab:exps}). The GSWP3v1 reanalysis product (\url{http://hydro.iis.u-tokyo.ac.jp/GSWP3/}) served as our atmospheric forcing, and is the default forcing data for CLM5 \cite{lawrence2019}. We applied climate and CO$_2$ anomalies independently, in order to disentangle their effects on parameter rankings. Future and pre-industrial climate forcing datasets were prepared by adding GSWP3v1 anomalies from 2005-2014 to the mean climate change signal. We inferred the mean climate change signal using the CESM2 large ensemble experiment \cite{rodgers2021}, computed as the average of the difference between the period of interest and present day for the six atmospheric forcing variables.
 
@@ -147,10 +147,8 @@ Each simulation ran for 150 years, with the first 140 for spin-up, followed by a
 
 \subsection{Parameters} 
 \begin{landscape}
-
  \begin{table}[h]
- \caption{Some key parameters \\
- Right now I'm sorting them by domain, should I sort them alphabetically by parameter name instead?}
+ \caption{Some key parameters}
  \centering
  \begin{tabular}{l l c}
  \hline
@@ -221,7 +219,7 @@ Likewise, whereas previous spin-up methodologies required 1500 years or longer t
 
 
 Choosing the number of clusters to generate the sparsegrid involved balancing the computational savings against representational fidelity. Generally the more clusters, the 
-stronger the relationship between output from the full grid and the sparsegrid. Accuracy of global photosynthesis could be achieved with a relatively small number of clusters, with R$_2>$0.95 achieved with only 200 clusters, and RMSE$<$1PgC requiring approximately 700 clusters (Figure \ref{fig:sggpp}). We chose 400 clusters, based on ILAMB scores of a wide variety of output variables (Supp Figure \ref{supp:ilamb})
+stronger the relationship between output from the full grid and the sparsegrid. Accuracy of global photosynthesis could be achieved with a relatively small number of clusters, with R$_2>$0.95 achieved with only 200 clusters, and RMSE$<$1PgC requiring approximately 700 clusters (Figure \ref{fig:sg}). We chose 400 clusters, based on ILAMB scores of a wide variety of output variables (Supp Figure \ref{supp:ilamb})
 \begin{figure}[h]
 \centering
 \includegraphics[width=35pc]{../figs/sparsegrid_gpp.pdf}
@@ -231,7 +229,7 @@ stronger the relationship between output from the full grid and the sparsegrid. 
 
 
 
-Most of the parameter perturbations had a relatively small impact on any given output variable. For example, the distributions of GPP and NBP are concentrated around the default parameterization with long tails, indicating that a small proportion of parameters have large effects (Figure \ref{fig:violins}). One perturbation, reducing the heat capacity of sand by 20\%, proved destructive in the future climate scenario, resulting in inhospitably hot soil conditions and widespread plant death. This simulation is likely unrealistic, indicating that the perturbation range was too large, but possibly also that the model struggles to acclimate to warmer soils. This represents one of the valuable outcomes of an extensive PPE, exposing unexpected model behavior, which may belie brittle parameterizations or bugs.
+Most of the parameter perturbations had a relatively small impact on any given output variable. For example, the distributions of GPP and NEP are concentrated around the default simulation with long tails, indicating that a small proportion of parameters have large effects (Figure \ref{fig:violins}). One perturbation, reducing the heat capacity of sand by 20\%, proved destructive in the future climate scenario, resulting in inhospitably hot soil conditions and widespread plant death. This simulation is likely unrealistic, indicating that the perturbation range was too large, but possibly also that the model struggles to acclimate to warmer soils. This represents one of the valuable outcomes of an extensive PPE, exposing unexpected model behavior, which may belie brittle parameterizations or bugs.
 
 \begin{figure}[h]
 \centering
