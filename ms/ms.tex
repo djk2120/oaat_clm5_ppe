@@ -50,26 +50,26 @@
 
 \section{Introduction}
 
-Water availability, land temperature extremes, fire risk, and crop productivity will all see impacts from climate change, and are among the many variables represented within land components of Earth System Models.
-Understanding how these variables respond directly and indirectly to CO$_2$ concentration, and how they themselves impact CO$_2$ concentrations, is at the center of climate change research.  
+Water availability, land temperature extremes, fire risk, and crop productivity will all see impacts from climate change, and are among the many processes represented within land components of Earth System Models.
+Understanding how these processes respond directly and indirectly to CO$_2$ concentrations, and how they themselves impact CO$_2$ concentrations, is at the center of climate change research.  
 Our certainty in climate model projections varies by domain and generally decreases with extended time horizons \cite{esd-13-885-2022}.
 Centennial-scale estimates of the cumulative terrestrial carbon sink have been especially challenging, with high uncertainty persisting across model generations \cite{friedlingstein2014,arora2020}. 
 A portion of this uncertainty is irreducible, inherent to the challenge of predicting vegetation dynamics in a novel climate \cite{bonan2018}.
 But with the ever-increasing observational basis from remote sensing, meteorological stations, flux towers, and field campaigns, combined with increasingly comprehensive land surface modelling platforms, we might expect predictions to become more skillful across subsequent model generations.
 
-While model inter-comparison projects have had tremendous utility, it can be difficult to interpret the differences between models, or even between subsequent versions of the same model, due to the multiplicity of structural and parametric variations.
-Within the day-to-day model development process, there is a greater emphasis on hypothesis testing, substituting one parameterization at a time to understand the various consequences.
+While model inter-comparison projects have had tremendous utility, it can be difficult to interpret the differences between models, or even between subsequent versions of the same model, due to the multiplicity of structural and parametric variations (McNeall et al. 2016 ESD).
+Within the model development process, there is a significant emphasis on hypothesis testing, substituting one parameterization at a time to understand the various consequences.
 However, the complexity of land models has increased to the point where understanding the full span of model function has become challenging \cite{fisher2020}, and manual model calibration appears intractable \cite{dagon2020}.
 Maintaining, improving, and interpreting complex land models benefits from thoughtful investment in software to automate and routinize important components of the development process, e.g. \citeA{collier2018}. 
 
-One such fundamental model development step is parameter sensitivity testing and/or parameter optimization.
-Because parameter values are uncertain, evaluating the effect of parameter values on model output is critical to the model development process \cite{hourdin2017}.
+One such fundamental model development step is parameter sensitivity testing and/or parameter optimization (Qian et al. 2018 JGR Atmos).
+Because parameter values are uncertain, evaluating the effect of parameter values on model output is critical to the model development process \cite{hourdin2017} (Balaji et al. 2022 PNAS).
 When applied systematically, the result is a Parameter Perturbation Ensemble (PPE), alternatively termed a Perturbed Physics Ensemble.
-PPEs have played an important role in assessing projection uncertainty in climate models (Hawkins 2019 JAMES).
-They also form a basis for automated model calibration \cite{williamson2013history}.
+PPEs have played an important role in assessing projection uncertainty in climate models (Hawkins 2019 JAMES), (Peatier et al. 2022 GRL, Sanderson et al. 2008 JClim, Tett et al. 2022 JClim, Yamazaki et al. 2021 Clim Dyn).
+PPEs also form a basis for automated model calibration through, for example, history matching \cite{williamson2013history} or Bayesian uncertainty quantification (Cleary et al. 2021 JCP).
 Our goal in this project is to systematize parameter perturbation activity within our modeling framework, and develop the necessary tools and datasets to efficiently test parameter effects across the full suite of land model processes. 
 In doing so, we have generated a large PPE, comprising thousands of parameter sensitivity tests.
-In this paper we present that dataset, how it was produced, and its potential applications.
+In this paper we present that dataset, describe how it was produced, and survey some potential applications.
 
 We are working with the Community Land Model (CLM), the land component of the Community Earth System Model, which is developed and maintained at the National Center for Atmospheric Research (NCAR).
 This work follows up on \citeA{dagon2020}, which began the process of systematically varying CLM parameters in service of automated model calibration.
@@ -81,7 +81,7 @@ This dataset has already demonstrated great utility for diagnosing parameter eff
 \label{methods}
 \subsection{Model description}
 \label{sect:md}
-The Community Terrestrial System Model (CTSM) is developed by the CESM Land Model Working Group and maintained at the National Center for Atmospheric Research (NCAR). This experiment utilizes the Community Land Model configuration of CTSM, version 5.1 (CLM5.1). The model source code and documentation are available online (\url{https://github.com/ESCOMP/CTSM}), as is a full model description \cite{lawrence2019}.
+The Community Terrestrial Systems Model (CTSM) is developed by the CESM Land Model Working Group and maintained at the National Center for Atmospheric Research (NCAR). This experiment utilizes the Community Land Model configuration of CTSM, version 5.1 (CLM5.1). The model source code and documentation are available online (\url{https://github.com/ESCOMP/CTSM}), as is a full model description \cite{lawrence2019}.
 
 Relative to CLM5.0, version 5.1 includes minor bug fixes, parameter adjustments, and the implementation of biomass heat storage \cite{swenson2019}. The PPE experiment required additional code modifications to systematically vary the full suite of model parameters. The model code for this experiment is contained in a development tag (\url{https://github.com/ESCOMP/CTSM/tree/branch_tags/PPE.n11_ctsm5.1.dev030}). We utilized the biogeochemistry version of CLM in land-only mode, with the crop model turned off. The component set longname is: \\ \texttt{2000\_DATM\%GSWP3v1\_CLM51\%BGC\_SICE\_SOCN\_SROF\_SGLC\_SWAV\_SIAC\_SESP}
 
@@ -89,7 +89,7 @@ Relative to CLM5.0, version 5.1 includes minor bug fixes, parameter adjustments,
 \label{sect:mcn}
 Model spin-up for the equilibration of carbon and nitrogen pools within biogeochemistry-enabled land models can consume up to 98\% of computational time needed for a simulation \cite{sun2023}. Depending on the evaluation criteria and model configuration, CLM5 requires between 800 and 2000 years (or more) to reach steady-state conditions \cite{lawrence2019}. In the absence of equilibrium, the drift towards steady state can obscure important model dynamics or features. For this reason, each member of the PPE has a unique steady state and thus requires an independent spin-up.
 
-To manage computational cost we leveraged the Matrix-CN spin-up mode recently implemented within CLM \cite{lu2020}. This new module utilizes a linearized simplification of CLM's biogeochemistry to significantly reduce spin-up time. Our spin-up protocol featured 20 years in accelerated decomposition mode, followed by 80 years of Matrix-CN, followed by 40 years of `normal' mode, cycling over a ten-year forcing dataset. This was designed to achieve sufficiently equilibrated model states, while minimizing computational time. This spin-up methodology did not always reach full equilibration of deep soil carbon (beyond 1 meter). Certain inferences about deep soil carbon are therefore subject to uncertainty due to spin-up concerns.
+To manage computational cost we leveraged the Matrix-CN spin-up mode recently implemented within CLM \cite{lu2020}. This new module utilizes a linearized simplification of CLM's biogeochemistry to significantly reduce spin-up time. Our spin-up protocol featured 20 years in accelerated decomposition mode, followed by 80 years of Matrix-CN, followed by 40 years of `normal' mode, cycling over a ten-year forcing dataset (described below). This protocol was designed to achieve sufficiently equilibrated model states, while minimizing computational time. This spin-up methodology did not always reach full equilibration of deep soil carbon (beyond 1 meter depth). Certain inferences about deep soil carbon are therefore subject to uncertainty due to spin-up concerns.
 
 \subsection{Sparsegrid}
 \label{sect:sg}
@@ -102,7 +102,7 @@ We used k-means clustering to identify groups of grid cells with similar dynamic
 Clustering was based on a subset of 18 meaningful CLM variables (Table \ref{tab:sg}). The clustering algorithm analyzed 12 observations of each variable per grid cell, namely the mean and interannual variability computed for six 30-year climatology windows (1865-1894, 1895-1924, ... , 1985-2014). Clusters were delineated to equalize the multi-dimensional variance across the user-specified number of groups, $k$. We tested 15 values of $k$, ranging from 10 to 800. Based on ILAMB2.5 benchmarking \cite{collier2018} against the full grid output, we opted for a 400-cluster sparsegrid, to balance computational cost against model fidelity (Supp Figure \ref{supp:ilamb}). Because our emphasis is on vegetated regions, we masked out Antarctica within the clustering algorithm, whereby we do not provide any output below 60$^\circ$S.
 
 \begin{table}[h]
-\caption{Clustering inputs}
+\caption{Clustering inputs categorized into three groups, with the CLM variable name in parentheses}
 \centering
 \begin{tabular}{l c c c c}
  \hline
@@ -154,7 +154,7 @@ Each simulation ran for 150 years, with the first 140 for spin-up, followed by a
  \hline
   Parameter  & Description & Model Domain \\
  \hline
-d\_max & Dry surface layer parameter & Sensible, latent heat and momentum fluxes \\
+d\_max & Dry surface layer (DSL) parameter & Sensible, latent heat and momentum fluxes \\
 frac\_sat\_soil\_dsl\_init & Fraction of saturated soil at which DSL initiates & Sensible, latent heat and momentum fluxes \\
 fff & Decay factor for fractional saturated area & Hydrology \\
 liq\_canopy\_storage\_scalar & Canopy-storage-of-liquid-water parameter & Hydrology \\
@@ -207,7 +207,7 @@ Parameters were varied across a wide variety of CLM subcomponents (Figure \ref{f
 A major goal of this project was to develop a fast configuration of CLM5-BGC that would allow for a large number of simulations given the available computational resources.
 Combining the CN-Matrix spinup approach with our sparsegrid formulation (see Section \ref{sect:sg} for details) yielded a configuration approximately 500 times faster than the 1-degree configuration most often used for CLM simulations (Figure \ref{fig:sims}).
 There are 22648, 5666, and 1764 land grid cells in standard 1$^{\circ}$, 2$^{\circ}$, and 4$^{\circ}$x5$^{\circ}$ CLM simulations, respectively, as compared to just 400 grid cells in the sparsegrid.
-Likewise, whereas previous spin-up methodologies required 1500 years or longer to satisfy equilibration criteria, the CN-matrix approach yielded satisfactory spin-up for our experiment within 140 years.
+Likewise, whereas previous spin-up methodologies required 1500 years or longer to satisfy equilibrium criteria, the CN-matrix approach yielded satisfactory spin-up for our experiment within 140 years.
 
 
 \begin{figure}[h]
@@ -222,8 +222,8 @@ Choosing the number of clusters to generate the sparsegrid involved balancing th
 better the approximation oif output from the full grid can be acheived with the sparsegrid. Accuracy of global photosynthesis could be achieved with a relatively small number of clusters, with R$_2>$0.95 achieved with only 200 clusters, and RMSE$<$1PgC requiring approximately 700 clusters (Figure \ref{fig:sg}). We chose 400 clusters, based on ILAMB scores of a wide variety of output variables (Supp Figure \ref{supp:ilamb})
 \begin{figure}[h]
 \centering
-\includegraphics[width=35pc]{../figs/sparsegrid_gpp.pdf}
-\caption{Sparsegrid vs fullgrid (2$^{\circ}$ resolution) global annual GPP across the last thirty years of a transient CLM5.1 simulation. We opted for 400 clusters to balance computational cost against representativeness.}
+\includegraphics[width=25pc]{../figs/sparsegrid_gpp.pdf}
+\caption{Sparsegrid vs fullgrid (2$^{\circ}$ resolution) global annual gross primary production (GPP) across the last thirty years of a transient CLM5.1 simulation. We opted for 400 clusters to balance computational cost against representativeness.}
 \label{fig:sg}
 \end{figure}
 
@@ -253,7 +253,7 @@ Parameters governing the response to temperature anomalies tend to differ from t
 \label{fig:et}
 \end{figure}
 
-The PPE is likewise useful for determining which parameters influence which model processes and where. For example the parameters controlling leaf area index varies significantly by biome (Figure \ref{fig:lai}). Plant hydraulics were the most important in the tropical rain forest, photosynthetic capacity in the boreal forest, and runoff and soil evaporation in the temperate grassland/desert biome. The most influential parameters globally includes parameters from each of these three biomes. We have similar plots delineated by plant functional type, and for many other output variables in our extended diagnostics set (\url{https://webext.cgd.ucar.edu/I2000/PPEn11_OAAT}) 
+The PPE is likewise useful for determining which parameters influence which model processes and where. For example the parameters controlling leaf area index vary significantly by biome (Figure \ref{fig:lai}). Plant hydraulics parameters were the most important in the tropical rain forest, photosynthetic capacity in the boreal forest, and runoff and soil evaporation in the temperate grassland/desert biome. The most influential parameters globally include parameters from each of these three biomes. We have similar plots delineated by plant functional type, and for many other output variables in our extended diagnostics set (\url{https://webext.cgd.ucar.edu/I2000/PPEn11_OAAT}). 
 
 \begin{figure}[h]
 \centering
@@ -275,19 +275,19 @@ The volume of data generated by a large PPE can be overwhelming - our full datas
 
 \section{Discussion}
 
-In this project, we have identified and perturbed 188 CLM parameters to create a large one-at-a-time parameter perturbation ensemble. This ensemble is useful for understanding parametric controls on CLM dynamics and has already been leveraged as a starting point for parameter optimization efforts. We made significant investments in software infrastructure to enable this experiment and reduce the burden of generating future PPEs.
+In this project, we have identified and perturbed 188 CLM parameters to create a large one-at-a-time parameter perturbation ensemble. This ensemble is useful for understanding parametric controls on CLM processes and has already been leveraged as a starting point for parameter optimization efforts. We made significant investments in software infrastructure to enable this experiment and reduce the burden of generating future PPEs.
 
 There were several barriers to perturbing the full set of CLM5-BGC parameters. Firstly, many parameters had not been officially identified as such. In such cases, we identified hard-coded values, established an appropriate parameter name, and extracted that parameter to the CLM parameter file for easier manipulation. In the end, we perturbed 188 parameters across a variety of CLM processes (Figure \ref{fig:params}). The second challenge involved defining a perturbation range for each parameter. We solicited expert judgment to set a minimum and maximum reasonable value for each parameter. In some cases, literature values were explicitly used (e.g. medlynslope), but the most common range was $\pm20\%$. The third challenge involved computational cost.
 
 Running CLM-BGC with standard spin-up at 1$^\circ$ resolution, which is the most common configuration, would be prohibitively expensive, yielding only 2.3 simulations per million core-hours (for reference the CLM annual computing allocation is ~40 million core-hours). We sought a 2400-simulation ensemble, requiring a much faster model configuration. We sped up the model approximately 500x (Figure \ref{fig:sims}) by strategically reducing the number of model grid cells and by leveraging a linearized spin-up solver (see Sections \ref{sect:mcn} and \ref{sect:sg} for details). We found that most of the important model dynamics could be effectively resolved using only 400 grid cells and a 140-year spin-up sequence (Figure \ref{fig:sg}, Supp Figures \ref{supp:ilamb} and zqz spinup figure).
 
-We found that parameter effects could be quite large, in some cases exceeding the effects of our various forcing scenarios (Figure \ref{fig:violins}). That being said, the majority of parameter perturbations had very small effect, leading to output distributions strongly concentrated around the default simulation with long tails representing a small subset of parameters. In the case of gross primary production, only xx parameters had a parameter effect of more than 2\% under the control forcing scenario (Supp Figure \ref{supp:gpp}). As such, we would expect the the effective parameter space dimensionality for any given process would be significantly smaller than implied by the 188 parameters.
+We found that parameter effects could be quite large, in some cases exceeding the effects of our various forcing scenarios (Figure \ref{fig:violins}). That being said, the majority of parameter perturbations had very small effect, leading to output distributions strongly concentrated around the default simulation with long tails representing a small subset of parameters. In the case of gross primary production, only xx parameters had a parameter effect of more than 2\% under the control forcing scenario (Supp Figure \ref{supp:gpp}). As such, we would expect that the dimensionality of the effective parameter space for any given process would be significantly smaller than implied by the 188 parameters.
 
 We opted for six forcing scenarios to identify parameter effects not just in present-day but in response to pre-industrial or future climate conditions. The parameters that were most influential under present-day conditions did not necessarily match the set of parameters controlling the response to future forcing (Figure \ref{fig:et}). We found that many acclimation parameters, which were not as important for determining present-day evapotranspiration (ET), were among the most influential on the response of ET to future climate. Similarly, the parameters controlling leaf area index varied significantly depending on biome (Figure \ref{fig:lai}).
 
-A one-at-a-time PPE cannot capture parameter interactions, and our min/max sampling protocol precludes diagnosing non-linearities. As such, this dataset will be insufficient for most calibration activities or for estimating overall parametric uncertainty. The advantage of our dataset is that we can diagnose parameter effects without the uncertainty of an intermediating emulator or regression model. As such, it is easy to diagnose which parameters are most influential on a given process, which has been leveraged for parameter filtering. We have published a large set of ensemble diagnostic plots online, which serves as a valuable enhancement to our model technical documentation. Now in addition to seeing the definition of a given parameter, and the relevant equations, you can see the magnitude and spatial patterns of its effects (e.g. Figure \ref{fig:panel}).
+A one-at-a-time PPE cannot capture parameter interactions, and our min/max sampling protocol precludes diagnosing non-linearities. As such, this dataset will be insufficient for most calibration activities or for estimating overall parametric uncertainty. The advantage of our dataset is that we can diagnose parameter effects without the uncertainty of an approximating emulator or regression model. As such, it is easy to diagnose which parameters are most influential on a given process, which has been leveraged for parameter filtering. We have published a large set of ensemble diagnostic plots online, which serves as a valuable enhancement to our model technical documentation. Now in addition to seeing the definition of a given parameter, and the relevant equations, a model user can see the magnitude and spatial patterns of its effects (e.g. Figure \ref{fig:panel}).
 
-We have already begun a follow-on experiment that perturbs a subset of parameters with the latin hypercube sampling strategy to work towards calibration of leaf area index. By investing in the infrastructure underlying this first experiment, all of our subsequent experiments have required much less time and effort. We expect to continue to extend our efforts in this domain, as well as repeat these types of experiments with subsequent model releases.
+We have already begun a follow-on experiment that perturbs a subset of parameters with the Latin hypercube sampling strategy to work towards calibrating leaf area index. By investing in the infrastructure underlying this first experiment, all of our subsequent experiments have required much less time and effort. We expect to continue to extend our efforts in this domain, as well as repeat these types of experiments with subsequent model releases.
 
 \section{Conclusion}
 \section*{Open Research Section}
