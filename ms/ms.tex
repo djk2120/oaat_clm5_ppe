@@ -52,12 +52,12 @@
 
 Water availability, land temperature extremes, fire risk, and crop productivity will all see impacts from climate change, and are among the many processes represented within land components of Earth System Models.
 Understanding how these processes respond directly and indirectly to CO$_2$ concentrations, and how they themselves impact CO$_2$ concentrations, is at the center of climate change research.  
-Our certainty in climate model projections varies by domain and generally decreases with extended time horizons \cite{esd-13-885-2022}.
+Our certainty in climate model projections varies by domain and generally decreases with extended time horizons \cite{koven2022}.
 Centennial-scale estimates of the cumulative terrestrial carbon sink have been especially challenging, with high uncertainty persisting across model generations \cite{friedlingstein2014,arora2020}. 
 A portion of this uncertainty is irreducible, inherent to the challenge of predicting vegetation dynamics in a novel climate \cite{bonan2018}.
 But with the ever-increasing observational basis from remote sensing, meteorological stations, flux towers, and field campaigns, combined with increasingly comprehensive land surface modelling platforms, we might expect predictions to become more skillful across subsequent model generations.
 
-While model inter-comparison projects have had tremendous utility, it can be difficult to interpret the differences between models, or even between subsequent versions of the same model, due to the multiplicity of structural and parametric variations (McNeall et al. 2016 ESD).
+While model inter-comparison projects have had tremendous utility, it can be difficult to interpret the differences between models, or even between subsequent versions of the same model, due to the multiplicity of structural and parametric variations \cite{mcneall2016}.
 Within the model development process, there is a significant emphasis on hypothesis testing, substituting one parameterization at a time to understand the various consequences.
 However, the complexity of land models has increased to the point where understanding the full span of model function has become challenging \cite{fisher2020}, and manual model calibration appears intractable \cite{dagon2020}.
 Maintaining, improving, and interpreting complex land models benefits from thoughtful investment in software to automate and routinize important components of the development process, e.g. \citeA{collier2018}. 
@@ -66,7 +66,7 @@ One such fundamental model development step is parameter sensitivity testing and
 Because parameter values are uncertain, evaluating the effect of parameter values on model output is critical to the model development process \cite{hourdin2017} (Balaji et al. 2022 PNAS).
 When applied systematically, the result is a Parameter Perturbation Ensemble (PPE), alternatively termed a Perturbed Physics Ensemble.
 PPEs have played an important role in assessing projection uncertainty in climate models (Hawkins 2019 JAMES), (Peatier et al. 2022 GRL, Sanderson et al. 2008 JClim, Tett et al. 2022 JClim, Yamazaki et al. 2021 Clim Dyn).
-PPEs also form a basis for automated model calibration through, for example, history matching \cite{williamson2013history} or Bayesian uncertainty quantification (Cleary et al. 2021 JCP).
+PPEs also form a basis for automated model calibration through, for example, history matching \cite{williamson2013} or Bayesian uncertainty quantification (Cleary et al. 2021 JCP).
 Our goal in this project is to systematize parameter perturbation activity within our modeling framework, and develop the necessary tools and datasets to efficiently test parameter effects across the full suite of land model processes. 
 In doing so, we have generated a large PPE, comprising thousands of parameter sensitivity tests.
 In this paper we present that dataset, describe how it was produced, and survey some potential applications.
