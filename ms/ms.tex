@@ -53,8 +53,8 @@ In this paper we present that dataset, describe how it was produced, and survey 
 We are working with the Community Land Model (CLM), the land component of the Community Earth System Model, which is developed and maintained at the National Center for Atmospheric Research (NCAR).
 This work follows up on \citeA{dagon2020}, which began the process of systematically varying CLM parameters in service of automated model calibration.
 We extend that work by sampling a more exhaustive set of parameters across a broader range of land model processes.
-A set of approximately 200 parameters were varied across a range of climate scenarios.
-This dataset has already demonstrated great utility for diagnosing parameter effects, while the software and modeling infrastructure has greatly our expanded our capability to generate insights about CLM dynamics and uncertainties.
+A set of 193 parameters were varied across a range of climate scenarios.
+This dataset has already demonstrated great utility for diagnosing parameter effects, while the software and modeling infrastructure has greatly our expanded our capability to generate insights about parameter effects and uncertainties within CLM.
 
 \section{Experiment Description}
 \label{methods}
@@ -76,7 +76,7 @@ Another control on model cost is resolution. Most CLM simulations utilize nomina
 
 Multivariate spatio-temporal clustering (MVSC) has been utilized to extract patterns of climatological significance from climate model output \cite{hoffman2005} and applied to design a representativeness-based sampling network \cite{hoffman2013}. Instead of lowering resolution by coarsening a rectilinear grid, we used MVSC to strategically remove redundant grid cells, leaving only 400 grid cells that efficiently sample important model dynamics.
 
-We used k-means clustering to identify groups of grid cells with similar dynamics based on a 2$^\circ$ transient simulation (1850-2014) using the CLM-PPE codebase. We selected one representative grid cell from each cluster to stand in for the entire cluster. The representative grid cell is whichever is located nearest the cluster centroid in climate space. The set of representative grid cells comprise a `sparsegrid', which are used in lieu of a `coarse' grid. A paint-by-number approach is used to recompose mapped output and compute global means, where the output from the representative grid cell is substituted for all members of the cluster cohort.
+We used k-means clustering to identify groups of grid cells with similar dynamics based on a 2$^\circ$ transient simulation (1850-2014) using the CLM-PPE codebase. We selected one representative grid cell from each cluster to stand in for the entire cluster. The representative grid cell is whichever is located nearest the cluster centroid in climate space. The set of representative grid cells comprise a `sparsegrid', which are used in lieu of a `coarse' grid. To recompose mapped output and compute global means, the output from the representative grid cell is substituted for all members of the cluster cohort.
 
 Clustering was based on a subset of 18 meaningful CLM variables (Table \ref{tab:sg}). The clustering algorithm analyzed 12 observations of each variable per grid cell, namely the mean and interannual variability computed for six 30-year climatology windows (1865-1894, 1895-1924, ... , 1985-2014). Clusters were delineated to equalize the multi-dimensional variance across the user-specified number of groups, $k$. We tested 15 values of $k$, ranging from 10 to 800. Based on ILAMB2.5 benchmarking \cite{collier2018} against the full grid output, we opted for a 400-cluster sparsegrid, to balance computational cost against model fidelity (Supp Figure \ref{supp:ilamb}). Because our emphasis is on vegetated regions, we masked out Antarctica within the clustering algorithm, whereby we do not provide any output below 60$^\circ$S.
 
@@ -174,7 +174,7 @@ Biome analysis
 
 \section{Results}
 
-Parameters were varied across a wide variety of CLM subcomponents (Figure \ref{fig:params}). A total of 188 parameters were targeted for sensitivity testing. Many parameters were originally hard-coded, but have now been extracted to the CLM parameter file for easier manipulation. In some cases new parameters were introduced to allow perturbation of important processes. For example a sand perturbation factor ($sand\_pf$) was introduced in order to perturb the percent sand in the soil column without creating a new surface dataset. A spreadsheet detailing all of the parameters, and their ranges, is provided in the supplementary material and available online (zqz link).
+A total of 193 parameters were targeted for sensitivity testing across a wide variety of CLM subcomponents (Figure \ref{fig:params}). In some cases new parameters were introduced to allow perturbation of important processes. For example a sand perturbation factor ($sand\_pf$) was introduced in order to perturb the percent sand in the soil column without creating a new surface dataset.  A spreadsheet detailing all of the parameters, and their ranges, is provided in the supplementary material and available online (zqz link).
 
 \begin{figure}[h]
 \centering
@@ -198,15 +198,13 @@ Likewise, whereas previous spin-up methodologies required 1500 years or longer t
 
 
 Choosing the number of clusters to generate the sparsegrid involved balancing the computational savings against representational fidelity. Generally the more clusters, the 
-better the approximation oif output from the full grid can be acheived with the sparsegrid. Accuracy of global photosynthesis could be achieved with a relatively small number of clusters, with R$_2>$0.95 achieved with only 200 clusters, and RMSE$<$1PgC requiring approximately 700 clusters (Figure \ref{fig:sg}). We chose 400 clusters, based on ILAMB scores of a wide variety of output variables (Supp Figure \ref{supp:ilamb})
+better the approximation of output from the full grid can be achieved with the sparsegrid (Figure \ref{fig:sg}). Accuracy of global photosynthesis could be achieved with a relatively small number of clusters, with R$_2>$0.95 achieved with only 200 clusters, and RMSE$<$1PgC requiring approximately 700 clusters (Supp Figure zqz). We chose 400 clusters, based on ILAMB scores of a wide variety of output variables (Supp Figure \ref{supp:ilamb})
 \begin{figure}[h]
 \centering
 \includegraphics[width=25pc]{../figs/sparsegrid_gpp.pdf}
-\caption{Sparsegrid vs fullgrid (2$^{\circ}$ resolution) global annual gross primary production (GPP) across the last thirty years of a transient CLM5.1 simulation. We opted for 400 clusters to balance computational cost against representativeness.}
+\caption{Sparsegrid vs fullgrid (2$^{\circ}$ resolution) global annual gross primary production (GPP) across the last forty years of a transient CLM5.1 simulation. We opted for 400 clusters to balance computational cost against representativeness.}
 \label{fig:sg}
 \end{figure}
-
-
 
 Most of the parameter perturbations had a relatively small impact on any given output variable. For example, the distributions of GPP and NEP are concentrated around the default simulation with long tails, indicating that only a small proportion of parameters have large effects (Figure \ref{fig:violins}). One perturbation, reducing the heat capacity of sand by 20\%, proved destructive in the future climate scenario, resulting in inhospitably hot soil conditions and widespread plant death. This simulation is likely unrealistic, indicating that the perturbation range was too large, but possibly also that the model struggles to acclimate to warmer soils. This represents one of the valuable outcomes of an extensive PPE, exposing unexpected model behavior, which may belie brittle parameterizations or bugs.
 
