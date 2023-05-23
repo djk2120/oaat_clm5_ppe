@@ -206,8 +206,9 @@ better the approximation of output from the full grid can be achieved with the s
 \label{fig:sg}
 \end{figure}
 
-Most of the parameter perturbations had a relatively small impact on any given output variable. For example, the distributions of GPP and NEP are concentrated around the default simulation with long tails, indicating that only a small proportion of parameters have large effects (Figure \ref{fig:violins}). One perturbation, reducing the heat capacity of sand by 20\%, proved destructive in the future climate scenario, resulting in inhospitably hot soil conditions and widespread plant death. This simulation is likely unrealistic, indicating that the perturbation range was too large, but possibly also that the model struggles to acclimate to warmer soils. This represents one of the valuable outcomes of an extensive PPE, exposing unexpected model behavior, which may belie brittle parameterizations or bugs.
+Parameter effects could be quite large, in some cases exceeding the magnitude of switching scenarios (Figure \ref{fig:ranges}). One perturbation, reducing the heat capacity of sand by 20\%, proved destructive in the future climate scenario, resulting in inhospitably hot soil conditions and widespread plant death. A perturbation of $\pm$20\% likely exceeds the reasonable range for this parameter, but this simulation was instructive for exposing the model's response to hot soils. Carrying out an extensive PPE increases the possibility exposing unexpected model behavior, which may belie unforeseen tipping points, brittle parameterizations,  and/or bugs.
 
+A small fraction of parameters tend to explain a large amount of the ensemble variance (Figure \ref{fig:variance}). For example the same four parameters explain up to 90\% of the canopy evaporation variance across all the forcing scenarios. Conversely, most of the parameter perturbations had a relatively small impact on any given output variable. As such, the effective parameter space dimensionality for any given CLM process is expected to be much smaller than would be expected from having 193 independent parameters.
 
 \begin{figure}[h]
 \centering
