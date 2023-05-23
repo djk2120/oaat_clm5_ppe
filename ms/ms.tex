@@ -208,25 +208,18 @@ better the approximation of output from the full grid can be achieved with the s
 
 Most of the parameter perturbations had a relatively small impact on any given output variable. For example, the distributions of GPP and NEP are concentrated around the default simulation with long tails, indicating that only a small proportion of parameters have large effects (Figure \ref{fig:violins}). One perturbation, reducing the heat capacity of sand by 20\%, proved destructive in the future climate scenario, resulting in inhospitably hot soil conditions and widespread plant death. This simulation is likely unrealistic, indicating that the perturbation range was too large, but possibly also that the model struggles to acclimate to warmer soils. This represents one of the valuable outcomes of an extensive PPE, exposing unexpected model behavior, which may belie brittle parameterizations or bugs.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=\textwidth]{../figs/violins.png}
-\caption{Global annual gross primary production (GPP) and net ecosystem production (NEP) across the PPE within each of our six forcing scenarios. Markers are drawn for 10 and 0.28 PgC bins for GPP and NEP, respectively. The marker area is proportional to the number of simulations falling in that bin. The ellipses are centered about the default simulations, and are each labeled with the portion of simulations contained within the default bin.}
-\label{fig:violins}
-\end{figure}
-
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{../figs/ranges.png}
-\caption{Alternatiive for Fig 4 where I focus on the range instead of the distribution.}
+\caption{Global annual gross primary production (GPP) and net ecosystem production (NEP) across six forcing scenarios. Circles mark the CLM5.1 default simulation, and the bars span the ensemble ranges.}
 \label{fig:ranges}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{../figs/variance.pdf}
-\caption{needs caption}
+\caption{Cumulative fraction of variance explained by the most influential parameters on gross primary production and canopy evaporation. For example approximately 96\% of canopy evaporation variance is explained by the first ten parameters regardless of forcing, whereas between 74 and 92\% of GPP variance is explained by the first ten parameters. Only the top 50 parameters are shown (of 193) to improve the visualization. Note that parameter rankings differ by variable.}
 \label{fig:variance}
 \end{figure}
 
