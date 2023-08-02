@@ -34,20 +34,6 @@ eprint = {https://www.pnas.org/doi/pdf/10.1073/pnas.2202075119},
 	pages = {024002},
 }
 
-@article{cheng2023,
-author = {Cheng, Yifan and Musselman, Keith N. and Swenson, Sean and Lawrence, David and Hamman, Joseph and Dagon, Katherine and Kennedy, Daniel and Newman, Andrew J.},
-title = {Moving Land Models Toward More Actionable Science: A Novel Application of the Community Terrestrial Systems Model Across Alaska and the Yukon River Basin},
-journal = {Water Resources Research},
-volume = {59},
-number = {1},
-pages = {e2022WR032204},
-keywords = {multi-objective optimization, Community Terrestrial Systems Model, Arctic Hydrology, actionable Earth Science, adaptive surrogate-based modeling optimization},
-doi = {https://doi.org/10.1029/2022WR032204},
-url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2022WR032204},
-eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022WR032204},
-year = {2023}
-}
-
 @article{cleary2021,
 title = {Calibrate, emulate, sample},
 journal = {Journal of Computational Physics},
@@ -202,24 +188,6 @@ volume = {in press},
 doi = {10.1029/2018MS001583},
 year = {2019}
 }
-@article{lin2015,
-	title = {Optimal stomatal behaviour around the world},
-	volume = {5},
-	copyright = {2014 Springer Nature Limited},
-	issn = {1758-6798},
-	url = {https://www.nature.com/articles/nclimate2550},
-	doi = {10.1038/nclimate2550},
-	language = {en},
-	number = {5},
-	urldate = {2023-08-02},
-	journal = {Nature Climate Change},
-	author = {Lin, Yan-Shih and Medlyn, Belinda E. and Duursma, Remko A. and Prentice, I. Colin and Wang, Han and Baig, Sofia and Eamus, Derek and de Dios, Victor Resco and Mitchell, Patrick and Ellsworth, David S. and de Beeck, Maarten Op and Wallin, Göran and Uddling, Johan and Tarvainen, Lasse and Linderson, Maj-Lena and Cernusak, Lucas A. and Nippert, Jesse B. and Ocheltree, Troy W. and Tissue, David T. and Martin-StPaul, Nicolas K. and Rogers, Alistair and Warren, Jeff M. and De Angelis, Paolo and Hikosaka, Kouki and Han, Qingmin and Onoda, Yusuke and Gimeno, Teresa E. and Barton, Craig V. M. and Bennie, Jonathan and Bonal, Damien and Bosc, Alexandre and Löw, Markus and Macinins-Ng, Cate and Rey, Ana and Rowland, Lucy and Setterfield, Samantha A. and Tausz-Posch, Sabine and Zaragoza-Castells, Joana and Broadmeadow, Mark S. J. and Drake, John E. and Freeman, Michael and Ghannoum, Oula and Hutley, Lindsay B. and Kelly, Jeff W. and Kikuzawa, Kihachiro and Kolari, Pasi and Koyama, Kohei and Limousin, Jean-Marc and Meir, Patrick and Lola da Costa, Antonio C. and Mikkelsen, Teis N. and Salinas, Norma and Sun, Wei and Wingate, Lisa},
-	month = may,
-	year = {2015},
-	keywords = {Biogeography, Climate and Earth system modelling, Ecological modelling, Ecophysiology},
-	pages = {459--464},
-}
-
 @article{lovenduski2017,
   author={N S Lovenduski and G B Bonan},
   title={Reducing uncertainty in projections of terrestrial carbon uptake},
@@ -373,33 +341,5 @@ year = {2019}
 	Url = {https://doi.org/10.1007/s00382-020-05608-5},
 	Volume = {56},
 	Year = {2021},
-}
 
-@article{yan2023a,
-	title = {Characterizing uncertainty in {Community} {Land} {Model} version 5 hydrological applications in the {United} {States}},
-	volume = {10},
-	issn = {2052-4463},
-	url = {https://www.nature.com/articles/s41597-023-02049-7},
-	doi = {10.1038/s41597-023-02049-7},
-	number = {1},
-	urldate = {2023-08-02},
-	journal = {Scientific Data},
-	author = {Yan, Hongxiang and Sun, Ning and Eldardiry, Hisham and Thurber, Travis B. and Reed, Patrick M. and Malek, Keyvan and Gupta, Rohini and Kennedy, Daniel and Swenson, Sean C. and Wang, Linying and Li, Dan and Vernon, Chris R. and Burleyson, Casey D. and Rice, Jennie S.},
-	year = {2023},
-	pages = {187},
-}
-
-@article{yan2023b,
-author = {Yan, Hongxiang and Sun, Ning and Eldardiry, Hisham and Thurber, Travis B. and Reed, Patrick M. and Malek, Keyvan and Gupta, Rohini and Kennedy, Daniel and Swenson, Sean C. and Hou, Zhangshuan and Cheng, Yanyan and Rice, Jennie S.},
-title = {Large Ensemble Diagnostic Evaluation of Hydrologic Parameter Uncertainty in the Community Land Model Version 5 (CLM5)},
-journal = {Journal of Advances in Modeling Earth Systems},
-volume = {15},
-number = {5},
-pages = {e2022MS003312},
-keywords = {CLM5, parameter uncertainty, hydrologic prediction, uncertainty characterization, ensembles},
-doi = {https://doi.org/10.1029/2022MS003312},
-url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2022MS003312},
-eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022MS003312},
-year = {2023}
-}
 
