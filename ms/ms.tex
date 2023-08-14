@@ -58,7 +58,7 @@ The dataset has already demonstrated utility for diagnosing parameter effects \c
 \label{methods}
 \subsection{Model description}
 \label{sect:md}
-The is developed by the CESM Land Model Working Group and maintained at the National Center for Atmospheric Research (NCAR). This experiment utilizes the Community Land Model configuration version 5.1 (CLM5.1) of the Community Terrestrial Systems Model. The model source code and documentation are available online (\url{https://github.com/ESCOMP/CTSM}), as is a full model description \cite{lawrence2019}.
+This experiment utilizes the Community Land Model configuration version 5.1 (CLM5.1) of the Community Terrestrial Systems Model. The model source code and documentation are available online (\url{https://github.com/ESCOMP/CTSM}), as is a full model description \cite{lawrence2019}.
 
 Relative to CLM5.0, version 5.1 includes minor bug fixes, parameter adjustments, and the implementation of biomass heat storage \cite{swenson2019}. The PPE experiment required additional code modifications to enable systematic variation of the full suite of model parameters (many of which were previously `hard-coded'). We utilized the biogeochemical cycling version of CLM, which includes active carbon and nitrogen cycles. This is as opposed to the satellite phenology mode, which is driven by observed canopy properties, and was explored in \citeA{dagon2020}. We used the model in land-only mode driven by observed meteorological forcing from the GSWP3v1 reanalysis product (\url{http://hydro.iis.u-tokyo.ac.jp/GSWP3/}), with the crop model turned off.
 
@@ -196,7 +196,7 @@ Parameters governing the change in ET expected in the future tend to differ from
 \label{fig:et}
 \end{figure}
 
-The PPE is likewise useful for determining which parameters influence which model processes and where. For example the parameters controlling leaf area index vary significantly by biome (Figure \ref{fig:lai}). Plant hydraulics parameters were the most important in the tropical rain forest, photosynthetic capacity in the boreal forest, and runoff and soil evaporation in the temperate grassland/desert biome. The most influential parameters globally include parameters that were important in each of these three biomes. Because the number of potential variables, parameters, and geographical ranges of interest to the wider CLM community is larger than we can document here,  we provide a tool that can be used to explore an extended diagnostics set which summarises the $>$2TB of output data and contains 1720 figures (\url{https://webext.cgd.ucar.edu/I2000/PPEn11_OAAT}). 
+The PPE is likewise useful for determining which parameters influence which model processes and where. For example the parameters controlling leaf area index vary significantly by biome (Figure \ref{fig:lai}). Plant hydraulics parameters were the most important in the tropical rain forest, photosynthetic capacity in the boreal forest, and runoff and soil evaporation in the temperate grassland/desert biome. The most influential parameters globally include parameters that were important in each of these three biomes. 
 
 \begin{figure}[h]
 \centering
@@ -205,7 +205,9 @@ The PPE is likewise useful for determining which parameters influence which mode
 \label{fig:lai}
 \end{figure}
 
-In many cases we found it easier to utilize interactive plotting utilities to toggle through the various parameters, output variables, and forcing scenarios (Figure \ref{fig:panel}). Interactive widgets are relatively easy to generate within a data analysis session, but more difficult to host online, hence the screenshot.
+Because the number of potential variables, parameters, and geographical ranges of interest to the wider CLM community is larger than we can document here,  we provide a tool that can be used to explore an extended diagnostics set which summarises the $>$2TB of output data via approximately 2000 plots (\url{https://webext.cgd.ucar.edu/I2000/PPEn11_OAAT}). 
+
+The diagnostics website includes ranking plots (as in Figure \ref{fig:lai}) and maps of parameter effects (as in Figure \ref{fig:panel}). But these plots are repeated across a combination of model output variables and model parameters. Likewise figures are repeated for each of the various forcing scenarios. 
 
 \begin{figure}[h]
 \centering
