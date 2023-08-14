@@ -181,15 +181,15 @@ A small fraction of parameters tend to explain a large amount of the ensemble va
 \label{fig:variance}
 \end{figure}
 
-We repeated the full set of parameter perturbations across the six forcing scenarios in Table \ref{tab:exps}. This ensures that we can identify parameters that are important not just under present-day conditions, but also parameters that control responses to individual forcing variables (CO2, nitrogen deposition) and climate  In the case of evapotranspiration (ET), for example, the parameters that control the increase in ET due to warming tend to be different from the parameters that control present-day ET (Figure \ref{fig:et}). 
+We repeated the full set of parameter perturbations across the six forcing scenarios in Table \ref{tab:exps}. This ensures that we can identify parameters that are important not just under present-day conditions, but also parameters that control responses to individual forcing variables (CO2, nitrogen deposition) and climate.  In the case of evapotranspiration (ET), for example, the parameters that control the increase in ET due to warming tend to be different from the parameters that control present-day ET (Figure \ref{fig:et}). 
 ET response can differ significantly from the default case (i.e. stray from the orange line), even when ET is near the default under present-day conditions (i.e. within the shaded region).
-Besides \textit{kmax}, all of the parameters that appear in the top eight parameters for ET response govern plant acclimation to temperature. 
+Besides \textit{kmax}, all of the parameters that appear in the top eight parameters for ET response to future climate govern plant acclimation to temperature. 
 These parameters, while not especially influential on present-day ET, would be among the most influential in governing the trend in ET going forward, illustrating the potential limitations of calibration to ambient conditions.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{../figs/ET_response.png}
-\caption{(a) Global annual average evapotranspiration (ET) in the warm forcing scenario vs. our control experiment. The shading spans the default ET in the control experiment, $\pm$1 W/m2. The response of ET to future climate with default parameters is +8.8\%. The orange line shows the expected future ET should the model conform to the default ET response. 
+\caption{(a) Global annual average evapotranspiration (ET) in the future climate scenario vs. our control experiment. The shading spans the default ET in the control experiment, $\pm$1 W/m2. The response of ET to future climate with default parameters is +8.8\%. The orange line shows the expected future ET assuming a linear default ET response. 
 (b) The top 8 parameters governing global ET in the control experiment.
 (c) The top 8 parameters governing ET response to future climate, i.e. the ratio of future ET to control ET.
 Parameters governing the change in ET expected in the future tend to differ from the parameters controlling present-day ET.}
@@ -230,21 +230,17 @@ We opted for six forcing scenarios to identify parameter effects not just in pre
 
 A one-at-a-time PPE cannot capture parameter interactions, and our min/max sampling protocol precludes diagnosing non-linearities. As such, this dataset will be insufficient for most calibration activities or for estimating overall parametric uncertainty. A primary utility of our dataset is that we can diagnose parameter effects without the uncertainty contributed by an emulator or a regression model. As such, it is easy to diagnose which parameters are most influential on a given process. We have published a large set of ensemble diagnostic plots online, which serves as a valuable enhancement to our model technical documentation. Now, in addition to seeing the definition of a given parameter, and the relevant equations, a model user can easily investigate the magnitude and spatial patterns of its effects (e.g. Figure \ref{fig:panel}).
 
-Several spin-off projects have leveraged the work presented here, including some that have already reached publication status \cite{cheng2023,yan2023a,yan2023b}. These projects utilized the output from this ensemble to filter for parameters that influence the relevant study domains and used the parameter ranges collated in Section zqz. Our project has accelerated parameter exploration work within our collaborator network by providing:
+Several spin-off projects have leveraged the work presented here, including some that have already reached publication status \cite{cheng2023,yan2023a,yan2023b}. These projects utilized the output from this ensemble to filter for parameters that influence the relevant study domains and used the parameter ranges collated in Section \ref{sect:exps}. Our project has accelerated parameter exploration work within our collaborator network by providing:
 
 \begin{itemize}
 \item Parameter ranges for nearly 200 parameters
-\item Machine learning smart low resolution unstructured grid (sparsegrid)
+\item Purpose-built unstructured grid (sparsegrid)
 \item Accelerated spinup procedure
 \item Ensemble generation scripting toolchain
 \item Parameter sensitivity diagnostics for nearly 200 parameters across 6 forcing scenarios
 \end{itemize} 
 
-We have likewise begun a follow-on activity that perturbs a subset of important parameters with the Latin hypercube sampling strategy to work towards routine model calibration.  Our first foray into exploring the potential for global calibration is with leaf area index due to controls that this variable has on biogeophysical and biogeochemical fluxes. By investing in the infrastructure that we introduce here, all of our subsequent paramter perturbation experiments have required much less time and effort. We expect to continue to extend our efforts in this domain towards model calibration, as well as repeat the foundational one-at-a-time experiments with subsequent model releases.
-
-\section{Conclusion}
-Do we want / need an explicit conclusion?
-
+We have likewise begun a follow-on activity that perturbs a subset of important parameters with the Latin hypercube sampling strategy \cite{Mckay_2000} to work towards routine model calibration.  Our first foray into exploring the potential for global calibration is with leaf area index due to controls that this variable has on biogeophysical and biogeochemical fluxes. By investing in the infrastructure that we introduce here, all of our subsequent parameter perturbation experiments have required much less time and effort. We expect to continue to extend our efforts in this domain towards model calibration, as well as repeat the foundational one-at-a-time experiments with subsequent model releases.
 
 \section*{Open Research Section}
 
