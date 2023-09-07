@@ -9,7 +9,7 @@ def get_exp(exp,tape='h0',dvs=[]):
     oaats=['AF1855','AF2095','C285','C867','NDEP','CTL2010']
     if exp in oaats:
         key='/glade/campaign/asp/djk2120/PPEn11/csvs/surviving.csv'
-        top='/glade/campaign/asp/djk2120/PPEn11/'
+        top='/glade/campaign/cgd/tss/projects/PPE/PPEn11_OAAT/'
         code='OAAT'
         yy=()
         minmax=True
@@ -43,8 +43,8 @@ def get_map(da,sgmap=None,file='sgmap.nc'):
         sgmap=xr.open_dataset(file)
     return da.sel(gridcell=sgmap.cclass).where(sgmap.notnan).compute()
 
-def rank_plot(da,nx,ax=None):
-    x = top_n(da,nx)
+def rank_plot(da,nx,ax=None,sortby='delta'):
+    x = top_n(da,nx,sortby=sortby)
     xdef = da.sel(param='default',minmax='min')
     
     if x.dims[0]=='minmax':
@@ -64,10 +64,16 @@ def rank_plot(da,nx,ax=None):
         ax.plot([xmin,xmax],[i,i],'r')
     ax.set_yticks(range(nx))
     ax.set_yticklabels([p[:15] for p in x.param.values]) #[:15] shortens param names to 15 characters max
-        
-def top_n(da,nx):
-    ''' return top_n by param effect '''
-    dx=abs(da.sel(minmax='max')-da.sel(minmax='min'))
+    
+def top_n(da,nx,sortby='delta'):
+    ''' return top_n sorted by param effect or min-val or maxval '''
+    flip={'max':1,'min':-1}
+    if sortby=='delta':
+        dx=abs(da.sel(minmax='max')-da.sel(minmax='min'))
+    elif sortby=='max':
+        dx=da.max(dim='minmax')
+    else:
+        dx=-da.min(dim='minmax')
     ix=dx.argsort()[-nx:].values
     x=da.isel(param=ix)
     return x
@@ -102,7 +108,7 @@ def get_ds(files,dims,dvs=[],appends={}):
              
     return ds
 
-def get_files(exp,tape,code='OAAT',yy=(),top='/glade/campaign/asp/djk2120/PPEn11/',key='/glade/campaign/asp/djk2120/PPEn11/csvs/surviving.csv',minmax=True):
+def get_files(exp,tape,code='OAAT',yy=(),top='/glade/campaign/cgd/tss/projects/PPE/PPEn11_OAAT/',key='/glade/campaign/asp/djk2120/PPEn11/csvs/surviving.csv',minmax=True):
 
     df=pd.read_csv(key)
     allfiles=all_files(exp,tape=tape,code=code,yy=yy,top=top)
@@ -148,7 +154,7 @@ def get_files(exp,tape,code='OAAT',yy=(),top='/glade/campaign/asp/djk2120/PPEn11
     return files,appends,dims
 
 
-def all_files(exp,tape='h0',code='OAAT',yy=(),top='/glade/campaign/asp/djk2120/PPEn11/'):
+def all_files(exp,tape='h0',code='OAAT',yy=(),top='/glade/campaign/cgd/tss/projects/PPE/PPEn11_OAAT/'):
     d=top+exp+'/hist/'
     
     files=np.array(sorted(glob.glob(d+'*'+code+'*'+tape+'*')))
@@ -167,7 +173,7 @@ def all_files(exp,tape='h0',code='OAAT',yy=(),top='/glade/campaign/asp/djk2120/P
             yrs=yrs[ix]
 
     #index by key
-    keys=np.array([code+f.split(code)[1].split('.')[0] for f in files])
+    keys=np.array([f.split('.clm2.')[0].split('_')[-1] for f in files])
     ny0=(keys==keys[0]).sum()
     out={}
     for key in keys:
