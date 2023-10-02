@@ -4,7 +4,7 @@ import numpy as np
 import glob
 
 
-def get_exp(exp,tape='h0',dvs=[]):
+def get_exp(exp,tape='h0',dvs=[],yy=[]):
     
     oaats=['AF1855','AF2095','C285','C867','NDEP','CTL2010']
     if exp in oaats:
@@ -13,10 +13,10 @@ def get_exp(exp,tape='h0',dvs=[]):
         code='OAAT'
         yy=()
         minmax=True
+        files,appends,dims=oaatfiles(exp,tape,code=code,yy=yy,top=top,key=key,minmax=minmax)
+    else:
+        files,appends,dims=lhcfiles(yy[0],yy[1],tape=tape)
         
-        
-        
-    files,appends,dims=get_files(exp,tape,code=code,yy=yy,top=top,key=key,minmax=minmax)
     ds=get_ds(files,dims,dvs=dvs,appends=appends)
     
     return ds
@@ -108,7 +108,59 @@ def get_ds(files,dims,dvs=[],appends={}):
              
     return ds
 
-def get_files(exp,tape,code='OAAT',yy=(),top='/glade/campaign/cgd/tss/projects/PPE/PPEn11_OAAT/',key='/glade/campaign/asp/djk2120/PPEn11/csvs/surviving.csv',minmax=True):
+def lhcfiles(yr0,yr1,tape='h0',dropdef=False):
+    fs=[]
+    for x in ['transient','ssp370v2']:
+        d='/glade/campaign/asp/djk2120/PPEn11/'+x+'/hist/'
+        fs=[*fs,*sorted(glob.glob(d+'*LHC*'+tape+'*'))]
+    
+    #discern year
+    fs =np.array(fs)
+    yrs=np.array([int(f.split(tape)[1][1:5]) for f in fs])
+
+    #bump back yr0, if needed
+    uyrs=np.unique(yrs)
+    yr0=uyrs[(uyrs/yr0)<=1][-1]
+
+    #find index to subset files by year
+    ix    = (yrs>=yr0)&(yrs<=yr1)
+    fs    = fs[ix] 
+
+    #reorganize files
+    mems=np.array(['LHC'+f.split('LHC')[1][:4] for f in fs])
+    files=[list(fs[mems==mem]) for mem in np.unique(mems)]
+    
+    #collect parameter info
+    key='/glade/campaign/asp/djk2120/PPEn11/csvs/lhc220926.txt'
+    df=pd.read_csv(key)
+    params=[p for p in df]
+    params.remove('member')
+    if dropdef:
+        defp=[]
+        files=files[1:]
+    else:
+        defp=[np.nan]
+    appends={p:xr.DataArray([*defp,*df[p].values],dims='ens') for p in params}
+    appends['param']=xr.DataArray(params,dims='param')
+    
+    #collect some forcing info
+    singles=['FSDS','RAIN','SNOW']
+    tmp=get_ds(files[0],dims=['time'])
+    for v in singles:
+        appends[v]=tmp[v]
+    appends['PREC']=appends['RAIN']+appends['SNOW']
+    
+    #add in gridcell info
+    tmp=xr.open_dataset(files[0][0])
+    singles=['grid1d_lat','grid1d_lon']
+    for v in singles:
+        appends[v]=tmp[v]
+    
+    dims=['ens','time']
+    
+    return files,appends,dims
+
+def oaatfiles(exp,tape,code='OAAT',yy=(),top='/glade/campaign/cgd/tss/projects/PPE/PPEn11_OAAT/',key='/glade/campaign/asp/djk2120/PPEn11/csvs/surviving.csv',minmax=True):
 
     df=pd.read_csv(key)
     allfiles=all_files(exp,tape=tape,code=code,yy=yy,top=top)
