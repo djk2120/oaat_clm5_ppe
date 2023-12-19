@@ -1,0 +1,9 @@
+postprocessing via:
+bash batch.sh &> batch.log &
+
+wait for those jobs to all finish, and then:
+qsub enscat.sh
+
+oaat_postp.py is the workhorse
+
+I haven't figured out how to get dask workers in a batch context, so I am reading in files one at a time and concatenating them accordingly, with parallelization via the job scheduler.
