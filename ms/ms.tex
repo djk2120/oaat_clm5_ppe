@@ -197,8 +197,8 @@ A small fraction of parameters tend to explain a large amount of the ensemble va
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{../figs/variance.pdf}
-\caption{Cumulative fraction of variance explained by the most influential parameters on gross primary production and canopy evaporation. For example, approximately 96\% of canopy evaporation variance is explained by the first ten parameters regardless of forcing, whereas between 74 and 92\% of GPP variance is explained by the first ten parameters. Only the top 50 parameters are shown (of 211) to improve the visualization. Note that parameter rankings differ by variable.}
+\includegraphics[width=\textwidth]{../figs/variance.png}
+\caption{Cumulative fraction of variance explained by the most influential parameters on GPP and canopy evaporation. Approximately 96\% of canopy evaporation variance can be explained by the ten most influential parameters, whereas 30 parameters are required to explain 96\% of GPP variance.}
 \label{fig:variance}
 \end{figure}
 
@@ -207,15 +207,7 @@ ET response can differ significantly from the default case (i.e. stray from the 
 Besides \textit{kmax}, all of the parameters that appear in the top eight parameters for ET response to future climate govern plant acclimation to temperature. 
 These parameters, while not especially influential on present-day ET, would be among the most influential in governing the trend in ET going forward, illustrating the potential limitations of calibration to ambient conditions.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=\textwidth]{../figs/ET_response.png}
-\caption{(a) Global annual average evapotranspiration (ET) in the future climate scenario vs. our control experiment. The shading spans the default ET in the control experiment, $\pm$1 W/m2. The response of ET to future climate with default parameters is +8.8\%. The orange line shows the expected future ET assuming a linear default ET response. 
-(b) The top 8 parameters governing global ET in the control experiment.
-(c) The top 8 parameters governing ET response to future climate, i.e. the ratio of future ET to control ET.
-Parameters governing the change in ET expected in the future tend to differ from the parameters controlling present-day ET.}
-\label{fig:et}
-\end{figure}
+
 
 The PPE is likewise useful for determining which parameters influence which model processes and where. For example the parameters controlling leaf area index vary significantly by biome (Figure \ref{fig:lai}). Plant hydraulics parameters were the most important in the tropical rain forest, photosynthetic capacity in the boreal forest, and runoff and soil evaporation in the temperate grassland/desert biome. The most influential parameters for leaf area index globally include parameters that were important in each of these three biomes. 
 
@@ -229,6 +221,14 @@ The PPE is likewise useful for determining which parameters influence which mode
 Because the number of potential variables, parameters, and geographical ranges of interest to the wider CLM community is larger than we can document here,  we provide a tool that can be used to explore an extended diagnostics set which summarises the $>$2TB of output data via approximately 2000 plots (\url{https://webext.cgd.ucar.edu/I2000/PPEn11_OAAT}). 
 
 The diagnostics website includes ranking plots (as in Figure \ref{fig:lai}) and maps of parameter effects (as in Figure \ref{fig:panel}). But these plots are repeated across a combination of model output variables and model parameters. Likewise figures are repeated for each of the various forcing scenarios. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{../figs/main/NEP_response.png}
+\caption{NEP response}
+\label{fig:nep}
+\end{figure}
+
 
 \begin{figure}[h]
 \centering
