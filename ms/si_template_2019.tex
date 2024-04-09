@@ -1,51 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% AGUtmpl.tex: this template file is for articles formatted with LaTeX2e,
-% Modified December 2018
-%
-% This template includes commands and instructions
-% given in the order necessary to produce a final output that will
-% satisfy AGU requirements.
-%
-% FOR FIGURES, DO NOT USE \psfrag
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% IMPORTANT NOTE:
-%
-% SUPPORTING INFORMATION DOCUMENTATION IS NOT COPYEDITED BEFORE PUBLICATION.
-%
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Step 1: Set the \documentclass
-%
-%
-% PLEASE USE THE DRAFT OPTION TO SUBMIT YOUR PAPERS.
-% The draft option produces double spaced output.
-%
-% Choose the journal abbreviation for the journal you are
-% submitting to:
 
-% jgrga JOURNAL OF GEOPHYSICAL RESEARCH (use for all of them)
-% gbc   GLOBAL BIOCHEMICAL CYCLES
-% grl   GEOPHYSICAL RESEARCH LETTERS
-% pal   PALEOCEANOGRAPHY
-% ras   RADIO SCIENCE
-% rog   REVIEWS OF GEOPHYSICS
-% tec   TECTONICS
-% wrr   WATER RESOURCES RESEARCH
-% gc    GEOCHEMISTRY, GEOPHYSICS, GEOSYSTEMS
-% sw    SPACE WEATHER
-% ms    JAMES
-% ef    EARTH'S FUTURE
-%
-%
-%
-% (If you are submitting to a journal other than jgrga,
-% substitute the initials of the journal for "jgrga" below.)
 
-\documentclass[draft,jgrga]{agutexSI2019}
+\documentclass[draft,ms]{agutexSI2019}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -124,39 +79,16 @@
 %\includegraphics{agu_pubart-white_reduced.eps}
 
 
-\title{Supporting Information for "Insert Title"}
-%
-% e.g., \title{Supporting Information for "Terrestrial ring current:
-% Origin, formation, and decay $\alpha\beta\Gamma\Delta$"}
-%
-%DOI: 10.1002/%insert paper number here%
-
-%% ------------------------------------------------------------------------ %%
-%
-%  AUTHORS AND AFFILIATIONS
-%
-%% ------------------------------------------------------------------------ %%
+\title{Supporting Information for ``CLM5-PPE"}
 
 
-% List authors by first name or initial followed by last name and
-% separated by commas. Use \affil{} to number affiliations, and
-% \thanks{} for author notes.
-% Additional author notes should be indicated with \thanks{} (for
-% example, for current addresses).
-
-% Example: \authors{A. B. Author\affil{1}\thanks{Current address, Antartica}, B. C. Author\affil{2,3}, and D. E.
-% Author\affil{3,4}\thanks{Also funded by Monsanto.}}
-
-\authors{=Authors=}
+\authors{D. Kennedy\affil{1,2}}
 
 
-% \affiliation{1}{First Affiliation}
-% \affiliation{2}{Second Affiliation}
-% \affiliation{3}{Third Affiliation}
-% \affiliation{4}{Fourth Affiliation}
 
-\affiliation{=number=}{=Affiliation Address=}
-%(repeat as many times as is necessary)
+\affiliation{1}{Climate and Global Dynamics Laboratory, NCAR, Boulder, CO, USA}
+\affiliation{2}{Earth Research Institute, University of California, Santa Barbara, CA, USA}
+
 
 
 
@@ -199,14 +131,13 @@
 \item Captions for Audio S1 to Sx
 \end{enumerate}
 
-\noindent\textbf{Introduction}
-%Type or paste your text here. The introduction gives a brief overview of the supporting information. You should include information %about as many of the following as possible (when appropriate):
-% 1. a general overview of the kind of data files;
-% 2. information about when and how the data were collected or created;
-% 3. a general description of processing steps used;
-% 4. any known imperfections or anomalies in the data.
-
-%\clearpage
+\noindent\textbf{Figures}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{../figs/main/bar.png}
+\caption{211 parameters were perturbed across the various domains of the land model.}
+\label{fig:params}
+\end{figure}
 
 %Delete all unused file types below. Copy/paste for multiples of each file type as needed.
 \noindent\textbf{Text S1.}
@@ -293,7 +224,7 @@
 %
 %% ------------------------------------------------------------------------ %%
 \end{article}
-\clearpage
+
 
 % Copy/paste for multiples of each file type as needed.
 
