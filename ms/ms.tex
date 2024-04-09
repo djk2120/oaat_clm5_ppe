@@ -7,7 +7,7 @@
 \usepackage{pdflscape}
 
 \usepackage{xr}
-\externaldocument{suppinfo}
+\externaldocument{ms/supp}
 
 \linenumbers
 
@@ -131,7 +131,7 @@ Given the large parameter space, to conduct an initial analysis of the response 
 
 Each simulation ran for 150 years, with the first 140 for spin-up (as described above in Section \ref{sect:mcn}), followed by a 10-year period for analysis. We opted for six different forcing scenarios to understand the intersection of parameter effects with different forcing agents associated with climate change (Table \ref{tab:exps}). The GSWP3v1 reanalysis product (\url{http://hydro.iis.u-tokyo.ac.jp/GSWP3/}) served as our atmospheric forcing, and is the default forcing data for CLM5 \cite{lawrence2019}. We applied climate and CO$_2$ anomalies independently, in order to disentangle their effects on parameter rankings. Future and pre-industrial climate forcing datasets were prepared by adding GSWP3v1 anomalies from 2005-2014 to the corresponding mean climate change signal (see Table \ref{tab:exps}; AF2095 and AF1855). We inferred the mean climate change signal using the CESM2 large ensemble experiment \cite{rodgers2021}, computed as the average of the difference between the period of interest and present day for the six atmospheric forcing variables. Our future climate scenario utilizes the end-of-century climate from the SSP3-7.0, a high-emissions scenario, forcing in order to allow comparison with the existing CESM2 large ensemble. Our software infrastructure has greatly reduced the effort and computational cost associated with ensemble generation, such that it would be easy to add additional ensembles, to explore other emission scenarios or climate regimes (e.g. Last Glacial Maximum). 
 
-We constrained the ranges of several parameters based on historical survivability (Figure \ref{abcdefg}). 
+We constrained the ranges of several parameters based on historical survivability (Figure \ref{supp:surv}). 
 
 \label{sect:exps}
  \begin{table}[h]
@@ -161,7 +161,9 @@ Biome analysis
 \section{Results}
 
 Given the challenging size of the CLM5-BGC parameter space (Figure \ref{fig:params}), and the need to probe and document parametric uncertainties within operational land surface models, a major goal of this project was to develop a fast configuration of CLM5-BGC that would allow for a large number of simulations given the available computational resources.
-
+Combining the SASU spinup approach with our sparsegrid formulation (see Section \ref{sect:sg} for details) yielded a configuration approximately 500 times less costly than the 1-degree configuration most often used for CLM simulations (Figure \ref{fig:sims}).
+There are 22648, 5666, and 1764 land grid cells in standard 1$^{\circ}$, 2$^{\circ}$, and 4$^{\circ}$x5$^{\circ}$ CLM simulations, respectively, as compared to just 400 grid cells in the sparsegrid.
+Likewise, whereas previous spin-up methodologies required 1500 years or longer to satisfy equilibrium criteria, the SASU approach enabled by matrix representation yielded satisfactory spin-up efficiency for our experiment within 140 years.
 
 \begin{figure}[h]
 \centering
@@ -171,9 +173,7 @@ Given the challenging size of the CLM5-BGC parameter space (Figure \ref{fig:para
 \end{figure}
 
 
-Combining the SASU spinup approach with our sparsegrid formulation (see Section \ref{sect:sg} for details) yielded a configuration approximately 500 times cheaper than the 1-degree configuration most often used for CLM simulations (Figure \ref{fig:sims}).
-There are 22648, 5666, and 1764 land grid cells in standard 1$^{\circ}$, 2$^{\circ}$, and 4$^{\circ}$x5$^{\circ}$ CLM simulations, respectively, as compared to just 400 grid cells in the sparsegrid.
-Likewise, whereas previous spin-up methodologies required 1500 years or longer to satisfy equilibrium criteria, the SASU approach enabled by matrix representation yielded satisfactory spin-up efficiency for our experiment within 140 years.
+
 
 
 \begin{figure}[h]
