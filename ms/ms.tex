@@ -131,7 +131,16 @@ Given the large parameter space, to conduct an initial analysis of the response 
 
 Each simulation ran for 150 years, with the first 140 for spin-up (as described above in Section \ref{sect:mcn}), followed by a 10-year period for analysis. We opted for six different forcing scenarios to understand the intersection of parameter effects with different forcing agents associated with climate change (Table \ref{tab:exps}). The GSWP3v1 reanalysis product (\url{http://hydro.iis.u-tokyo.ac.jp/GSWP3/}) served as our atmospheric forcing, and is the default forcing data for CLM5 \cite{lawrence2019}. We applied climate and CO$_2$ anomalies independently, in order to disentangle their effects on parameter rankings. Future and pre-industrial climate forcing datasets were prepared by adding GSWP3v1 anomalies from 2005-2014 to the corresponding mean climate change signal (see Table \ref{tab:exps}; AF2095 and AF1855). We inferred the mean climate change signal using the CESM2 large ensemble experiment \cite{rodgers2021}, computed as the average of the difference between the period of interest and present day for the six atmospheric forcing variables. The future climate scenario utilizes the end-of-century climate from the SSP3-7.0, a high-emissions scenario, forcing in order to allow comparison with the existing CESM2 large ensemble. Our software infrastructure has greatly reduced the effort and computational cost associated with ensemble generation, such that it would be easy to add additional ensembles, to explore other emission scenarios or climate regimes (e.g. Last Glacial Maximum). 
 
-We constrained the ranges of several parameters based on historical survivability (Figure \ref{supp:surv}). 
+For a small percentage of parameters, the perturbation ranges were severe enough to eradicate a given PFT across all or part of its geographical range (Supp Figure S1). 
+In the case that one or more PFTs did not survive a parameter perturbation, we iteratively re-ran the simulation with slightly less extreme parameter values until the PFT survived.
+A PFT is classified as surviving in a given gridcell if it achieves an LAI of at least 0.1 m2/m2 at any point during the production portion of the simulation (i.e. post-spinup).
+A PFT is classified as surviving for a given parameter perturbation if at least 50\% of the area that
+was alive with the default parameters is alive in the perturbed simulation.
+For the analyses in this paper, we constrained the ranges of several parameters based on survivability in the low CO$_2$, pre-industrial climate, and control climate ensembles to improve the chances that all PFTs would be able to survive to present-day in a transient 1850 to present-day simulation.
+We did not constrain parameter ranges based on future climate, high CO$_2
+$, or increased nitrogen deposition.
+Original and constrained ranges are available in the supplemental materials spreadsheet (zqz).
+ 
 
 \label{sect:exps}
  \begin{table}[h]
@@ -218,12 +227,7 @@ This PPE is especially useful for determining which parameters influence which m
 We repeated the full set of parameter perturbations across the six forcing scenarios in Table \ref{tab:exps}. This ensures that we can identify parameters that are important not just under present-day conditions, but also parameters that control the response to forcing (CO2, nitrogen deposition) and climate.
 For example, the parameters that control present-day NEP differ  from the parameters that control NEP in the high CO$_2$ scenario (Figure \ref{fig:nep}a,b). NEP increases by approximately 50\% at 867 ppm with the default parameters, but can actually decrease with certain parameter settings (Figure \ref{fig:nep}c). One key parameter is \textit{tpuse\_sf}, which is a scalar perturbation factor influencing the triose phosphate limitations on photosynthesis. Triose phosphate limitation is difficult to quantify and has not been observed to significantly hinder photosynthesis under present-day CO$_2$ concentrations (cite Kumarathunge et al). In CLM5.1, this parameter is not particularly influential on NEP at 367 ppm (ranked 39, not shown), but is third most influential with high CO$_2$. 
 
-The future climate experiment is 3K(zqz) warmer averaged over our study domain (land-only, Antarctica excluded, Supp Figure S4). This led to an increase in evapotranspiration of 8.8\% relative to the control simulation when using the default CLM5.1 parameters (Figure \ref{fig:nep}f). While the parameters that most strongly affect global average ET in both the control and future climates are generally the same (Figure \ref{fig:nep}d,e), a distinct set of parameters govern the change in ET due to warming (Figure \ref{fig:nep}f). While the control simulation is primarily influenced by hydrology and stomatal conductance parameters, the response of ET to warming is largely controlled by photosynthesis acclimation parameters (i.e. \textit{tpuse\_sf}, \textit{kcha}, \textit{vcmaxha}, \textit{vcmaxhd}, \textit{lmrhd}, and \textit{cpha}). The scale of ET response may be inflated, given that these are land-only experiments, and an interactive atmosphere could modulate the ET response. 
-
-
-
-
-
+The future climate experiment is 4.3K warmer averaged over our study domain (land-only, Antarctica excluded, Supp Figure S4). This led to an increase in evapotranspiration of 8.8\% relative to the control simulation when using the default CLM5.1 parameters (Figure \ref{fig:nep}f). While the parameters that most strongly affect global average ET in both the control and future climates are generally the same (Figure \ref{fig:nep}d,e), a distinct set of parameters govern the change in ET due to warming (Figure \ref{fig:nep}f). While the control simulation is primarily influenced by hydrology and stomatal conductance parameters, the response of ET to warming is largely controlled by photosynthesis acclimation parameters (i.e. \textit{tpuse\_sf}, \textit{kcha}, \textit{vcmaxha}, \textit{vcmaxhd}, \textit{lmrhd}, and \textit{cpha}). In a coupled ESM, land-atmosphere interactions would modulate these parameter effects, such that the parameter rankings are likely more credible than the absolute values of the parameter effects.
 
 
 \begin{figure}[h]
@@ -233,7 +237,8 @@ The future climate experiment is 3K(zqz) warmer averaged over our study domain (
 \label{fig:lai}
 \end{figure}
 
-Because the number of potential variables, parameters, and geographical ranges of interest to the wider CLM community is larger than we can document here,  we provide a tool that can be used to explore an extended diagnostics set which summarises the $>$2TB of output data via approximately 2000 plots (\url{https://webext.cgd.ucar.edu/I2000/PPEn11_OAAT}). The diagnostics website includes ranking plots (as in Figure \ref{fig:lai}) and maps of parameter effects (as in Figure \ref{fig:panel}). But these plots are repeated across a combination of model output variables and model parameters. Likewise figures are repeated for each of the various forcing scenarios. 
+In this paper, we focus primarily on global and biome-level parameter rankings. However it is also possible to inspect the geographic footprint of parameter perturbations by projecting the sparsegrid output to standard lat/lon coordinates (see Section \ref{sect:sg} for details). For example, perturbing the \textit{medlynslope} parameter has a large effect on global runoff, but primarily via its effects in vegetated areas (Figure \ref{fig:map}). 
+Because the number of potential variables, parameters, and geographical ranges of interest to the wider CLM community is larger than we can document here,  we provide a tool that can be used to explore an extended diagnostics set which summarises the $>$2TB of output data via approximately 2000 plots (\url{https://webext.cgd.ucar.edu/I2000/PPEn11_OAAT}). The diagnostics website includes ranking plots (as in Figure \ref{fig:lai}) and maps of parameter effects (as in Figure \ref{fig:map}). These plots are repeated across a combination of model output variables and model parameters. Likewise figures are repeated for each of the various forcing scenarios. 
 
 \begin{figure}[h]
 \centering
@@ -247,7 +252,7 @@ Because the number of potential variables, parameters, and geographical ranges o
 \centering
 \includegraphics[width=\textwidth]{../figs/QRUNOFFabs_x_medlynslope_CTL2010.png}
 \caption{Map of the effect of perturbing medlynslope on runoff within the control ensemble. Increasing medlynslope tends to reduce runoff, but only in regions with sufficient vegetation activity. This is one example of many plots available online (\url{https://webext.cgd.ucar.edu/I2000/PPEn11_OAAT}) in a broader diagnostics set. }
-\label{fig:panel}
+\label{fig:map}
 \end{figure}
 
 \section{Discussion}
