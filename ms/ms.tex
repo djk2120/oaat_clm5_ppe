@@ -126,6 +126,7 @@ Solar radiation (FSDS) & Soil liquid water (TOTSOILLIQ) & Total liquid runoff (Q
 
 \subsection{Experimental Design}
 Identification of the complete parameter set of a land surface model is in itself a non-trivial exercise, as in practice, many empirical constants were hard-coded and not amenable to systematic perturbation. For the purposes of this activity, we identified a broad set of 211 CLM-BGC parameters, and enabled their modification via the model input files. Several domains were not perturbed, including crops, CH$_4$, VOC, and dust emissions, urban properties, and river flow parameters. The crop model was not utilized as our initial focus is on unmanaged land.
+Of the 211 parameters, 145 are scalar-valued, with a single parameter value acting globally. The remaining 66 parameters include a plant functional type (PFT) dimension, with the potential for different parameter values for each unique plant functional type. Not all parameters are currently utilizing this functionality, such as \textit{medlynintercept} where the default value is 100 $\mu$mol H$_2$O for all sixteen of CLM's natural vegetation PFTs.
 
 Given the large parameter space, to conduct an initial analysis of the response of the model to parametric uncertainty, we decided to vary each parameter independently, exploring the impact of low and high values. To define parameter ranges we created an online spreadsheet and solicited domain-area experts to provide a minimum and maximum value for each parameter. In some cases literature values were directly utilized, but in many cases, expert judgment was used. The spreadsheet, with literature references and parameter descriptions is available online and in appendix zqz. In some cases parameters could not or should not be perturbed independently, because they feature inherent co-dependence. In the case of nitrogen fixation costs, we opted to perturb the parameters independently, but also as a group (`KCN'), to enforce a change in overall nitrogen limitation in lieu of switching from one uptake pathway to another. We likewise opted to perturb soil hydraulic parameters directly (e.g. saturated hydraulic conductivity) and also via perturbations to the soil texture (percent sand, clay, and silt).
 
@@ -133,13 +134,13 @@ Each simulation ran for 150 years, with the first 140 for spin-up (as described 
 
 For a small percentage of parameters, the perturbation ranges were severe enough to eradicate a given PFT across all or part of its geographical range (Supp Figure S1). 
 In the case that one or more PFTs did not survive a parameter perturbation, we iteratively re-ran the simulation with slightly less extreme parameter values until the PFT survived.
-A PFT is classified as surviving in a given gridcell if it achieves an LAI of at least 0.1 m2/m2 at any point during the production portion of the simulation (i.e. post-spinup).
-A PFT is classified as surviving for a given parameter perturbation if at least 50\% of the area that
+A PFT was classified as surviving in a given gridcell if it achieves an LAI of at least 0.1 m2/m2 at any point during the production portion of the simulation (i.e. post-spinup).
+A PFT was classified as surviving for a given parameter perturbation if at least 50\% of the area that
 was alive with the default parameters is alive in the perturbed simulation.
 For the analyses in this paper, we constrained the ranges of several parameters based on survivability in the low CO$_2$, pre-industrial climate, and control climate ensembles to improve the chances that all PFTs would be able to survive to present-day in a transient 1850 to present-day simulation.
 We did not constrain parameter ranges based on future climate, high CO$_2
 $, or increased nitrogen deposition.
-Original and constrained ranges are available in the supplemental materials spreadsheet (zqz).
+In total 16 of the 211 parameters had the parameter range constrained to some extent. Original and constrained ranges are available in the supplemental materials spreadsheet (zqz).
  
 
 \label{sect:exps}
