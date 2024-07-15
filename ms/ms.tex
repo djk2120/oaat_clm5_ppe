@@ -44,7 +44,16 @@ F. Li\affil{11}, D.L. Lombardozzi\affil{1,12}, Y. Luo\affil{12}, J.K. Shuman\aff
 \end{keypoints}
 
 \begin{abstract}
-[ enter your Abstract here ]
+\begin{itemize}
+\item 211 parameters perturbed
+\item featherweight clm configuration, 500x less costly
+\item parameter effects can exceed scenario effects
+\item large dataset available online providing parameter ranges and effect sizes useful for future studies
+\item software infrastructure developed to facilitate routine investigation of parameter sensitivity and uncertainty, as well as automated calibration
+\item small number of parameters explains a large fraction of variance 
+\item most important parameters can vary regionally and also based on climate forcing
+
+\end{itemize}
 \end{abstract}
 
 
@@ -170,7 +179,7 @@ Biome analysis
 
 \section{Results}
 
-Given the very large size of the CLM5-BGC parameter space (Figure \ref{fig:params}), and the desire to probe and document parametric uncertainties within operational land surface models, a major goal of this project was to develop a fast configuration of CLM5-BGC that would allow for a large number of simulations given the available computational resources.
+Given the very large size of the CLM5-BGC parameter space (Figure \ref{fig:params}), and the relatively expensive computational cost of standard model configurations, a major goal of this project was to develop a fast configuration of CLM5-BGC that would allow for a large number of simulations.
 Combining the SASU spinup approach with the sparsegrid formulation (see Section \ref{sect:sg} for details) yielded a configuration approximately 500 times less costly than the 1-degree configuration most often used for CLM simulations (Figure \ref{fig:sims}).
 There are 22648, 5666, and 1764 land grid cells in standard 1$^{\circ}$, 2$^{\circ}$, and 4$^{\circ}$x5$^{\circ}$ CLM5 simulations, respectively, as compared to just 400 grid cells in the sparsegrid.
 Likewise, whereas previous spin-up methodologies required 1500 years or longer to satisfy equilibrium criteria, the SASU approach enabled by matrix representation yielded satisfactory spin-up efficiency for this experiment within 140 years.
@@ -195,8 +204,8 @@ Likewise, whereas previous spin-up methodologies required 1500 years or longer t
 
 
 Choosing the number of clusters to generate the sparsegrid involved balancing the computational savings against representational fidelity. Given more clusters, the sparsegrid will generally provide a better approximation of output from the full grid. As one example, accurate reconstruction of global photosynthesis could be achieved with a relatively small number of clusters, with R$^2>$0.95 achieved with only 200 clusters (Figure \ref{fig:sg}).
-Performance continues to improve with added clusters, but with marginal returns.
-We had hoped to see a clear point of diminishing returns across a wide range of variables as we increase the number of clusters. Instead, for most variables, we observe a quick reduction of bias approaching 200 clusters, but after this point, convergence slows and presents some small amplitude oscillations (Supp Figure S2). We chose 400 clusters, because it provides satisfactory performance across a range of important metrics, while affording us sufficient simulations to perform the full experiment within our computational budget.
+Performance continues to improve with added clusters, but with marginal returns (Supp Figure S2).
+We had hoped to see a clear point of diminishing returns across a wide range of variables as we increase the number of clusters. Instead, for most variables, we observe a quick reduction of bias approaching 200 clusters, but after this point, convergence slows and presents some small amplitude oscillations. We chose 400 clusters, because it provides satisfactory performance across a range of important metrics, while affording us sufficient simulations to perform the full experiment within our computational budget.
 \begin{figure}[h]
 \centering
 \includegraphics[width=25pc]{../figs/main/sparsegrid_gpp.pdf}
@@ -204,7 +213,7 @@ We had hoped to see a clear point of diminishing returns across a wide range of 
 \label{fig:sg}
 \end{figure}
 
-This model configuration allowed for over two thousand simulations across six forcing scenarios.
+This model configuration allowed for over 2000 simulations across six forcing scenarios.
 Overall, we found substantial impacts of parametric uncertainty on model behavior, in some cases exceeding the magnitude of climate scenario effects (Figure \ref{fig:ranges}). In the control scenario, gross primary productivity (GPP) ranged from 103 to 158 PgC, and net ecosystem productivity (NEP) ranged from 1.7 to 3.8 PgC. NEP was especially variable in the high CO$_2$ scenario, varying from 1.6 to 5.7 PgC. One perturbation, reducing the heat capacity of sand by 20\%, proved destructive in the future climate scenario, resulting in inhospitably hot soil conditions and widespread plant death. A perturbation of $\pm$20\% may exceed the reasonable range for this parameter, but this simulation was instructive for exposing the model's response to hot soils. Carrying out an extensive PPE increases the possibility of exposing unexpected model behavior, including unforeseen tipping points, brittle parameterizations,  and/or bugs.
 
 A small fraction of parameters tend to explain a large amount of the ensemble variance (Figure \ref{fig:variance}) for any given variable or metric. For example, just four parameters (maximum leaf wetted fraction, liquid canopy storage, the turbulent transfer coefficient, and leaf characteristic length) explain upwards of 90\% of the canopy evaporation variance across all the forcing scenarios (Supp Fig S3). Conversely, GPP, which is a significantly more complicated process, requires 20 parameters to explain 90\% of the control ensemble variance. In general, most of the parameter perturbations had a relatively small impact on any given output variable. Though this experiment encompasses 211 parameters, no single variable responds to all 211 parameters. In fact, the effective parameter space dimensionality for any given output variable tends to be much smaller than 211. While the principle of land models is that these are all interlinked via complex feedback processes, many parameters nonetheless have impacts that are mostly limited to their own domain. 
@@ -228,7 +237,7 @@ This PPE is especially useful for determining which parameters influence which m
 We repeated the full set of parameter perturbations across the six forcing scenarios in Table \ref{tab:exps}. This ensures that we can identify parameters that are important not just under present-day conditions, but also parameters that control the response to forcing (CO2, nitrogen deposition) and climate.
 For example, the parameters that control present-day NEP differ  from the parameters that control NEP in the high CO$_2$ scenario (Figure \ref{fig:nep}a,b). NEP increases by approximately 50\% at 867 ppm with the default parameters, but can actually decrease with certain parameter settings (Figure \ref{fig:nep}c). One key parameter is \textit{tpuse\_sf}, which is a scalar perturbation factor influencing the triose phosphate limitations on photosynthesis. Triose phosphate limitation is difficult to quantify and has not been observed to significantly hinder photosynthesis under present-day CO$_2$ concentrations (cite Kumarathunge et al). In CLM5.1, this parameter is not particularly influential on NEP at 367 ppm (ranked 39, not shown), but is third most influential with high CO$_2$. 
 
-The future climate experiment is 4.3K warmer averaged over our study domain (land-only, Antarctica excluded, Supp Figure S4). This led to an increase in evapotranspiration of 8.8\% relative to the control simulation when using the default CLM5.1 parameters (Figure \ref{fig:nep}f). While the parameters that most strongly affect global average ET in both the control and future climates are generally the same (Figure \ref{fig:nep}d,e), a distinct set of parameters govern the change in ET due to warming (Figure \ref{fig:nep}f). While the control simulation is primarily influenced by hydrology and stomatal conductance parameters, the response of ET to warming is largely controlled by photosynthesis acclimation parameters (i.e. \textit{tpuse\_sf}, \textit{kcha}, \textit{vcmaxha}, \textit{vcmaxhd}, \textit{lmrhd}, and \textit{cpha}). In a coupled ESM, land-atmosphere interactions would modulate these parameter effects, such that the parameter rankings are likely more credible than the absolute values of the parameter effects.
+The future climate experiment is 4.3K warmer averaged over our study domain (land-only, Antarctica excluded, Supp Figure S4). This led to an increase in evapotranspiration of 8.8\% relative to the control simulation when using the default CLM5.1 parameters (Figure \ref{fig:nep}f). While the parameters that most strongly affect global average ET in both the control and future climates are generally the same (Figure \ref{fig:nep}d,e), a distinct set of parameters govern the change in ET due to warming (Figure \ref{fig:nep}f). While the control simulation is primarily influenced by hydrology and stomatal conductance parameters, the response of ET to warming is largely controlled by photosynthesis acclimation parameters (i.e. \textit{tpuse\_sf}, \textit{kcha}, \textit{vcmaxha}, \textit{vcmaxhd}, \textit{lmrhd}, and \textit{cpha}). In a coupled ESM, land-atmosphere interactions would modulate these parameter effects, such that the parameter rankings are likely more robust than the absolute values of the parameter effects.
 
 
 \begin{figure}[h]
