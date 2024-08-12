@@ -19,12 +19,12 @@ hoffman2005
 hoffman2013
 hourdin2017
 hourdin2020
+huang2018
 koven2022
 lawrence2019
 lin2015
 lovenduski2017
 lu2020
-luo2020
 mckay2000
 mcneall2016
 murphy2004
@@ -35,6 +35,7 @@ qian2018
 rodgers2021
 sanderson2008
 schlosser2000
+sitch2024
 sun2023
 swenson2019
 tett2022
@@ -44,3 +45,4 @@ wood1998
 yamazaki2021
 yan2023a
 yan2023b
+zarakas2024
