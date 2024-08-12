@@ -1,4 +1,3 @@
-(
 alonso-gonzalez2022
 arora2020
 balaji2022
@@ -21,10 +20,14 @@ hourdin2017
 hourdin2020
 huang2018
 koven2022
+kumarathunge2019
+lague2019
 lawrence2019
+liao2023
 lin2015
 lovenduski2017
 lu2020
+luo2022
 mckay2000
 mcneall2016
 murphy2004
@@ -39,6 +42,8 @@ sitch2024
 sun2023
 swenson2019
 tett2022
+thornton2005
+wieder2019
 williamson2013
 williamson2017
 wood1998
