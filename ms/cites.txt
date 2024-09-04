@@ -13,6 +13,7 @@ cuntz2016
 dagon2020
 eyring2016
 fisher2020
+friedlingstein2006
 friedlingstein2014
 friedlingstein2022
 hawkins2019
