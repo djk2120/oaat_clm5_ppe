@@ -40,9 +40,9 @@ F. Li\affil{11}, D.L. Lombardozzi\affil{1,12}, Y. Luo\affil{13}, J.K. Shuman\aff
 \correspondingauthor{Daniel Kennedy}{djk2120@ucar.edu}
 
 \begin{keypoints}
-\item We constructed a large parameter perturbation ensemble of the Community Land Model, version 5.1, perturbing 211 parameters independently across six forcing scenarios.
+\item We constructed a parameter perturbation ensemble of the Community Land Model, v5.1, perturbing 211 parameters across six forcing scenarios.
 \item Parameter effects can exceed scenario effects and parameter effect rankings differ by biome and based on the forcing scenario.
-\item The software infrastructure developed for this experiment has greatly reduced the human and computer time needed for constructing this type of ensemble, which can facilitate more routine PPEs.
+\item The software infrastructure developed in our experiment has greatly reduced the human and computer time needed for constructing future PPEs.
 \end{keypoints}
 
 \begin{abstract}
@@ -115,7 +115,61 @@ Solar radiation (FSDS) & Soil liquid water (TOTSOILLIQ) & Total liquid runoff (Q
 
 \subsection{Parameter identification and ranges}
 
+
+
+
 Identification of the complete parameter set of a land surface model is in itself a non-trivial exercise, as in practice, many empirical constants are hard-coded and not amenable to systematic perturbation \cite{mendoza2015,cuntz2016}. For the purposes of this activity, we identified a broad set of 211 CLM-BGC parameters, and enabled their modification via the model parameter file. Several domains were not perturbed, including crops, methane emissions, emissions of biogenic volatile organic compounds and dust, urban properties, and river flow parameters. The crop model was not utilized as our initial focus is on unmanaged land. Of the 211 parameters, 145 are scalar-valued, with a single parameter value acting globally. The remaining 66 parameters include a plant functional type (PFT) dimension, with the potential for different parameter values for each unique plant functional type. Not all parameters are currently utilizing this functionality, such as \textit{medlynintercept} where the default value is 100 $\mu$mol H$_2$O m$^{-2}$ s$^{-1}$ for all sixteen of CLM's natural vegetation PFTs.
+
+
+
+\begin{landscape}
+ \begin{table}[h]
+ \caption{In total, 211 parameters were perturbed in this experiment. These are the parameters mentioned within the main text. A complete set of parameters is included in a spreadsheet in the supplementary information.}
+ \centering
+ \begin{tabular}{l l c}
+ \hline
+  Parameter  & Description & Model Domain \\
+ \hline
+cv & Turbulent transfer coefficient & Sensible, latent heat and momentum fluxes \\
+dleaf & Leaf characteristic length & Sensible, latent heat and momentum fluxes \\
+d\_max & Dry surface layer (DSL) parameter & Sensible, latent heat and momentum fluxes \\
+frac\_sat\_soil\_dsl\_init & Fraction of saturated soil at which DSL initiates & Sensible, latent heat and momentum fluxes \\
+fff & Decay factor for fractional saturated area & Hydrology \\
+liq\_canopy\_storage\_scalar & Canopy-storage-of-liquid-water parameter & Hydrology \\
+maximum\_leaf\_wetted\_fraction & Maximum leaf wetted fraction & Hydrology \\
+sand\_pf & Perturbation factor for sand content of soil column & Hydrology \\
+sucsat\_sf & Scale factor for minimum soil water potential & Hydrology \\
+medlynintercept & Medlyn intercept of conductance-photosynthesis relationship & Stomatal resistance and photosynthesis \\
+medlynslope & Medlyn slope of conductance-photosynthesis relationship & Stomatal resistance and photosynthesis \\
+tpu25ratio & Ratio of tpu25top to vcmax25top & Stomatal resistance and photosynthesis \\
+jmaxb0 & Baseline proportion of nitrogen allocated for electron transport & Photosynthetic capacity\\
+jmaxb1 & Response of electron transport rate to light & Photosynthetic capacity\\
+slatop & Specific leaf area at top of canopy & Photosynthetic capacity\\
+theta\_cj & empirical curvature parameter for photosynthesis colimitation& Photosynthetic capacity \\
+wc2wjb0 & Baseline ratio of wc:wj & Photosynthetic capacity \\
+FUN\_fracfixers & fraction of carbon available for N fixation & Fixation and uptake of Nitrogen \\
+KCN & Nitrogen acquisition parameter group & Fixation and uptake of Nitrogen \\
+kmax & Plant segment max conductance & Plant hydraulics \\
+krmax & Root segment max conductance & Plant hydraulics \\
+psi50 & Water potential at 50\% loss of conductance & Plant hydraulics \\
+nstem & Stem number & Biomass heat storage \\
+lmr\_intercept\_atkin & Intercept in the calculation of leaf maintenance respiration& Plant respiration \\
+froot\_leaf & Allocation parameter: new fine root C per new leaf C & Carbon and nitrogen allocation \\
+leafcn & Leaf C:N & Carbon and nitrogen allocation \\
+leaf\_long & Leaf longevity & Vegetation phenology and turnover \\
+cpha & Activation energy for cp & Acclimation parameters \\
+jmaxhd & Deactivation energy for jmax & Acclimation parameters \\
+kcha & Activation energy for kc & Acclimation parameters \\
+lmrha & Activation energy for lmr & Acclimation parameters \\
+lmrhd & Deactivation energy for lmr & Acclimation parameters \\
+tpuha & Activation energy for tpu & Acclimation parameters \\
+tpuse\_sf & Scale factor for tpu entropy term & Acclimation parameters \\
+vcmaxha & Activation energy for vcmax & Acclimation parameters \\
+vcmaxhd & Deactivation energy for vcmax & Acclimation parameters \\
+ \hline
+ \end{tabular}
+ \end{table}
+\end{landscape}
 
 Given the large parameter space, to conduct an initial analysis of the response of the model to parametric uncertainty, we decided to vary each parameter independently, exploring the impact of low and high values. To define parameter ranges we created an online spreadsheet and solicited domain-area experts to provide a minimum and maximum value for each parameter. In some cases literature values were directly utilized, but in many cases, expert judgment was used or else a default perturbation of $\pm$20\%. The parameter range spreadsheet is provided within the Supplementary Information. In some cases parameters could not or should not be perturbed independently, because they feature inherent co-dependence. In the case of nitrogen fixation costs, we opted to perturb the parameters independently, but also as a group (`KCN'), to enforce a change in overall nitrogen limitation in lieu of switching from one uptake pathway to another. We likewise opted to perturb soil hydraulics directly in two distinct ways, first by directly perturbing the hydraulic properties (e.g. saturated hydraulic conductivity) and also then also in a parallel set of simulations perturbing the soil texture (percent sand, silt, and clay).
 
@@ -304,54 +358,7 @@ This material is based upon work supported by the NSF National Center for Atmosp
 
 \bibliography{refs}
 
-\appendix
-\section{Supplementary Figures}
 
-
-
-Will be deleted:
-\subsection{Parameters} 
-\begin{landscape}
- \begin{table}[h]
- \caption{Some key parameters}
- \centering
- \begin{tabular}{l l c}
- \hline
-  Parameter  & Description & Model Domain \\
- \hline
-d\_max & Dry surface layer (DSL) parameter & Sensible, latent heat and momentum fluxes \\
-frac\_sat\_soil\_dsl\_init & Fraction of saturated soil at which DSL initiates & Sensible, latent heat and momentum fluxes \\
-fff & Decay factor for fractional saturated area & Hydrology \\
-liq\_canopy\_storage\_scalar & Canopy-storage-of-liquid-water parameter & Hydrology \\
-maximum\_leaf\_wetted\_fraction & Maximum leaf wetted fraction & Hydrology \\
-medlynintercept & Medlyn intercept of conductance-photosynthesis relationship & Stomatal resistance and photosynthesis \\
-medlynslope & Medlyn slope of conductance-photosynthesis relationship & Stomatal resistance and photosynthesis \\
-tpu25ratio & Ratio of tpu25top to vcmax25top & Stomatal resistance and photosynthesis \\
-jmaxb0 & Baseline proportion of nitrogen allocated for electron transport & Photosynthetic capacity (LUNA) \\
-jmaxb1 & Response of electron transport rate to light & Photosynthetic capacity (LUNA) \\
-slatop & Specific leaf area at top of canopy & Photosynthetic capacity (LUNA) \\
-wc2wjb0 & Baseline ratio of wc:wj & Photosynthetic capacity (LUNA) \\
-kmax & Plant segment max conductance & Plant hydraulics \\
-krmax & Root segment max conductance & Plant hydraulics \\
-psi50 & Water potential at 50\% loss of conductance & Plant hydraulics \\
-nstem & Stem number & Biomass heat storage \\
-lmr\_intercept\_atkin & Intercept in the calculation of leaf maintenance respiration& Plant respiration \\
-froot\_leaf & Allocation parameter: new fine root C per new leaf C & Carbon and nitrogen allocation \\
-leafcn & Leaf C:N & Carbon and nitrogen allocation \\
-leaf\_long & Leaf longevity & Vegetation phenology and turnover \\
-cpha & Activation energy for cp & Acclimation parameters \\
-jmaxhd & Deactivation energy for jmax & Acclimation parameters \\
-kcha & Activation energy for kc & Acclimation parameters \\
-lmrha & Activation energy for lmr & Acclimation parameters \\
-lmrhd & Deactivation energy for lmr & Acclimation parameters \\
-tpuha & Activation energy for tpu & Acclimation parameters \\
-tpuse\_sf & Scale factor for tpu entropy term & Acclimation parameters \\
-vcmaxha & Activation energy for vcmax & Acclimation parameters \\
-vcmaxhd & Deactivation energy for vcmax & Acclimation parameters \\
- \hline
- \end{tabular}
- \end{table}
-\end{landscape}
 
 
 
