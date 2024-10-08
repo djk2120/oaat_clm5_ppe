@@ -1,0 +1,1152 @@
+param,units,pft,clm51_default,surv_min,surv_max,constrained?,orig_min,orig_max
+C2_liq_Brun89,m3/s,all,4.22e-13,3.376e-13,5.064e-13,0,3.376e-13,5.064e-13
+FUN_fracfixers,fraction,NEMT,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,NEBT,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,NDBT,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,BETT,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,BEMT,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,BDTT,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,BDMT,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,BDBT,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,BES,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,BDMS,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,BDBS,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,C3AG,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,C3G,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,C4G,0.25,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,C3C,0.0,0.0,1.0,0,0.0,1.0
+FUN_fracfixers,fraction,C3I,0.0,0.0,1.0,0,0.0,1.0
+a_coef,unitless,all,0.13,0.1,0.13,0,0.1,0.13
+a_exp,unitless,all,0.45,0.45,0.5,0,0.45,0.5
+a_fix,unitless,NEMT,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,NEBT,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,NDBT,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,BETT,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,BEMT,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,BDTT,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,BDMT,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,BDBT,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,BES,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,BDMS,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,BDBS,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,C3AG,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,C3G,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,C4G,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,C3C,-3.62,-4.14,-3.1,0,-4.14,-3.1
+a_fix,unitless,C3I,-3.62,-4.14,-3.1,0,-4.14,-3.1
+accum_factor,unitless,all,0.1,0.1,0.4,0,0.1,0.4
+akc_active,gC/m3,NEMT,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,NEBT,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,NDBT,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,BETT,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,BEMT,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,BDTT,0.006,0.0006,0.06,0,0.0006,0.06
+akc_active,gC/m3,BDMT,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,BDBT,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,BES,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,BDMS,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,BDBS,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,C3AG,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,C3G,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,C4G,0.6,0.06,6.0,0,0.06,6.0
+akc_active,gC/m3,C3C,0.06,0.006,0.6,0,0.006,0.6
+akc_active,gC/m3,C3I,0.06,0.006,0.6,0,0.006,0.6
+akn_active,gC/m2,NEMT,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,NEBT,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,NDBT,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,BETT,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,BEMT,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,BDTT,0.012,0.0012,0.12,0,0.0012,0.12
+akn_active,gC/m2,BDMT,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,BDBT,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,BES,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,BDMS,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,BDBS,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,C3AG,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,C3G,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,C4G,1.2,0.12,12.0,0,0.12,12.0
+akn_active,gC/m2,C3C,0.12,0.012,1.2,0,0.012,1.2
+akn_active,gC/m2,C3I,0.12,0.012,1.2,0,0.012,1.2
+aq_sp_yield_min,unitless,all,0.02,0.01,0.02,0,0.01,0.02
+b_fix,1/C,NEMT,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,NEBT,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,NDBT,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,BETT,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,BEMT,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,BDTT,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,BDMT,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,BDBT,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,BES,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,BDMS,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,BDBS,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,C3AG,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,C3G,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,C4G,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,C3C,0.27,0.23,0.31,0,0.23,0.31
+b_fix,1/C,C3I,0.27,0.23,0.31,0,0.23,0.31
+baseflow_scalar,--,all,0.001,0.0005,0.1,0,0.0005,0.1
+boreal_peatfire_c,nan,all,0.00017,7.2e-06,1.08e-05,0,7.2e-06,1.08e-05
+br_mr,gC/gN/s,all,2.525e-06,2.02e-06,3.03e-06,0,2.02e-06,3.03e-06
+br_root,gC/gN/s,all,8.3e-07,6.64e-07,9.96e-07,0,6.64e-07,9.96e-07
+bsw_sf,unitless,all,1.0,0.8,1.2,0,0.8,1.2
+c_fix,C,NEMT,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,NEBT,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,NDBT,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,BETT,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,BEMT,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,BDTT,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,BDMT,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,BDBT,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,BES,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,BDMS,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,BDBS,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,C3AG,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,C3G,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,C4G,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,C3C,25.1,24.49,25.81,0,24.49,25.81
+c_fix,C,C3I,25.1,24.49,25.81,0,24.49,25.81
+cc_dstem,0 to 1,NEMT,0.3,0.24,0.36,0,0.24,0.36
+cc_dstem,0 to 1,NEBT,0.3,0.24,0.36,0,0.24,0.36
+cc_dstem,0 to 1,NDBT,0.3,0.24,0.36,0,0.24,0.36
+cc_dstem,0 to 1,BETT,0.27,0.216,0.324,0,0.216,0.324
+cc_dstem,0 to 1,BEMT,0.27,0.216,0.324,0,0.216,0.324
+cc_dstem,0 to 1,BDTT,0.27,0.216,0.324,0,0.216,0.324
+cc_dstem,0 to 1,BDMT,0.27,0.216,0.324,0,0.216,0.324
+cc_dstem,0 to 1,BDBT,0.27,0.216,0.324,0,0.216,0.324
+cc_dstem,0 to 1,BES,0.35,0.28,0.42,0,0.28,0.42
+cc_dstem,0 to 1,BDMS,0.35,0.28,0.42,0,0.28,0.42
+cc_dstem,0 to 1,BDBS,0.35,0.28,0.42,0,0.28,0.42
+cc_dstem,0 to 1,C3AG,0.8,0.64,0.96,0,0.64,0.96
+cc_dstem,0 to 1,C3G,0.8,0.64,0.96,0,0.64,0.96
+cc_dstem,0 to 1,C4G,0.8,0.64,0.96,0,0.64,0.96
+cc_dstem,0 to 1,C3C,0.8,0.64,0.96,0,0.64,0.96
+cc_dstem,0 to 1,C3I,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,NEMT,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,NEBT,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,NDBT,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,BETT,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,BEMT,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,BDTT,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,BDMT,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,BDBT,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,BES,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,BDMS,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,BDBS,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,C3AG,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,C3G,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,C4G,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,C3C,0.8,0.64,0.96,0,0.64,0.96
+cc_leaf,0 to 1,C3I,0.8,0.64,0.96,0,0.64,0.96
+cc_lstem,0 to 1,NEMT,0.3,0.24,0.36,0,0.24,0.36
+cc_lstem,0 to 1,NEBT,0.3,0.24,0.36,0,0.24,0.36
+cc_lstem,0 to 1,NDBT,0.3,0.24,0.36,0,0.24,0.36
+cc_lstem,0 to 1,BETT,0.27,0.216,0.324,0,0.216,0.324
+cc_lstem,0 to 1,BEMT,0.27,0.216,0.324,0,0.216,0.324
+cc_lstem,0 to 1,BDTT,0.27,0.216,0.324,0,0.216,0.324
+cc_lstem,0 to 1,BDMT,0.27,0.216,0.324,0,0.216,0.324
+cc_lstem,0 to 1,BDBT,0.27,0.216,0.324,0,0.216,0.324
+cc_lstem,0 to 1,BES,0.35,0.28,0.42,0,0.28,0.42
+cc_lstem,0 to 1,BDMS,0.35,0.28,0.42,0,0.28,0.42
+cc_lstem,0 to 1,BDBS,0.35,0.28,0.42,0,0.28,0.42
+cc_lstem,0 to 1,C3AG,0.8,0.64,0.96,0,0.64,0.96
+cc_lstem,0 to 1,C3G,0.8,0.64,0.96,0,0.64,0.96
+cc_lstem,0 to 1,C4G,0.8,0.64,0.96,0,0.64,0.96
+cc_lstem,0 to 1,C3C,0.8,0.64,0.96,0,0.64,0.96
+cc_lstem,0 to 1,C3I,0.8,0.64,0.96,0,0.64,0.96
+cc_other,0 to 1,NEMT,0.5,0.4,0.6,0,0.4,0.6
+cc_other,0 to 1,NEBT,0.5,0.4,0.6,0,0.4,0.6
+cc_other,0 to 1,NDBT,0.5,0.4,0.6,0,0.4,0.6
+cc_other,0 to 1,BETT,0.45,0.36,0.54,0,0.36,0.54
+cc_other,0 to 1,BEMT,0.45,0.36,0.54,0,0.36,0.54
+cc_other,0 to 1,BDTT,0.45,0.36,0.54,0,0.36,0.54
+cc_other,0 to 1,BDMT,0.45,0.36,0.54,0,0.36,0.54
+cc_other,0 to 1,BDBT,0.45,0.36,0.54,0,0.36,0.54
+cc_other,0 to 1,BES,0.55,0.44,0.66,0,0.44,0.66
+cc_other,0 to 1,BDMS,0.55,0.44,0.66,0,0.44,0.66
+cc_other,0 to 1,BDBS,0.55,0.44,0.66,0,0.44,0.66
+cc_other,0 to 1,C3AG,0.8,0.64,0.96,0,0.64,0.96
+cc_other,0 to 1,C3G,0.8,0.64,0.96,0,0.64,0.96
+cc_other,0 to 1,C4G,0.8,0.64,0.96,0,0.64,0.96
+cc_other,0 to 1,C3C,0.8,0.64,0.96,0,0.64,0.96
+cc_other,0 to 1,C3I,0.8,0.64,0.96,0,0.64,0.96
+ceta,kg/m3,all,358.0,250.0,450.0,0,250.0,450.0
+ck,unitless,NEMT,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,NEBT,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,NDBT,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,BETT,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,BEMT,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,BDTT,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,BDMT,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,BDBT,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,BES,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,BDMS,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,BDBS,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,C3AG,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,C3G,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,C4G,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,C3C,3.95,3.0,5.15,0,3.0,5.15
+ck,unitless,C3I,3.95,3.0,5.15,0,3.0,5.15
+clay_pf,percent,all,0.0,-20.0,20.0,0,-20.0,20.0
+cmb_cmplt_fact_cwd,unitless,all,0.28,0.224,0.336,0,0.224,0.336
+cmb_cmplt_fact_litter,unitless,all,0.5,0.4,0.6,0,0.4,0.6
+cn_s3_bgc,gC/gN,all,11.0,11.0,30.0,1,8.0,30.0
+cp25_yr2000,mol/mol,all,4.275e-05,3.5e-05,4.47e-05,0,3.5e-05,4.47e-05
+cpha,J/mol,all,37830.0,18915.0,56745.0,0,18915.0,56745.0
+crit_dayl,seconds,all,39300.0,31440.0,47160.0,0,31440.0,47160.0
+crit_offset_fdd,days,all,15.0,12.0,18.0,0,12.0,18.0
+crit_offset_swi,days,all,15.0,12.0,18.0,0,12.0,18.0
+crit_onset_gdd_sf,unitless,NEMT,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,NEBT,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,NDBT,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,BETT,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,BEMT,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,BDTT,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,BDMT,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,BDBT,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,BES,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,BDMS,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,BDBS,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,C3AG,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,C3G,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,C4G,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,C3C,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_gdd_sf,unitless,C3I,1.0,0.8,1.2,0,0.8,1.2
+crit_onset_swi,days,all,15.0,12.0,18.0,0,12.0,18.0
+croot_stem,gC/gC,NEMT,0.3,0.24,0.36,0,0.24,0.36
+croot_stem,gC/gC,NEBT,0.3,0.24,0.36,0,0.24,0.36
+croot_stem,gC/gC,NDBT,0.3,0.24,0.36,0,0.24,0.36
+croot_stem,gC/gC,BETT,0.3,0.24,0.36,0,0.24,0.36
+croot_stem,gC/gC,BEMT,0.3,0.24,0.36,0,0.24,0.36
+croot_stem,gC/gC,BDTT,0.3,0.24,0.36,0,0.24,0.36
+croot_stem,gC/gC,BDMT,0.3,0.24,0.36,0,0.24,0.36
+croot_stem,gC/gC,BDBT,0.3,0.24,0.36,0,0.24,0.36
+croot_stem,gC/gC,BES,0.3,0.24,0.36,0,0.24,0.36
+croot_stem,gC/gC,BDMS,0.3,0.24,0.36,0,0.24,0.36
+croot_stem,gC/gC,BDBS,0.3,0.24,0.36,0,0.24,0.36
+croot_stem,gC/gC,C3AG,0.0,0.0,0.0,0,0.0,0.0
+croot_stem,gC/gC,C3G,0.0,0.0,0.0,0,0.0,0.0
+croot_stem,gC/gC,C4G,0.0,0.0,0.0,0,0.0,0.0
+croot_stem,gC/gC,C3C,0.0,0.0,0.0,0,0.0,0.0
+croot_stem,gC/gC,C3I,0.0,0.0,0.0,0,0.0,0.0
+cropfire_a1,nan,all,0.00016,0.000128,0.000192,0,0.000128,0.000192
+cryoturb_diffusion_k,m^2/sec,all,1.59e-11,1.59e-12,1.59e-10,0,1.59e-12,1.59e-10
+csoilc,unitless,all,0.004,0.0025,0.012,0,0.0025,0.012
+csol_clay,J/K/m3,all,2.385,1.908,2.86,0,1.908,2.86
+csol_om,J/K/m3,all,2.5,2.0,3.0,0,2.0,3.0
+csol_sand,J/K/m3,all,2.128,1.7,2.55,0,1.7,2.55
+cv,m/s^(1/2),all,0.01,0.005,0.02,0,0.005,0.02
+d_max,mm,all,15.0,10.0,60.0,0,10.0,60.0
+decomp_depth_efolding,m,all,10.0,10.0,10.0,0,10.0,10.0
+denitrif_nitrateconc_coefficient,unitless,all,1.15,0.575,2.3,0,0.575,2.3
+denitrif_nitrateconc_exponent,unitless,all,0.57,0.285,1.14,0,0.285,1.14
+denitrif_respiration_coefficient,unitless,all,0.1,0.05,0.2,0,0.05,0.2
+denitrif_respiration_exponent,unitless,all,1.3,0.65,2.6,0,0.65,2.6
+displar,unitless,NEMT,0.67,0.4,0.95,0,0.4,0.95
+displar,unitless,NEBT,0.67,0.4,0.95,0,0.4,0.95
+displar,unitless,NDBT,0.67,0.4,0.95,0,0.4,0.95
+displar,unitless,BETT,0.67,0.4,0.95,0,0.4,0.95
+displar,unitless,BEMT,0.67,0.4,0.95,0,0.4,0.95
+displar,unitless,BDTT,0.67,0.4,0.95,0,0.4,0.95
+displar,unitless,BDMT,0.67,0.4,0.95,0,0.4,0.95
+displar,unitless,BDBT,0.67,0.4,0.95,0,0.4,0.95
+displar,unitless,BES,0.68,0.4,0.95,0,0.4,0.95
+displar,unitless,BDMS,0.68,0.4,0.95,0,0.4,0.95
+displar,unitless,BDBS,0.68,0.4,0.95,0,0.4,0.95
+displar,unitless,C3AG,0.68,0.4,0.95,0,0.4,0.95
+displar,unitless,C3G,0.68,0.4,0.95,0,0.4,0.95
+displar,unitless,C4G,0.68,0.4,0.95,0,0.4,0.95
+displar,unitless,C3C,0.68,0.4,0.95,0,0.4,0.95
+displar,unitless,C3I,0.68,0.4,0.95,0,0.4,0.95
+dleaf,m,NEMT,0.04,0.000216,0.00108,0,0.000216,0.00108
+dleaf,m,NEBT,0.04,0.000216,0.00108,0,0.000216,0.00108
+dleaf,m,NDBT,0.04,0.00072,0.0036,0,0.00072,0.0036
+dleaf,m,BETT,0.04,0.0081,0.0567,0,0.0081,0.0567
+dleaf,m,BEMT,0.04,0.0081,0.0567,0,0.0081,0.0567
+dleaf,m,BDTT,0.04,0.0081,0.243,0,0.0081,0.243
+dleaf,m,BDMT,0.04,0.0081,0.243,0,0.0081,0.243
+dleaf,m,BDBT,0.04,0.0081,0.243,0,0.0081,0.243
+dleaf,m,BES,0.04,0.0081,0.081,0,0.0081,0.081
+dleaf,m,BDMS,0.04,0.000405,0.1215,0,0.000405,0.1215
+dleaf,m,BDBS,0.04,0.000162,0.0486,0,0.000162,0.0486
+dleaf,m,C3AG,0.04,0.000144,0.018,0,0.000144,0.018
+dleaf,m,C3G,0.04,0.000144,0.018,0,0.000144,0.018
+dleaf,m,C4G,0.04,0.000144,0.018,0,0.000144,0.018
+dleaf,m,C3C,0.04,0.000162,0.1215,0,0.000162,0.1215
+dleaf,m,C3I,0.04,0.000162,0.1215,0,0.000162,0.1215
+drift_gs,unitless,all,0.00035,0.00028,0.00042,0,0.00028,0.00042
+dsladlai,m^2/gC,NEMT,0.00125,0.001,0.0015,0,0.001,0.0015
+dsladlai,m^2/gC,NEBT,0.001,0.0008,0.0012,0,0.0008,0.0012
+dsladlai,m^2/gC,NDBT,0.003,0.0024,0.0036,0,0.0024,0.0036
+dsladlai,m^2/gC,BETT,0.00122,0.000976,0.001464,0,0.000976,0.001464
+dsladlai,m^2/gC,BEMT,0.0015,0.0012,0.0018,0,0.0012,0.0018
+dsladlai,m^2/gC,BDTT,0.0027,0.00216,0.00324,0,0.00216,0.00324
+dsladlai,m^2/gC,BDMT,0.0027,0.00216,0.00324,0,0.00216,0.00324
+dsladlai,m^2/gC,BDBT,0.0027,0.00216,0.00324,0,0.00216,0.00324
+dsladlai,m^2/gC,BES,0.0,0.0,0.0,0,0.0,0.0
+dsladlai,m^2/gC,BDMS,0.0,0.0,0.0,0,0.0,0.0
+dsladlai,m^2/gC,BDBS,0.0,0.0,0.0,0,0.0,0.0
+dsladlai,m^2/gC,C3AG,0.0,0.0,0.0,0,0.0,0.0
+dsladlai,m^2/gC,C3G,0.0,0.0,0.0,0,0.0,0.0
+dsladlai,m^2/gC,C4G,0.0,0.0,0.0,0,0.0,0.0
+dsladlai,m^2/gC,C3C,0.0,0.0,0.0,0,0.0,0.0
+dsladlai,m^2/gC,C3I,0.0,0.0,0.0,0,0.0,0.0
+e_ice,unitless,all,6.0,0.0,8.0,0,0.0,8.0
+ekc_active,gC/m3,NEMT,0.36,0.036,3.6,0,0.036,3.6
+ekc_active,gC/m3,NEBT,0.36,0.036,3.6,0,0.036,3.6
+ekc_active,gC/m3,NDBT,0.036,0.0036,0.36,0,0.0036,0.36
+ekc_active,gC/m3,BETT,0.36,0.036,3.6,0,0.036,3.6
+ekc_active,gC/m3,BEMT,0.36,0.036,3.6,0,0.036,3.6
+ekc_active,gC/m3,BDTT,0.036,0.0036,0.36,0,0.0036,0.36
+ekc_active,gC/m3,BDMT,0.36,0.036,3.6,0,0.036,3.6
+ekc_active,gC/m3,BDBT,0.36,0.036,3.6,0,0.036,3.6
+ekc_active,gC/m3,BES,0.36,0.036,3.6,0,0.036,3.6
+ekc_active,gC/m3,BDMS,0.36,0.036,3.6,0,0.036,3.6
+ekc_active,gC/m3,BDBS,0.36,0.036,3.6,0,0.036,3.6
+ekc_active,gC/m3,C3AG,0.36,0.036,3.6,0,0.036,3.6
+ekc_active,gC/m3,C3G,0.36,0.036,3.6,0,0.036,3.6
+ekc_active,gC/m3,C4G,3.6,0.36,36.0,0,0.36,36.0
+ekc_active,gC/m3,C3C,0.36,0.036,3.6,0,0.036,3.6
+ekc_active,gC/m3,C3I,0.36,0.036,3.6,0,0.036,3.6
+ekn_active,gC/m2,NEMT,0.06,0.006,0.6,0,0.006,0.6
+ekn_active,gC/m2,NEBT,0.06,0.006,0.6,0,0.006,0.6
+ekn_active,gC/m2,NDBT,0.006,0.0006,0.06,0,0.0006,0.06
+ekn_active,gC/m2,BETT,0.06,0.006,0.6,0,0.006,0.6
+ekn_active,gC/m2,BEMT,0.06,0.006,0.6,0,0.006,0.6
+ekn_active,gC/m2,BDTT,0.006,0.0006,0.06,0,0.0006,0.06
+ekn_active,gC/m2,BDMT,0.06,0.006,0.6,0,0.006,0.6
+ekn_active,gC/m2,BDBT,0.06,0.006,0.6,0,0.006,0.6
+ekn_active,gC/m2,BES,0.06,0.006,0.6,0,0.006,0.6
+ekn_active,gC/m2,BDMS,0.06,0.006,0.6,0,0.006,0.6
+ekn_active,gC/m2,BDBS,0.06,0.006,0.6,0,0.006,0.6
+ekn_active,gC/m2,C3AG,0.06,0.006,0.6,0,0.006,0.6
+ekn_active,gC/m2,C3G,0.06,0.006,0.6,0,0.006,0.6
+ekn_active,gC/m2,C4G,0.6,0.06,6.0,0,0.06,6.0
+ekn_active,gC/m2,C3C,0.06,0.006,0.6,0,0.006,0.6
+ekn_active,gC/m2,C3I,0.06,0.006,0.6,0,0.006,0.6
+enzyme_turnover_daily,unitless,all,0.1,0.05,0.15,0,0.05,0.15
+eta0_vionnet,kg*s/m2,all,7622370.0,6097896.0,9146844.0,0,6097896.0,9146844.0
+fbw,unitless,NEMT,0.45,0.2,0.7,0,0.2,0.7
+fbw,unitless,NEBT,0.45,0.2,0.7,0,0.2,0.7
+fbw,unitless,NDBT,0.45,0.2,0.7,0,0.2,0.7
+fbw,unitless,BETT,0.6,0.2,0.7,0,0.2,0.7
+fbw,unitless,BEMT,0.6,0.2,0.7,0,0.2,0.7
+fbw,unitless,BDTT,0.6,0.2,0.7,0,0.2,0.7
+fbw,unitless,BDMT,0.6,0.2,0.7,0,0.2,0.7
+fbw,unitless,BDBT,0.45,0.2,0.7,0,0.2,0.7
+fbw,unitless,BES,0.5,0.2,0.7,0,0.2,0.7
+fbw,unitless,BDMS,0.5,0.2,0.7,0,0.2,0.7
+fbw,unitless,BDBS,0.5,0.2,0.7,0,0.2,0.7
+fbw,unitless,C3AG,0.7,0.2,0.7,0,0.2,0.7
+fbw,unitless,C3G,0.7,0.2,0.7,0,0.2,0.7
+fbw,unitless,C4G,0.7,0.2,0.7,0,0.2,0.7
+fbw,unitless,C3C,0.7,0.2,0.7,0,0.2,0.7
+fbw,unitless,C3I,0.7,0.2,0.7,0,0.2,0.7
+fd_pft,hr,NEMT,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,NEBT,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,NDBT,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,BETT,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,BEMT,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,BDTT,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,BDMT,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,BDBT,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,BES,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,BDMS,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,BDBS,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,C3AG,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,C3G,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,C4G,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,C3C,24.0,19.2,28.8,0,19.2,28.8
+fd_pft,hr,C3I,24.0,19.2,28.8,0,19.2,28.8
+fff,1/m,all,0.5,0.02,5.0,0,0.02,5.0
+flivewd,fraction,NEMT,0.1,0.08,0.12,0,0.08,0.12
+flivewd,fraction,NEBT,0.1,0.08,0.12,0,0.08,0.12
+flivewd,fraction,NDBT,0.1,0.08,0.12,0,0.08,0.12
+flivewd,fraction,BETT,0.1,0.08,0.12,0,0.08,0.12
+flivewd,fraction,BEMT,0.1,0.08,0.12,0,0.08,0.12
+flivewd,fraction,BDTT,0.1,0.08,0.12,0,0.08,0.12
+flivewd,fraction,BDMT,0.1,0.08,0.12,0,0.08,0.12
+flivewd,fraction,BDBT,0.1,0.08,0.12,0,0.08,0.12
+flivewd,fraction,BES,0.5,0.4,0.6,0,0.4,0.6
+flivewd,fraction,BDMS,0.5,0.4,0.6,0,0.4,0.6
+flivewd,fraction,BDBS,0.1,0.08,0.12,0,0.08,0.12
+flivewd,fraction,C3AG,0.0,0.0,0.0,0,0.0,0.0
+flivewd,fraction,C3G,0.0,0.0,0.0,0,0.0,0.0
+flivewd,fraction,C4G,0.0,0.0,0.0,0,0.0,0.0
+flivewd,fraction,C3C,0.0,0.0,0.0,0,0.0,0.0
+flivewd,fraction,C3I,0.0,0.0,0.0,0,0.0,0.0
+fm_droot,0 to 1,NEMT,0.15,0.12,0.18,0,0.12,0.18
+fm_droot,0 to 1,NEBT,0.15,0.12,0.18,0,0.12,0.18
+fm_droot,0 to 1,NDBT,0.15,0.12,0.18,0,0.12,0.18
+fm_droot,0 to 1,BETT,0.13,0.104,0.156,0,0.104,0.156
+fm_droot,0 to 1,BEMT,0.13,0.104,0.156,0,0.104,0.156
+fm_droot,0 to 1,BDTT,0.1,0.08,0.12,0,0.08,0.12
+fm_droot,0 to 1,BDMT,0.1,0.08,0.12,0,0.08,0.12
+fm_droot,0 to 1,BDBT,0.13,0.104,0.156,0,0.104,0.156
+fm_droot,0 to 1,BES,0.17,0.136,0.204,0,0.136,0.204
+fm_droot,0 to 1,BDMS,0.17,0.136,0.204,0,0.136,0.204
+fm_droot,0 to 1,BDBS,0.17,0.136,0.204,0,0.136,0.204
+fm_droot,0 to 1,C3AG,0.2,0.16,0.24,0,0.16,0.24
+fm_droot,0 to 1,C3G,0.2,0.16,0.24,0,0.16,0.24
+fm_droot,0 to 1,C4G,0.2,0.16,0.24,0,0.16,0.24
+fm_droot,0 to 1,C3C,0.2,0.16,0.24,0,0.16,0.24
+fm_droot,0 to 1,C3I,0.2,0.16,0.24,0,0.16,0.24
+fm_leaf,0 to 1,NEMT,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,NEBT,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,NDBT,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,BETT,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,BEMT,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,BDTT,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,BDMT,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,BDBT,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,BES,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,BDMS,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,BDBS,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,C3AG,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,C3G,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,C4G,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,C3C,0.8,0.64,0.96,0,0.64,0.96
+fm_leaf,0 to 1,C3I,0.8,0.64,0.96,0,0.64,0.96
+fm_lroot,0 to 1,NEMT,0.15,0.12,0.18,0,0.12,0.18
+fm_lroot,0 to 1,NEBT,0.15,0.12,0.18,0,0.12,0.18
+fm_lroot,0 to 1,NDBT,0.15,0.12,0.18,0,0.12,0.18
+fm_lroot,0 to 1,BETT,0.13,0.104,0.156,0,0.104,0.156
+fm_lroot,0 to 1,BEMT,0.13,0.104,0.156,0,0.104,0.156
+fm_lroot,0 to 1,BDTT,0.1,0.08,0.12,0,0.08,0.12
+fm_lroot,0 to 1,BDMT,0.1,0.08,0.12,0,0.08,0.12
+fm_lroot,0 to 1,BDBT,0.13,0.104,0.156,0,0.104,0.156
+fm_lroot,0 to 1,BES,0.17,0.136,0.204,0,0.136,0.204
+fm_lroot,0 to 1,BDMS,0.17,0.136,0.204,0,0.136,0.204
+fm_lroot,0 to 1,BDBS,0.17,0.136,0.204,0,0.136,0.204
+fm_lroot,0 to 1,C3AG,0.2,0.16,0.24,0,0.16,0.24
+fm_lroot,0 to 1,C3G,0.2,0.16,0.24,0,0.16,0.24
+fm_lroot,0 to 1,C4G,0.2,0.16,0.24,0,0.16,0.24
+fm_lroot,0 to 1,C3C,0.2,0.16,0.24,0,0.16,0.24
+fm_lroot,0 to 1,C3I,0.2,0.16,0.24,0,0.16,0.24
+fm_lstem,0 to 1,NEMT,0.5,0.4,0.6,0,0.4,0.6
+fm_lstem,0 to 1,NEBT,0.5,0.4,0.6,0,0.4,0.6
+fm_lstem,0 to 1,NDBT,0.5,0.4,0.6,0,0.4,0.6
+fm_lstem,0 to 1,BETT,0.45,0.36,0.54,0,0.36,0.54
+fm_lstem,0 to 1,BEMT,0.45,0.36,0.54,0,0.36,0.54
+fm_lstem,0 to 1,BDTT,0.35,0.28,0.42,0,0.28,0.42
+fm_lstem,0 to 1,BDMT,0.35,0.28,0.42,0,0.28,0.42
+fm_lstem,0 to 1,BDBT,0.45,0.36,0.54,0,0.36,0.54
+fm_lstem,0 to 1,BES,0.55,0.44,0.66,0,0.44,0.66
+fm_lstem,0 to 1,BDMS,0.55,0.44,0.66,0,0.44,0.66
+fm_lstem,0 to 1,BDBS,0.55,0.44,0.66,0,0.44,0.66
+fm_lstem,0 to 1,C3AG,0.8,0.64,0.96,0,0.64,0.96
+fm_lstem,0 to 1,C3G,0.8,0.64,0.96,0,0.64,0.96
+fm_lstem,0 to 1,C4G,0.8,0.64,0.96,0,0.64,0.96
+fm_lstem,0 to 1,C3C,0.8,0.64,0.96,0,0.64,0.96
+fm_lstem,0 to 1,C3I,0.8,0.64,0.96,0,0.64,0.96
+fm_other,0 to 1,NEMT,0.5,0.4,0.6,0,0.4,0.6
+fm_other,0 to 1,NEBT,0.5,0.4,0.6,0,0.4,0.6
+fm_other,0 to 1,NDBT,0.5,0.4,0.6,0,0.4,0.6
+fm_other,0 to 1,BETT,0.45,0.36,0.54,0,0.36,0.54
+fm_other,0 to 1,BEMT,0.45,0.36,0.54,0,0.36,0.54
+fm_other,0 to 1,BDTT,0.35,0.28,0.42,0,0.28,0.42
+fm_other,0 to 1,BDMT,0.35,0.28,0.42,0,0.28,0.42
+fm_other,0 to 1,BDBT,0.45,0.36,0.54,0,0.36,0.54
+fm_other,0 to 1,BES,0.55,0.44,0.66,0,0.44,0.66
+fm_other,0 to 1,BDMS,0.55,0.44,0.66,0,0.44,0.66
+fm_other,0 to 1,BDBS,0.55,0.44,0.66,0,0.44,0.66
+fm_other,0 to 1,C3AG,0.8,0.64,0.96,0,0.64,0.96
+fm_other,0 to 1,C3G,0.8,0.64,0.96,0,0.64,0.96
+fm_other,0 to 1,C4G,0.8,0.64,0.96,0,0.64,0.96
+fm_other,0 to 1,C3C,0.8,0.64,0.96,0,0.64,0.96
+fm_other,0 to 1,C3I,0.8,0.64,0.96,0,0.64,0.96
+fm_root,0 to 1,NEMT,0.15,0.12,0.18,0,0.12,0.18
+fm_root,0 to 1,NEBT,0.15,0.12,0.18,0,0.12,0.18
+fm_root,0 to 1,NDBT,0.15,0.12,0.18,0,0.12,0.18
+fm_root,0 to 1,BETT,0.13,0.104,0.156,0,0.104,0.156
+fm_root,0 to 1,BEMT,0.13,0.104,0.156,0,0.104,0.156
+fm_root,0 to 1,BDTT,0.1,0.08,0.12,0,0.08,0.12
+fm_root,0 to 1,BDMT,0.1,0.08,0.12,0,0.08,0.12
+fm_root,0 to 1,BDBT,0.13,0.104,0.156,0,0.104,0.156
+fm_root,0 to 1,BES,0.17,0.136,0.204,0,0.136,0.204
+fm_root,0 to 1,BDMS,0.17,0.136,0.204,0,0.136,0.204
+fm_root,0 to 1,BDBS,0.17,0.136,0.204,0,0.136,0.204
+fm_root,0 to 1,C3AG,0.2,0.16,0.24,0,0.16,0.24
+fm_root,0 to 1,C3G,0.2,0.16,0.24,0,0.16,0.24
+fm_root,0 to 1,C4G,0.2,0.16,0.24,0,0.16,0.24
+fm_root,0 to 1,C3C,0.2,0.16,0.24,0,0.16,0.24
+fm_root,0 to 1,C3I,0.2,0.16,0.24,0,0.16,0.24
+fnps,unitless,all,0.15,0.1,0.3,0,0.1,0.3
+frac_sat_soil_dsl_init,unitless,all,0.8,0.5,1.0,0,0.5,1.0
+freelivfix_intercept,nan,all,0.0117,0.00585,0.0234,0,0.00585,0.0234
+freelivfix_slope_wet,nan,all,0.0006,0.0003,0.0012,0,0.0003,0.0012
+froot_leaf,gC/gC,NEMT,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,NEBT,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,NDBT,0.75,0.6,0.9,0,0.6,0.9
+froot_leaf,gC/gC,BETT,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,BEMT,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,BDTT,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,BDMT,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,BDBT,0.75,0.6,0.9,0,0.6,0.9
+froot_leaf,gC/gC,BES,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,BDMS,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,BDBS,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,C3AG,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,C3G,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,C4G,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,C3C,1.5,1.2,1.8,0,1.2,1.8
+froot_leaf,gC/gC,C3I,1.0,0.8,1.2,0,0.8,1.2
+frootcn,gC/gN,NEMT,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,NEBT,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,NDBT,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,BETT,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,BEMT,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,BDTT,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,BDMT,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,BDBT,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,BES,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,BDMS,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,BDBS,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,C3AG,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,C3G,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,C4G,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,C3C,42.0,33.6,50.4,0,33.6,50.4
+frootcn,gC/gN,C3I,42.0,33.6,50.4,0,33.6,50.4
+fsr_pft,m/s,NEMT,0.18,0.144,0.216,0,0.144,0.216
+fsr_pft,m/s,NEBT,0.18,0.144,0.216,0,0.144,0.216
+fsr_pft,m/s,NDBT,0.18,0.144,0.216,0,0.144,0.216
+fsr_pft,m/s,BETT,0.25,0.2,0.3,0,0.2,0.3
+fsr_pft,m/s,BEMT,0.22,0.176,0.264,0,0.176,0.264
+fsr_pft,m/s,BDTT,0.25,0.2,0.3,0,0.2,0.3
+fsr_pft,m/s,BDMT,0.22,0.176,0.264,0,0.176,0.264
+fsr_pft,m/s,BDBT,0.22,0.176,0.264,0,0.176,0.264
+fsr_pft,m/s,BES,0.25,0.2,0.3,0,0.2,0.3
+fsr_pft,m/s,BDMS,0.25,0.2,0.3,0,0.2,0.3
+fsr_pft,m/s,BDBS,0.05,0.04,0.06,0,0.04,0.06
+fsr_pft,m/s,C3AG,0.05,0.04,0.06,0,0.04,0.06
+fsr_pft,m/s,C3G,0.32,0.256,0.384,0,0.256,0.384
+fsr_pft,m/s,C4G,0.32,0.256,0.384,0,0.256,0.384
+fsr_pft,m/s,C3C,0.32,0.256,0.384,0,0.256,0.384
+fsr_pft,m/s,C3I,0.32,0.256,0.384,0,0.256,0.384
+fstor2tran,unitless,all,0.5,0.4,0.6,0,0.4,0.6
+fun_cn_flex_a,unitless,NEMT,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,NEBT,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,NDBT,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,BETT,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,BEMT,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,BDTT,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,BDMT,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,BDBT,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,BES,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,BDMS,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,BDBS,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,C3AG,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,C3G,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,C4G,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,C3C,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_a,unitless,C3I,5.0,4.0,6.0,0,4.0,6.0
+fun_cn_flex_b,unitless,NEMT,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,NEBT,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,NDBT,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,BETT,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,BEMT,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,BDTT,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,BDMT,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,BDBT,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,BES,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,BDMS,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,BDBS,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,C3AG,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,C3G,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,C4G,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,C3C,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_b,unitless,C3I,100.0,80.0,120.0,0,80.0,120.0
+fun_cn_flex_c,unitless,NEMT,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,NEBT,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,NDBT,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,BETT,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,BEMT,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,BDTT,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,BDMT,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,BDBT,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,BES,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,BDMS,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,BDBS,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,C3AG,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,C3G,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,C4G,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,C3C,8.0,6.4,9.6,0,6.4,9.6
+fun_cn_flex_c,unitless,C3I,8.0,6.4,9.6,0,6.4,9.6
+grperc,unitless,NEMT,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,NEBT,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,NDBT,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,BETT,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,BEMT,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,BDTT,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,BDMT,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,BDBT,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,BES,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,BDMS,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,BDBS,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,C3AG,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,C3G,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,C4G,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,C3C,0.11,0.05,0.3,0,0.05,0.3
+grperc,unitless,C3I,0.11,0.05,0.3,0,0.05,0.3
+hksat_sf,unitless,all,1.0,0.1,10.0,0,0.1,10.0
+ignition_efficiency,count/flash,all,0.22,0.176,0.264,0,0.176,0.264
+interception_fraction,--,all,1.0,0.5,1.0,0,0.5,1.0
+jmax25top_sf,unitless,all,1.0,0.8,1.2,0,0.8,1.2
+jmaxb0,J,all,0.0311,0.02055,0.05,1,0.01,0.05
+jmaxb1,--,all,0.17,0.05,0.25,0,0.05,0.25
+jmaxha,J/mol,all,50000.0,34000.0,78000.0,0,34000.0,78000.0
+jmaxhd,J/mol,all,200000.0,88300.0,280000.0,0,88300.0,280000.0
+jmaxse_sf,unitless,all,1.0,0.8,1.025,1,0.8,1.2
+k_nitr_max_perday,1/day,all,0.1,0.05,0.2,0,0.05,0.2
+kc25_coef,mol/mol,all,0.0004049,0.000266,0.000454,0,0.000266,0.000454
+kc_nonmyc,gC/m3,NEMT,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,NEBT,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,NDBT,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,BETT,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,BEMT,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,BDTT,0.072,0.0072,0.72,0,0.0072,0.72
+kc_nonmyc,gC/m3,BDMT,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,BDBT,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,BES,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,BDMS,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,BDBS,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,C3AG,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,C3G,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,C4G,7.2,0.72,72.0,0,0.72,72.0
+kc_nonmyc,gC/m3,C3C,0.72,0.072,7.2,0,0.072,7.2
+kc_nonmyc,gC/m3,C3I,0.72,0.072,7.2,0,0.072,7.2
+kcha,J/mol,all,79430.0,39715.0,119145.0,0,39715.0,119145.0
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,NEMT,1.6e-08,3e-09,3.8e-08,0,3e-09,3.8e-08
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,NEBT,2.23e-08,4e-09,3.4e-08,0,4e-09,3.4e-08
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,NDBT,1.79e-08,3.4e-09,3.1e-08,0,3.4e-09,3.1e-08
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BETT,3.32e-08,1.5e-08,1.7e-07,0,1.5e-08,1.7e-07
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BEMT,2.6e-08,1.3e-08,1.9e-07,0,1.3e-08,1.9e-07
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BDTT,4.03e-08,8.5e-09,6e-08,0,8.5e-09,6e-08
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BDMT,2.48e-08,1.2e-08,2.2e-07,0,1.2e-08,2.2e-07
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BDBT,2.73e-08,1.3e-08,2.3e-07,0,1.3e-08,2.3e-07
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BES,1.15e-08,2.4e-09,2e-08,0,2.4e-09,2e-08
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BDMS,2.52e-09,9.5e-10,4.1e-09,0,9.5e-10,4.1e-09
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BDBS,4.12e-09,5.9e-10,6.2e-09,0,5.9e-10,6.2e-09
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,C3AG,2.41e-09,2.3e-10,3.6e-09,0,2.3e-10,3.6e-09
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,C3G,2e-09,4e-10,3e-09,0,4e-10,3e-09
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,C4G,1.29e-09,3.1e-10,1.9e-09,0,3.1e-10,1.9e-09
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,C3C,2.06e-08,1.6e-09,3.1e-08,0,1.6e-09,3.1e-08
+kmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,C3I,2e-08,1.6e-09,3.1e-08,0,1.6e-09,3.1e-08
+kn_nonmyc,gC/m2,NEMT,0.012,0.0012,0.12,0,0.0012,0.12
+kn_nonmyc,gC/m2,NEBT,0.012,0.0012,0.12,0,0.0012,0.12
+kn_nonmyc,gC/m2,NDBT,0.0012,0.00012,0.012,0,0.00012,0.012
+kn_nonmyc,gC/m2,BETT,0.012,0.0012,0.12,0,0.0012,0.12
+kn_nonmyc,gC/m2,BEMT,0.012,0.0012,0.12,0,0.0012,0.12
+kn_nonmyc,gC/m2,BDTT,0.0012,0.00012,0.012,0,0.00012,0.012
+kn_nonmyc,gC/m2,BDMT,0.012,0.0012,0.12,0,0.0012,0.12
+kn_nonmyc,gC/m2,BDBT,0.012,0.0012,0.12,0,0.0012,0.12
+kn_nonmyc,gC/m2,BES,0.012,0.0012,0.12,0,0.0012,0.12
+kn_nonmyc,gC/m2,BDMS,0.012,0.0012,0.12,0,0.0012,0.12
+kn_nonmyc,gC/m2,BDBS,0.012,0.0012,0.12,0,0.0012,0.12
+kn_nonmyc,gC/m2,C3AG,0.012,0.0012,0.12,0,0.0012,0.12
+kn_nonmyc,gC/m2,C3G,0.012,0.0012,0.12,0,0.0012,0.12
+kn_nonmyc,gC/m2,C4G,0.12,0.012,1.2,0,0.012,1.2
+kn_nonmyc,gC/m2,C3C,0.012,0.0012,0.12,0,0.0012,0.12
+kn_nonmyc,gC/m2,C3I,0.012,0.0012,0.12,0,0.0012,0.12
+ko25_coef,mol/mol,all,0.2784,0.207,0.395,0,0.207,0.395
+koha,J/mol,all,36380.0,18190.0,54570.0,0,18190.0,54570.0
+kp25ratio,unitless,all,20000.0,10000.0,60000.0,0,10000.0,60000.0
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,NEMT,1.49e-10,2.3e-11,2.5e-10,0,2.3e-11,2.5e-10
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,NEBT,1.57e-10,2.6e-11,2.9e-10,0,2.6e-11,2.9e-10
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,NDBT,1.08e-10,2.8e-11,1.6e-10,0,2.8e-11,1.6e-10
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BETT,1.66e-10,1.1e-10,1.9e-08,0,1.1e-10,1.9e-08
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BEMT,8.35e-11,5.4e-11,5.1e-10,0,5.4e-11,5.1e-10
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BDTT,3.4e-09,8e-11,1e-08,0,8e-11,1e-08
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BDMT,1.04e-10,6.9e-11,1.6e-10,0,6.9e-11,1.6e-10
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BDBT,1.39e-10,9.3e-11,2.1e-10,0,9.3e-11,2.1e-10
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BES,1.03e-09,4.5e-11,1.7e-09,0,4.5e-11,1.7e-09
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BDMS,3.78e-08,7.4e-11,1.1e-07,0,7.4e-11,1.1e-07
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,BDBS,4.65e-11,2.2e-11,1.5e-10,0,2.2e-11,1.5e-10
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,C3AG,8.05e-11,1e-11,1.9e-10,0,1e-11,1.9e-10
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,C3G,2.08e-08,4.7e-11,5.9e-08,0,4.7e-11,5.9e-08
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,C4G,2.97e-08,8.2e-11,1e-07,0,8.2e-11,1e-07
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,C3C,9.56e-10,6e-11,3.8e-09,0,6e-11,3.8e-09
+krmax,mm h2o (transpired)/mm h2o (water potential gradient)/sec,C3I,7.94e-10,6e-11,3.8e-09,0,6e-11,3.8e-09
+lai_dl,m2/m2,all,0.5,0.5,1.5,0,0.5,1.5
+leaf_long,years,NEMT,3.31,2.65,3.971,0,2.65,3.971
+leaf_long,years,NEBT,3.31,2.65,3.971,0,2.65,3.971
+leaf_long,years,NDBT,0.507,0.405,0.608,0,0.405,0.608
+leaf_long,years,BETT,1.4,1.12,1.68,0,1.12,1.68
+leaf_long,years,BEMT,1.4,1.12,1.68,0,1.12,1.68
+leaf_long,years,BDTT,0.483,0.387,0.58,0,0.387,0.58
+leaf_long,years,BDMT,0.483,0.387,0.58,0,0.387,0.58
+leaf_long,years,BDBT,0.483,0.387,0.58,0,0.387,0.58
+leaf_long,years,BES,1.32,1.06,1.588,0,1.06,1.588
+leaf_long,years,BDMS,0.39,0.312,0.468,0,0.312,0.468
+leaf_long,years,BDBS,0.39,0.312,0.468,0,0.312,0.468
+leaf_long,years,C3AG,0.321,0.257,0.385,0,0.257,0.385
+leaf_long,years,C3G,0.321,0.257,0.385,0,0.257,0.385
+leaf_long,years,C4G,0.14,0.112,0.168,0,0.112,0.168
+leaf_long,years,C3C,0.321,0.257,0.385,0,0.257,0.385
+leaf_long,years,C3I,1.0,0.8,1.2,0,0.8,1.2
+leafcn,gC/gN,NEMT,58.0,40.6,75.4,0,40.6,75.4
+leafcn,gC/gN,NEBT,58.0,40.6,75.4,0,40.6,75.4
+leafcn,gC/gN,NDBT,25.8,18.1,33.6,0,18.1,33.6
+leafcn,gC/gN,BETT,29.6,20.7,38.5,0,20.7,38.5
+leafcn,gC/gN,BEMT,29.6,20.7,38.5,0,20.7,38.5
+leafcn,gC/gN,BDTT,23.5,16.4,30.5,0,16.4,30.5
+leafcn,gC/gN,BDMT,23.5,16.4,30.5,0,16.4,30.5
+leafcn,gC/gN,BDBT,23.5,16.4,30.5,0,16.4,30.5
+leafcn,gC/gN,BES,36.4,25.5,47.3,0,25.5,47.3
+leafcn,gC/gN,BDMS,23.3,16.3,30.2,0,16.3,30.2
+leafcn,gC/gN,BDBS,21.4,14.98,27.8,0,14.98,27.8
+leafcn,gC/gN,C3AG,20.7,14.5,26.91,0,14.5,26.91
+leafcn,gC/gN,C3G,28.0,19.6,36.4,0,19.6,36.4
+leafcn,gC/gN,C4G,35.4,24.8,46.0,0,24.8,46.0
+leafcn,gC/gN,C3C,28.0,19.6,36.4,0,19.6,36.4
+leafcn,gC/gN,C3I,25.0,17.5,32.5,0,17.5,32.5
+lfuel,nan,all,75.0,50.0,105.0,0,50.0,105.0
+liq_canopy_storage_scalar,kg/m2,all,0.1,0.05,2.0,0,0.05,2.0
+lmr_intercept_atkin,umol CO2/m**2/s,NEMT,1.4995,1.1996,1.7994,0,1.1996,1.7994
+lmr_intercept_atkin,umol CO2/m**2/s,NEBT,1.4995,1.1996,1.7994,0,1.1996,1.7994
+lmr_intercept_atkin,umol CO2/m**2/s,NDBT,1.4995,1.1996,1.7994,0,1.1996,1.7994
+lmr_intercept_atkin,umol CO2/m**2/s,BETT,1.756,1.4048,2.1072,0,1.4048,2.1072
+lmr_intercept_atkin,umol CO2/m**2/s,BEMT,1.756,1.4048,2.1072,0,1.4048,2.1072
+lmr_intercept_atkin,umol CO2/m**2/s,BDTT,1.756,1.4048,2.1072,0,1.4048,2.1072
+lmr_intercept_atkin,umol CO2/m**2/s,BDMT,1.756,1.4048,2.1072,0,1.4048,2.1072
+lmr_intercept_atkin,umol CO2/m**2/s,BDBT,1.756,1.4048,2.1072,0,1.4048,2.1072
+lmr_intercept_atkin,umol CO2/m**2/s,BES,2.0749,1.65992,2.48988,0,1.65992,2.48988
+lmr_intercept_atkin,umol CO2/m**2/s,BDMS,2.0749,1.65992,2.48988,0,1.65992,2.48988
+lmr_intercept_atkin,umol CO2/m**2/s,BDBS,2.0749,1.65992,2.48988,0,1.65992,2.48988
+lmr_intercept_atkin,umol CO2/m**2/s,C3AG,2.1956,1.76,2.63472,0,1.76,2.63472
+lmr_intercept_atkin,umol CO2/m**2/s,C3G,2.1956,1.76,2.63472,0,1.76,2.63472
+lmr_intercept_atkin,umol CO2/m**2/s,C4G,2.1956,1.76,2.63472,0,1.76,2.63472
+lmr_intercept_atkin,umol CO2/m**2/s,C3C,2.1956,1.76,2.63472,0,1.76,2.63472
+lmr_intercept_atkin,umol CO2/m**2/s,C3I,2.1956,1.76,2.63472,0,1.76,2.63472
+lmrha,J/mol,all,46390.0,23195.0,69585.0,0,23195.0,69585.0
+lmrhd,J/mol,all,150650.0,146000.0,225975.0,1,75325.0,225975.0
+lmrse,J/mol/K,all,490.0,392.0,502.25,1,392.0,588.0
+luna_theta_cj,unitless,all,0.95,0.8,0.99,0,0.8,0.99
+lwtop_ann,unitless,all,0.7,0.56,0.84,0,0.56,0.84
+max_altdepth_cryoturbation,m,all,2.0,1.0,4.0,0,1.0,4.0
+max_altmultiplier_cryoturb,unitless,all,3.0,1.5,6.0,0,1.5,6.0
+maximum_leaf_wetted_fraction,--,all,0.05,0.01,0.5,0,0.01,0.5
+maxpsi_hr,MPa,all,-0.002,-1.0,-0.002,1,-1.0,0.0
+medlynintercept,umol H2O,NEMT,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,NEBT,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,NDBT,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,BETT,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,BEMT,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,BDTT,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,BDMT,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,BDBT,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,BES,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,BDMS,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,BDBS,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,C3AG,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,C3G,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,C4G,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,C3C,100.0,1.0,50000.0,1,1.0,200000.0
+medlynintercept,umol H2O,C3I,100.0,1.0,50000.0,1,1.0,200000.0
+medlynslope,umol H2O/umol CO2,NEMT,2.35,1.53,4.14,0,1.53,4.14
+medlynslope,umol H2O/umol CO2,NEBT,2.35,1.53,4.14,0,1.53,4.14
+medlynslope,umol H2O/umol CO2,NDBT,2.35,1.53,4.14,0,1.53,4.14
+medlynslope,umol H2O/umol CO2,BETT,4.12,2.91,9.11,1,1.7,9.11
+medlynslope,umol H2O/umol CO2,BEMT,4.12,1.7,9.11,0,1.7,9.11
+medlynslope,umol H2O/umol CO2,BDTT,4.45,2.05,7.07,0,2.05,7.07
+medlynslope,umol H2O/umol CO2,BDMT,4.45,2.05,7.07,0,2.05,7.07
+medlynslope,umol H2O/umol CO2,BDBT,4.45,2.05,7.07,0,2.05,7.07
+medlynslope,umol H2O/umol CO2,BES,4.7,2.8,5.95,1,0.91,5.95
+medlynslope,umol H2O/umol CO2,BDMS,4.7,2.8,5.95,1,0.91,5.95
+medlynslope,umol H2O/umol CO2,BDBS,4.7,0.91,5.95,0,0.91,5.95
+medlynslope,umol H2O/umol CO2,C3AG,2.22,3.78,8.54,0,3.78,8.54
+medlynslope,umol H2O/umol CO2,C3G,5.25,3.78,8.54,0,3.78,8.54
+medlynslope,umol H2O/umol CO2,C4G,1.62,0.65,3.93,0,0.65,3.93
+medlynslope,umol H2O/umol CO2,C3C,5.79,3.89,7.57,0,3.89,7.57
+medlynslope,umol H2O/umol CO2,C3I,5.79,3.89,7.57,0,3.89,7.57
+minpsi_hr,MPa,all,-2.0,-10.0,-1.0,0,-10.0,-1.0
+minrelh,fraction,all,0.25,0.2,0.3,0,0.2,0.3
+mu,unitless,all,0.13889,0.131,0.24,0,0.131,0.24
+n_baseflow,unitless,all,1.0,1.0,2.0,0,1.0,2.0
+n_melt_coef,unitless,all,200.0,180.0,220.0,0,180.0,220.0
+ndays_off,days,all,15.0,12.0,18.0,0,12.0,18.0
+ndays_on,days,NEMT,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,NEBT,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,NDBT,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,BETT,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,BEMT,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,BDTT,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,BDMT,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,BDBT,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,BES,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,BDMS,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,BDBS,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,C3AG,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,C3G,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,C4G,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,C3C,30.0,24.0,36.0,0,24.0,36.0
+ndays_on,days,C3I,30.0,24.0,36.0,0,24.0,36.0
+non_boreal_peatfire_c,nan,all,0.00017,0.000136,0.000204,0,0.000136,0.000204
+nstem,number m-2,NEMT,0.08,0.03,0.5,0,0.03,0.5
+nstem,number m-2,NEBT,0.08,0.03,0.5,0,0.03,0.5
+nstem,number m-2,NDBT,0.08,0.03,0.5,0,0.03,0.5
+nstem,number m-2,BETT,0.06,0.03,0.5,0,0.03,0.5
+nstem,number m-2,BEMT,0.035,0.03,0.5,0,0.03,0.5
+nstem,number m-2,BDTT,0.06,0.03,0.5,0,0.03,0.5
+nstem,number m-2,BDMT,0.035,0.03,0.5,0,0.03,0.5
+nstem,number m-2,BDBT,0.08,0.03,0.5,0,0.03,0.5
+nstem,number m-2,BES,0.5,0.03,0.5,0,0.03,0.5
+nstem,number m-2,BDMS,0.5,0.03,0.5,0,0.03,0.5
+nstem,number m-2,BDBS,0.5,0.03,0.5,0,0.03,0.5
+nstem,number m-2,C3AG,100.0,0.03,0.5,0,0.03,0.5
+nstem,number m-2,C3G,100.0,0.03,0.5,0,0.03,0.5
+nstem,number m-2,C4G,100.0,0.03,0.5,0,0.03,0.5
+nstem,number m-2,C3C,100.0,0.03,0.5,0,0.03,0.5
+nstem,number m-2,C3I,100.0,0.03,0.5,0,0.03,0.5
+occur_hi_gdp_tree,nan,all,0.33,0.264,0.396,0,0.264,0.396
+om_frac_sf,unitless,all,1.0,0.8,1.2,0,0.8,1.2
+pc,unitless,all,0.4,0.4,0.69,0,0.4,0.69
+pd,kg/m3,all,2700.0,2160.0,3240.0,0,2160.0,3240.0
+perched_baseflow_scalar,kg/m2/s,all,1e-05,1e-06,0.0001,0,1e-06,0.0001
+pot_hmn_ign_counts_alpha,nan,all,0.01,0.008,0.012,0,0.008,0.012
+prh30,unitless,all,0.7,0.56,0.84,0,0.56,0.84
+psi50,mm,NEMT,-530000.0,-371000.0,-689000.0,0,-371000.0,-689000.0
+psi50,mm,NEBT,-400000.0,-280000.0,-520000.0,0,-280000.0,-520000.0
+psi50,mm,NDBT,-380000.0,-266000.0,-494000.0,0,-266000.0,-494000.0
+psi50,mm,BETT,-250000.0,-175000.0,-325000.0,0,-175000.0,-325000.0
+psi50,mm,BEMT,-270000.0,-189000.0,-351000.0,0,-189000.0,-351000.0
+psi50,mm,BDTT,-340000.0,-238000.0,-442000.0,0,-238000.0,-442000.0
+psi50,mm,BDMT,-270000.0,-189000.0,-351000.0,0,-189000.0,-351000.0
+psi50,mm,BDBT,-200000.0,-140000.0,-260000.0,0,-140000.0,-260000.0
+psi50,mm,BES,-400000.0,-280000.0,-520000.0,0,-280000.0,-520000.0
+psi50,mm,BDMS,-390000.0,-273000.0,-507000.0,0,-273000.0,-507000.0
+psi50,mm,BDBS,-390000.0,-273000.0,-507000.0,0,-273000.0,-507000.0
+psi50,mm,C3AG,-340000.0,-238000.0,-442000.0,0,-238000.0,-442000.0
+psi50,mm,C3G,-340000.0,-238000.0,-442000.0,0,-238000.0,-442000.0
+psi50,mm,C4G,-340000.0,-238000.0,-442000.0,0,-238000.0,-442000.0
+psi50,mm,C3C,-340000.0,-238000.0,-442000.0,0,-238000.0,-442000.0
+psi50,mm,C3I,-340000.0,-238000.0,-442000.0,0,-238000.0,-442000.0
+q10_mr,unitless,all,1.5,1.25,3.0,1,1.0,3.0
+r_mort,1/year,all,0.02,0.016,0.024,0,0.016,0.024
+relhExp,unitless,all,6.0999,4.0,8.0,0,4.0,8.0
+rf_l1s1_bgc,unitless,all,0.55,0.2,0.8,0,0.2,0.8
+rf_l2s1_bgc,unitless,all,0.5,0.2,0.8,0,0.2,0.8
+rf_l3s2_bgc,unitless,all,0.5,0.2,0.8,0,0.2,0.8
+rf_s2s1_bgc,unitless,all,0.55,0.55,0.8,1,0.2,0.8
+rf_s2s3_bgc,unitless,all,0.55,0.2,0.8,0,0.2,0.8
+rf_s3s1_bgc,unitless,all,0.55,0.2,0.8,0,0.2,0.8
+rh_hgh,nan,all,80.0,70.0,85.0,0,70.0,85.0
+rh_low,nan,all,30.0,25.0,35.0,0,25.0,35.0
+rho_max,kg/m3,all,350.0,280.0,420.0,0,280.0,420.0
+rholnir,fraction,NEMT,0.41,0.31,0.51,0,0.31,0.51
+rholnir,fraction,NEBT,0.41,0.33,0.49,0,0.33,0.49
+rholnir,fraction,NDBT,0.39,0.37,0.41,0,0.37,0.41
+rholnir,fraction,BETT,0.46,0.42,0.5,0,0.42,0.5
+rholnir,fraction,BEMT,0.46,0.42,0.5,0,0.42,0.5
+rholnir,fraction,BDTT,0.41,0.35,0.47,0,0.35,0.47
+rholnir,fraction,BDMT,0.41,0.36,0.48,0,0.36,0.48
+rholnir,fraction,BDBT,0.41,0.34,0.46,0,0.34,0.46
+rholnir,fraction,BES,0.46,0.35,0.47,0,0.35,0.47
+rholnir,fraction,BDMS,0.41,0.35,0.47,0,0.35,0.47
+rholnir,fraction,BDBS,0.41,0.22,0.34,0,0.22,0.34
+rholnir,fraction,C3AG,0.28,0.22,0.34,0,0.22,0.34
+rholnir,fraction,C3G,0.28,0.22,0.34,0,0.22,0.34
+rholnir,fraction,C4G,0.28,0.36,0.48,0,0.36,0.48
+rholnir,fraction,C3C,0.42,0.38,0.46,0,0.38,0.46
+rholnir,fraction,C3I,0.42,0.38,0.46,0,0.38,0.46
+rholvis,fraction,NEMT,0.09,0.04,0.12,0,0.04,0.12
+rholvis,fraction,NEBT,0.09,0.05,0.13,0,0.05,0.13
+rholvis,fraction,NDBT,0.08,0.04,0.12,0,0.04,0.12
+rholvis,fraction,BETT,0.11,0.04,0.23,0,0.04,0.23
+rholvis,fraction,BEMT,0.11,0.04,0.23,0,0.04,0.23
+rholvis,fraction,BDTT,0.08,0.02,0.14,0,0.02,0.14
+rholvis,fraction,BDMT,0.08,0.02,0.14,0,0.02,0.14
+rholvis,fraction,BDBT,0.08,0.05,0.13,0,0.05,0.13
+rholvis,fraction,BES,0.11,0.07,0.15,0,0.07,0.15
+rholvis,fraction,BDMS,0.08,0.04,0.12,0,0.04,0.12
+rholvis,fraction,BDBS,0.08,0.04,0.12,0,0.04,0.12
+rholvis,fraction,C3AG,0.05,0.01,0.09,0,0.01,0.09
+rholvis,fraction,C3G,0.05,0.01,0.09,0,0.01,0.09
+rholvis,fraction,C4G,0.05,0.01,0.09,0,0.01,0.09
+rholvis,fraction,C3C,0.08,0.04,0.12,0,0.04,0.12
+rholvis,fraction,C3I,0.08,0.04,0.12,0,0.04,0.12
+rhosnir,fraction,NEMT,0.36,0.288,0.432,0,0.288,0.432
+rhosnir,fraction,NEBT,0.36,0.288,0.432,0,0.288,0.432
+rhosnir,fraction,NDBT,0.36,0.288,0.432,0,0.288,0.432
+rhosnir,fraction,BETT,0.49,0.392,0.588,0,0.392,0.588
+rhosnir,fraction,BEMT,0.49,0.392,0.588,0,0.392,0.588
+rhosnir,fraction,BDTT,0.49,0.392,0.588,0,0.392,0.588
+rhosnir,fraction,BDMT,0.49,0.392,0.588,0,0.392,0.588
+rhosnir,fraction,BDBT,0.49,0.392,0.588,0,0.392,0.588
+rhosnir,fraction,BES,0.49,0.392,0.588,0,0.392,0.588
+rhosnir,fraction,BDMS,0.49,0.392,0.588,0,0.392,0.588
+rhosnir,fraction,BDBS,0.49,0.392,0.588,0,0.392,0.588
+rhosnir,fraction,C3AG,0.53,0.424,0.636,0,0.424,0.636
+rhosnir,fraction,C3G,0.53,0.424,0.636,0,0.424,0.636
+rhosnir,fraction,C4G,0.53,0.424,0.636,0,0.424,0.636
+rhosnir,fraction,C3C,0.53,0.424,0.636,0,0.424,0.636
+rhosnir,fraction,C3I,0.53,0.424,0.636,0,0.424,0.636
+rhosvis,fraction,NEMT,0.12,0.096,0.144,0,0.096,0.144
+rhosvis,fraction,NEBT,0.12,0.096,0.144,0,0.096,0.144
+rhosvis,fraction,NDBT,0.12,0.096,0.144,0,0.096,0.144
+rhosvis,fraction,BETT,0.21,0.168,0.252,0,0.168,0.252
+rhosvis,fraction,BEMT,0.21,0.168,0.252,0,0.168,0.252
+rhosvis,fraction,BDTT,0.21,0.168,0.252,0,0.168,0.252
+rhosvis,fraction,BDMT,0.21,0.168,0.252,0,0.168,0.252
+rhosvis,fraction,BDBT,0.21,0.168,0.252,0,0.168,0.252
+rhosvis,fraction,BES,0.21,0.168,0.252,0,0.168,0.252
+rhosvis,fraction,BDMS,0.21,0.168,0.252,0,0.168,0.252
+rhosvis,fraction,BDBS,0.21,0.168,0.252,0,0.168,0.252
+rhosvis,fraction,C3AG,0.31,0.248,0.372,0,0.248,0.372
+rhosvis,fraction,C3G,0.31,0.248,0.372,0,0.248,0.372
+rhosvis,fraction,C4G,0.31,0.248,0.372,0,0.248,0.372
+rhosvis,fraction,C3C,0.31,0.248,0.372,0,0.248,0.372
+rhosvis,fraction,C3I,0.31,0.248,0.372,0,0.248,0.372
+rootprof_beta,unitless,NEMT,0.976,0.97,0.98,0,0.97,0.98
+rootprof_beta,unitless,NEBT,0.943,0.929,0.952,0,0.929,0.952
+rootprof_beta,unitless,NDBT,0.943,0.929,0.952,0,0.929,0.952
+rootprof_beta,unitless,BETT,0.993,0.991,0.994,0,0.991,0.994
+rootprof_beta,unitless,BEMT,0.966,0.958,0.972,0,0.958,0.972
+rootprof_beta,unitless,BDTT,0.993,0.991,0.994,0,0.991,0.994
+rootprof_beta,unitless,BDMT,0.966,0.958,0.972,0,0.958,0.972
+rootprof_beta,unitless,BDBT,0.943,0.929,0.952,0,0.929,0.952
+rootprof_beta,unitless,BES,0.964,0.955,0.97,0,0.955,0.97
+rootprof_beta,unitless,BDMS,0.964,0.955,0.97,0,0.955,0.97
+rootprof_beta,unitless,BDBS,0.914,0.894,0.928,0,0.894,0.928
+rootprof_beta,unitless,C3AG,0.914,0.894,0.928,0,0.894,0.928
+rootprof_beta,unitless,C3G,0.943,0.929,0.952,0,0.929,0.952
+rootprof_beta,unitless,C4G,0.943,0.929,0.952,0,0.929,0.952
+rootprof_beta,unitless,C3C,0.943,0.929,0.952,0,0.929,0.952
+rootprof_beta,unitless,C3I,0.943,0.929,0.952,0,0.929,0.952
+rstem,s m-2,NEMT,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,NEBT,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,NDBT,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,BETT,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,BEMT,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,BDTT,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,BDMT,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,BDBT,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,BES,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,BDMS,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,BDBS,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,C3AG,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,C3G,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,C4G,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,C3C,1000.0,500.0,2000.0,0,500.0,2000.0
+rstem,s m-2,C3I,1000.0,500.0,2000.0,0,500.0,2000.0
+s_fix,gC/gN,NEMT,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,NEBT,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,NDBT,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,BETT,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,BEMT,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,BDTT,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,BDMT,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,BDBT,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,BES,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,BDMS,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,BDBS,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,C3AG,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,C3G,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,C4G,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,C3C,-6.0,-7.2,-4.8,0,-7.2,-4.8
+s_fix,gC/gN,C3I,-6.0,-7.2,-4.8,0,-7.2,-4.8
+sand_pf,percent,all,0.0,-20.0,20.0,0,-20.0,20.0
+scvng_fct_mlt_sf,unitless,all,1.0,0.5,2.0,0,0.5,2.0
+slatop,m^2/gC,NEMT,0.01,0.0073,0.0127,0,0.0073,0.0127
+slatop,m^2/gC,NEBT,0.01,0.0073,0.0127,0,0.0073,0.0127
+slatop,m^2/gC,NDBT,0.02018,0.0177,0.0226,0,0.0177,0.0226
+slatop,m^2/gC,BETT,0.019,0.0158,0.022,0,0.0158,0.022
+slatop,m^2/gC,BEMT,0.019,0.0158,0.022,0,0.0158,0.022
+slatop,m^2/gC,BDTT,0.0308,0.0278,0.0336,0,0.0278,0.0336
+slatop,m^2/gC,BDMT,0.0308,0.0278,0.0336,0,0.0278,0.0336
+slatop,m^2/gC,BDBT,0.0308,0.0278,0.0336,0,0.0278,0.0336
+slatop,m^2/gC,BES,0.01798,0.0147,0.0212,0,0.0147,0.0212
+slatop,m^2/gC,BDMS,0.0307,0.0277,0.0337,0,0.0277,0.0337
+slatop,m^2/gC,BDBS,0.028,0.0248,0.0312,0,0.0248,0.0312
+slatop,m^2/gC,C3AG,0.021,0.0178,0.0242,0,0.0178,0.0242
+slatop,m^2/gC,C3G,0.0402,0.0371,0.0434,0,0.0371,0.0434
+slatop,m^2/gC,C4G,0.03846,0.0351,0.0418,0,0.0351,0.0418
+slatop,m^2/gC,C3C,0.0402,0.0371,0.0434,0,0.0371,0.0434
+slatop,m^2/gC,C3I,0.0402,0.0371,0.0434,0,0.0371,0.0434
+slopebeta,unitless,all,-3.0,-5.0,-1.0,0,-5.0,-1.0
+slopemax,unitless,all,0.4,0.01,1.0,0,0.01,1.0
+snow_canopy_storage_scalar,kg/m2,all,6.0,1.4,9.5,0,1.4,9.5
+snowcan_unload_temp_fact,K*s,all,187000.0,93500.0,374000.0,0,93500.0,374000.0
+snowcan_unload_wind_fact,unitless,all,0.5,0.25,1.0,0,0.25,1.0
+snw_rds_refrz,microns,all,1000.0,500.0,1500.0,0,500.0,1500.0
+soilpsi_off,MPa,all,-0.8,-0.96,-0.64,0,-0.96,-0.64
+soilpsi_on,MPa,all,-0.6,-0.72,-0.48,0,-0.72,-0.48
+som_diffus,m^2/sec,all,3.17e-12,3.17e-13,3.17e-11,0,3.17e-13,3.17e-11
+ssi,unitless,all,0.033,0.0264,0.0396,0,0.0264,0.0396
+stem_leaf,gC/gC,NEMT,2.3,1.84,2.76,0,1.84,2.76
+stem_leaf,gC/gC,NEBT,2.3,1.84,2.76,0,1.84,2.76
+stem_leaf,gC/gC,NDBT,1.0,0.8,1.2,0,0.8,1.2
+stem_leaf,gC/gC,BETT,2.3,1.84,2.76,0,1.84,2.76
+stem_leaf,gC/gC,BEMT,1.5,1.2,1.8,0,1.2,1.8
+stem_leaf,gC/gC,BDTT,1.0,0.8,1.2,0,0.8,1.2
+stem_leaf,gC/gC,BDMT,2.3,1.84,2.76,0,1.84,2.76
+stem_leaf,gC/gC,BDBT,2.3,1.84,2.76,0,1.84,2.76
+stem_leaf,gC/gC,BES,1.4,1.12,1.68,0,1.12,1.68
+stem_leaf,gC/gC,BDMS,0.24,0.192,0.288,0,0.192,0.288
+stem_leaf,gC/gC,BDBS,0.24,0.192,0.288,0,0.192,0.288
+stem_leaf,gC/gC,C3AG,0.0,0.0,0.0,0,0.0,0.0
+stem_leaf,gC/gC,C3G,0.0,0.0,0.0,0,0.0,0.0
+stem_leaf,gC/gC,C4G,0.0,0.0,0.0,0,0.0,0.0
+stem_leaf,gC/gC,C3C,0.0,0.0,0.0,0,0.0,0.0
+stem_leaf,gC/gC,C3I,0.0,0.0,0.0,0,0.0,0.0
+sucsat_sf,unitless,all,1.0,0.1,3.0,1,0.1,10.0
+tau_cwd,1/year,all,3.33,1.67,6.67,0,1.67,6.67
+tau_l1,1/year,all,0.0541,0.027,0.108,0,0.027,0.108
+tau_l2_l3,1/year,all,0.204,0.102,0.408,0,0.102,0.408
+tau_ref,s,all,172800.0,86400.0,345600.0,0,86400.0,345600.0
+tau_s1,1/year,all,0.137,0.0685,0.274,0,0.0685,0.274
+tau_s2,1/year,all,5.0,2.5,10.0,0,2.5,10.0
+tau_s3,1/year,all,222.0,111.0,444.0,0,111.0,444.0
+taulnir,fraction,NEMT,0.32,0.23,0.39,0,0.23,0.39
+taulnir,fraction,NEBT,0.32,0.27,0.39,0,0.27,0.39
+taulnir,fraction,NDBT,0.42,0.38,0.46,0,0.38,0.46
+taulnir,fraction,BETT,0.33,0.27,0.39,0,0.27,0.39
+taulnir,fraction,BEMT,0.33,0.23,0.43,0,0.23,0.43
+taulnir,fraction,BDTT,0.43,0.37,0.49,0,0.37,0.49
+taulnir,fraction,BDMT,0.43,0.33,0.53,0,0.33,0.53
+taulnir,fraction,BDBT,0.43,0.37,0.49,0,0.37,0.49
+taulnir,fraction,BES,0.33,0.27,0.39,0,0.27,0.39
+taulnir,fraction,BDMS,0.43,0.37,0.49,0,0.37,0.49
+taulnir,fraction,BDBS,0.43,0.37,0.49,0,0.37,0.49
+taulnir,fraction,C3AG,0.4,0.34,0.46,0,0.34,0.46
+taulnir,fraction,C3G,0.4,0.34,0.46,0,0.34,0.46
+taulnir,fraction,C4G,0.4,0.34,0.46,0,0.34,0.46
+taulnir,fraction,C3C,0.4,0.32,0.48,0,0.32,0.48
+taulnir,fraction,C3I,0.4,0.32,0.48,0,0.32,0.48
+taulvis,fraction,NEMT,0.04,0.02,0.06,0,0.02,0.06
+taulvis,fraction,NEBT,0.04,0.03,0.07,0,0.03,0.07
+taulvis,fraction,NDBT,0.06,0.04,0.08,0,0.04,0.08
+taulvis,fraction,BETT,0.06,0.04,0.08,0,0.04,0.08
+taulvis,fraction,BEMT,0.06,0.01,0.18,0,0.01,0.18
+taulvis,fraction,BDTT,0.06,0.03,0.07,0,0.03,0.07
+taulvis,fraction,BDMT,0.06,0.01,0.14,0,0.01,0.14
+taulvis,fraction,BDBT,0.06,0.03,0.07,0,0.03,0.07
+taulvis,fraction,BES,0.06,0.04,0.08,0,0.04,0.08
+taulvis,fraction,BDMS,0.06,0.04,0.08,0,0.04,0.08
+taulvis,fraction,BDBS,0.06,0.04,0.08,0,0.04,0.08
+taulvis,fraction,C3AG,0.05,0.04,0.08,0,0.04,0.08
+taulvis,fraction,C3G,0.05,0.03,0.07,0,0.03,0.07
+taulvis,fraction,C4G,0.05,0.03,0.07,0,0.03,0.07
+taulvis,fraction,C3C,0.05,0.01,0.09,0,0.01,0.09
+taulvis,fraction,C3I,0.05,0.01,0.09,0,0.01,0.09
+tausnir,fraction,NEMT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausnir,fraction,NEBT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausnir,fraction,NDBT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausnir,fraction,BETT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausnir,fraction,BEMT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausnir,fraction,BDTT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausnir,fraction,BDMT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausnir,fraction,BDBT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausnir,fraction,BES,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausnir,fraction,BDMS,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausnir,fraction,BDBS,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausnir,fraction,C3AG,0.25,0.2,0.3,0,0.2,0.3
+tausnir,fraction,C3G,0.25,0.2,0.3,0,0.2,0.3
+tausnir,fraction,C4G,0.25,0.2,0.3,0,0.2,0.3
+tausnir,fraction,C3C,0.25,0.2,0.3,0,0.2,0.3
+tausnir,fraction,C3I,0.25,0.2,0.3,0,0.2,0.3
+tausvis,fraction,NEMT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausvis,fraction,NEBT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausvis,fraction,NDBT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausvis,fraction,BETT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausvis,fraction,BEMT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausvis,fraction,BDTT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausvis,fraction,BDMT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausvis,fraction,BDBT,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausvis,fraction,BES,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausvis,fraction,BDMS,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausvis,fraction,BDBS,0.001,0.0008,0.0012,0,0.0008,0.0012
+tausvis,fraction,C3AG,0.12,0.096,0.144,0,0.096,0.144
+tausvis,fraction,C3G,0.12,0.096,0.144,0,0.096,0.144
+tausvis,fraction,C4G,0.12,0.096,0.144,0,0.096,0.144
+tausvis,fraction,C3C,0.12,0.096,0.144,0,0.096,0.144
+tausvis,fraction,C3I,0.12,0.096,0.144,0,0.096,0.144
+theta_cj,unitless,NEMT,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,NEBT,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,NDBT,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,BETT,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,BEMT,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,BDTT,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,BDMT,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,BDBT,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,BES,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,BDMS,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,BDBS,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,C3AG,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,C3G,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,C4G,0.8,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,C3C,0.98,0.8,0.999,0,0.8,0.999
+theta_cj,unitless,C3I,0.98,0.8,0.999,0,0.8,0.999
+theta_ip,unitless,all,0.95,0.95,0.999,0,0.95,0.999
+theta_psii,unitless,all,0.7,0.6,0.9,0,0.6,0.9
+tkd_clay,W/m/K,all,2.92,2.336,3.504,0,2.336,3.504
+tkd_om,W/m/K,all,0.05,0.04,0.06,0,0.04,0.06
+tkd_sand,W/m/K,all,8.8,7.04,10.56,0,7.04,10.56
+tkm_om,W/m/K,all,0.25,0.2,0.3,0,0.2,0.3
+tpu25ratio,unitless,all,0.167,0.0835,0.501,0,0.0835,0.501
+tpuha,J/mol,all,72000.0,45000.0,97250.0,1,45000.0,173000.0
+tpuhd,J/mol,all,200000.0,100000.0,415000.0,0,100000.0,415000.0
+tpuse_sf,unitless,all,1.0,0.8,1.2,0,0.8,1.2
+ufuel,nan,all,1050.0,840.0,1260.0,0,840.0,1260.0
+upplim_destruct_metamorph,kg/m^3,all,175.0,100.0,250.0,0,100.0,250.0
+vcmaxha,J/mol,all,72000.0,45000.0,97250.0,1,45000.0,173000.0
+vcmaxhd,J/mol,all,200000.0,196562.5,415000.0,1,90000.0,415000.0
+vcmaxse_sf,unitless,all,1.0,0.8,1.0125,1,0.8,1.2
+watsat_sf,unitless,all,1.0,0.8,1.2,0,0.8,1.2
+wc2wjb0,unitless,all,0.8054,0.653,1.5,1,0.5,1.5
+wimp,unitless,all,0.05,0.02,0.1,0,0.02,0.1
+wind_min,m/s,all,1.0,0.8,1.2,0,0.8,1.2
+wind_snowcompact_fact,m/s,all,5.0,5.0,7.0,0,5.0,7.0
+wood_density,kg m-3,NEMT,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,NEBT,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,NDBT,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,BETT,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,BEMT,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,BDTT,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,BDMT,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,BDBT,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,BES,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,BDMS,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,BDBS,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,C3AG,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,C3G,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,C4G,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,C3C,500.0,250.0,750.0,0,250.0,750.0
+wood_density,kg m-3,C3I,500.0,250.0,750.0,0,250.0,750.0
+xdrdt,unitless,all,1.0,0.5,2.0,0,0.5,2.0
+xl,unitless,NEMT,0.01,-0.15,0.17,0,-0.15,0.17
+xl,unitless,NEBT,0.01,-0.15,0.17,0,-0.15,0.17
+xl,unitless,NDBT,0.01,-0.15,0.17,0,-0.15,0.17
+xl,unitless,BETT,0.32,0.09,0.45,0,0.09,0.45
+xl,unitless,BEMT,0.32,0.09,0.45,0,0.09,0.45
+xl,unitless,BDTT,0.2,-0.42,0.84,0,-0.42,0.84
+xl,unitless,BDMT,0.59,-0.3,0.95,0,-0.3,0.95
+xl,unitless,BDBT,0.59,-0.3,0.95,0,-0.3,0.95
+xl,unitless,BES,0.32,0.01,0.01,0,0.01,0.01
+xl,unitless,BDMS,0.59,0.25,0.25,0,0.25,0.25
+xl,unitless,BDBS,0.59,0.25,0.25,0,0.25,0.25
+xl,unitless,C3AG,-0.23,-0.02,0.54,0,-0.02,0.54
+xl,unitless,C3G,-0.23,-0.41,0.04,0,-0.41,0.04
+xl,unitless,C4G,-0.23,-0.41,0.04,0,-0.41,0.04
+xl,unitless,C3C,0.3,-0.02,0.54,0,-0.02,0.54
+xl,unitless,C3I,0.3,-0.02,0.54,0,-0.02,0.54
+z0mr,unitless,NEMT,0.055,0.033,0.077,0,0.033,0.077
+z0mr,unitless,NEBT,0.055,0.033,0.077,0,0.033,0.077
+z0mr,unitless,NDBT,0.055,0.033,0.077,0,0.033,0.077
+z0mr,unitless,BETT,0.075,0.045,0.105,0,0.045,0.105
+z0mr,unitless,BEMT,0.075,0.045,0.105,0,0.045,0.105
+z0mr,unitless,BDTT,0.055,0.033,0.077,0,0.033,0.077
+z0mr,unitless,BDMT,0.055,0.033,0.077,0,0.033,0.077
+z0mr,unitless,BDBT,0.055,0.033,0.077,0,0.033,0.077
+z0mr,unitless,BES,0.12,0.072,0.168,0,0.072,0.168
+z0mr,unitless,BDMS,0.12,0.072,0.168,0,0.072,0.168
+z0mr,unitless,BDBS,0.12,0.072,0.168,0,0.072,0.168
+z0mr,unitless,C3AG,0.12,0.072,0.168,0,0.072,0.168
+z0mr,unitless,C3G,0.12,0.072,0.168,0,0.072,0.168
+z0mr,unitless,C4G,0.12,0.072,0.168,0,0.072,0.168
+z0mr,unitless,C3C,0.12,0.072,0.168,0,0.072,0.168
+z0mr,unitless,C3I,0.12,0.072,0.168,0,0.072,0.168
+z_dl,m,all,0.05,0.01,0.1,0,0.01,0.1
+zbedrock_sf,unitless,all,1.0,0.8,1.2,0,0.8,1.2
+zetamaxstable,nan,all,0.5,0.1,10.0,0,0.1,10.0
+zlnd,m,all,0.01,0.003,0.05,0,0.003,0.05
+zsno,m,all,0.0024,1e-05,0.07,0,1e-05,0.07
