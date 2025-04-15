@@ -220,7 +220,7 @@ In addition to analyzing parameter effects on various output variables globally,
 \section{Results}
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{../figs/main/bar.png}
+\includegraphics[width=\textwidth]{bar.png}
 \caption{211 parameters were perturbed across the various domains of the land model.}
 \label{fig:params}
 \end{figure}
@@ -232,7 +232,7 @@ Given the very large size of the CLM5-BGC parameter space (Figure \ref{fig:param
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=30pc]{../figs/main/sims.png}
+\includegraphics[width=30pc]{sims.png}
 \caption{The approximate number of simulations afforded by 1 million core-hours on the Cheyenne supercomputer for a range of CLM configurations. Configurations are labeled according to spin-up procedure (SASU or the standard 1500-year spinup) and horizontal resolution (`sg' signifies sparsegrid). The inset map shows the locations of the 400 sparse grid cells. See Section \ref{methods} for spin-up and sparsegrid details.}
 \label{fig:sims}
 \end{figure}
@@ -245,7 +245,7 @@ The main goal of the sparsegrid is to obtain a coarse understanding of parameter
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=25pc]{../figs/main/sparsegrid_gpp.pdf}
+\includegraphics[width=25pc]{sparsegrid_gpp.pdf}
 \caption{Sparsegrid vs fullgrid (2$^{\circ}$ resolution) global annual gross primary production (GPP) across the last forty years of a transient CLM5.1 simulation. We opted for 400 clusters to balance computational cost against representativeness.}
 \label{fig:sg}
 \end{figure}
@@ -259,14 +259,14 @@ A small fraction of parameters tends to explain a large amount of the ensemble v
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{../figs/main/ranges.png}
+\includegraphics[width=\textwidth]{ranges.png}
 \caption{Global annual mean values for the default simulations (circles) and ensemble ranges (bars) for (a) gross primary production (GPP), (b) net ecosystem production (NEP), (c) leaf area index (LAI), and (d) evapotranspiration (ET) across six forcing scenarios. (e) Global LAI across the full set of parameter perturbation simulations under the future climate scenario. Most simulations fall within 5\% of the default LAI, with a small number of parameters generating larger effects. One perturbation, reducing sand heat capacity by 20\% caused a very low LAI. }
 \label{fig:ranges}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{../figs/main/variance.png}
+\includegraphics[width=\textwidth]{variance.png}
 \caption{Cumulative fraction of variance explained by the most influential parameters on gross primary production and canopy evaporation. Approximately 96\% of canopy evaporation variance can be explained by the ten most influential parameters, whereas 30 parameters are required to explain 96\% of GPP variance.}
 \label{fig:variance}
 \end{figure}
@@ -282,7 +282,7 @@ We repeated parameter ranking analyses in each of nine Whittaker biomes (see Sec
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{../figs/main/deltas.png}
+\includegraphics[width=\textwidth]{deltas.png}
 \caption{The eight most influential parameters (ranked by absolute parameter effect) on NEP (top row) in the control simulations (a), high CO$_2$ simulations (b), and the relative response to high CO$_2$ (c), as well as on evapotranspiration (ET, bottom row) in the control simulations (d), future climate simulations (e) and the relative response to future climate (f).
 The solid lines span the range between the two simulations for each parameter, with an open circle indicating the simulation where a parameter is set to its minimum value and a filled circle for its maximum. The lines are color-coded according to scientific domain. The dashed lines indicate the value in the simulation with default CLM5.1 parameters. 
 The parameters that are most influential on present-day climate (a,d) can differ significantly from the parameters that control the response to forcing perturbations (c,f).}
@@ -292,7 +292,7 @@ The parameters that are most influential on present-day climate (a,d) can differ
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{../figs/main/lai_biome.pdf}
+\includegraphics[width=\textwidth]{lai_biome.pdf}
 \caption{The eight most influential parameters (ranked by absolute parameter effect) on leaf area index (LAI) within the control ensemble, globally and within three biomes. Lines and circles are as described in Figure 6. Parameter rankings vary by biome, with the global rankings seeming to reflect contributions from each of these three biomes.}
 \label{fig:lai}
 \end{figure}
@@ -305,7 +305,7 @@ Because the number of potential variables, parameters, and geographical ranges o
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{../figs/QRUNOFFabs_x_medlynslope_CTL2010.png}
+\includegraphics[width=\textwidth]{QRUNOFFabs_x_medlynslope_CTL2010.png}
 \caption{Map of the effect of perturbing the medlynslope stomatal conductance parameter on runoff within the control ensemble. Increasing medlynslope tends to reduce runoff, but only in regions with sufficient vegetation activity. This is one example of many plots available online (\url{https://webext.cgd.ucar.edu/I2000/PPEn11_OAAT}) in a broader diagnostics set. }
 \label{fig:map}
 \end{figure}
